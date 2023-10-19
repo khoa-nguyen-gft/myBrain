@@ -1,0 +1,63 @@
+[2023-06-28T08:34:17.024+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.start_template_job manual__2023-06-28T08:34:11.195535+00:00 [queued]>
+[2023-06-28T08:34:17.029+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.start_template_job manual__2023-06-28T08:34:11.195535+00:00 [queued]>
+[2023-06-28T08:34:17.030+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-28T08:34:17.037+0000] {taskinstance.py:1327} INFO - Executing <Task(DataflowTemplatedJobStartOperator): start_template_job> on 2023-06-28 08:34:11.195535+00:00
+[2023-06-28T08:34:17.041+0000] {standard_task_runner.py:57} INFO - Started process 836 to run task
+[2023-06-28T08:34:17.044+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bs_customer_invoice_dag', 'start_template_job', 'manual__2023-06-28T08:34:11.195535+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/bs_customer_invoice_chinook_dag.py', '--cfg-path', '/tmp/tmpbkk6cmpv']
+[2023-06-28T08:34:17.046+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask start_template_job
+[2023-06-28T08:34:17.084+0000] {task_command.py:410} INFO - Running <TaskInstance: bs_customer_invoice_dag.start_template_job manual__2023-06-28T08:34:11.195535+00:00 [running]> on host 5bcd2ea11ebc
+[2023-06-28T08:34:17.134+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='datokza@gmail.com' AIRFLOW_CTX_DAG_OWNER='okza' AIRFLOW_CTX_DAG_ID='bs_customer_invoice_dag' AIRFLOW_CTX_TASK_ID='start_template_job' AIRFLOW_CTX_EXECUTION_DATE='2023-06-28T08:34:11.195535+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-28T08:34:11.195535+00:00'
+[2023-06-28T08:34:17.141+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-06-28T08:34:22.854+0000] {dataflow.py:425} INFO - Start waiting for done.
+[2023-06-28T08:34:24.055+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_PENDING
+[2023-06-28T08:34:24.060+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:34:34.360+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:34:34.364+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:34:45.535+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:34:45.545+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:34:55.854+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:34:55.860+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:06.157+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:06.159+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:16.496+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:16.506+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:26.791+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:26.798+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:37.074+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:37.078+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:49.373+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:49.378+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:35:59.676+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:35:59.681+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:36:10.015+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:36:10.017+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:36:20.294+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:36:20.299+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:36:30.638+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:36:30.641+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:36:40.953+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:36:40.956+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:36:51.263+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:36:51.276+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:01.576+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:01.590+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:11.898+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:11.899+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:22.185+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:22.196+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:33.317+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:33.319+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:43.633+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:43.635+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:37:53.920+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:37:53.927+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:38:04.199+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:38:04.200+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:38:14.578+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:38:14.593+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:38:24.886+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_RUNNING
+[2023-06-28T08:38:24.894+0000] {dataflow.py:428} INFO - Waiting for done. Sleep 10 s
+[2023-06-28T08:38:35.184+0000] {dataflow.py:388} INFO - Google Cloud DataFlow job my-dataflow-job-24e64021 is state: JOB_STATE_DONE
+[2023-06-28T08:38:35.231+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bs_customer_invoice_dag, task_id=start_template_job, execution_date=20230628T083411, start_date=20230628T083417, end_date=20230628T083835
+[2023-06-28T08:38:35.300+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-28T08:38:35.319+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

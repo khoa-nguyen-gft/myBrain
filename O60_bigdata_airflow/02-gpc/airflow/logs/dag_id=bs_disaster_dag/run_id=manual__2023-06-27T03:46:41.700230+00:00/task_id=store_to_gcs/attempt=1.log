@@ -1,0 +1,14 @@
+[2023-06-27T03:46:46.168+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:46:41.700230+00:00 [queued]>
+[2023-06-27T03:46:46.173+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:46:41.700230+00:00 [queued]>
+[2023-06-27T03:46:46.173+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-27T03:46:46.180+0000] {taskinstance.py:1327} INFO - Executing <Task(LocalFilesystemToGCSOperator): store_to_gcs> on 2023-06-27 03:46:41.700230+00:00
+[2023-06-27T03:46:46.185+0000] {standard_task_runner.py:57} INFO - Started process 559 to run task
+[2023-06-27T03:46:46.189+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bs_disaster_dag', 'store_to_gcs', 'manual__2023-06-27T03:46:41.700230+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/bs_disaster_dag.py', '--cfg-path', '/tmp/tmpqrs_jwnr']
+[2023-06-27T03:46:46.191+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask store_to_gcs
+[2023-06-27T03:46:46.230+0000] {task_command.py:410} INFO - Running <TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:46:41.700230+00:00 [running]> on host 87fd6b97b27b
+[2023-06-27T03:46:46.276+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bs_disaster_dag' AIRFLOW_CTX_TASK_ID='store_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2023-06-27T03:46:41.700230+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-27T03:46:41.700230+00:00'
+[2023-06-27T03:46:46.283+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-06-27T03:46:48.835+0000] {gcs.py:538} INFO - File /opt/***/data/extract_disaster_data.csv uploaded to extract_disaster_data.csv in my--demo-gcs-bucket bucket
+[2023-06-27T03:46:48.856+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bs_disaster_dag, task_id=store_to_gcs, execution_date=20230627T034641, start_date=20230627T034646, end_date=20230627T034648
+[2023-06-27T03:46:48.892+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-27T03:46:48.919+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="336ccf09-fb5f-4b35-9b6f-f3fb90fed03a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../images/Grandle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-prefix-sums/O01_algorithms_prefix_sums_031_MinAvgTwoSlice/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-prefix-sums/O01_algorithms_prefix_sums_031_MinAvgTwoSlice/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-prefix-sums/O01_algorithms_prefix_sums_031_MinAvgTwoSlice/SolutionHint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_041_Distinct/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_041_Distinct/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_041_Distinct/SolutionHint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_042_MaxProductOfThree/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_042_MaxProductOfThree/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_043_Triangle/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_043_Triangle/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_043_Triangle/SolutionHint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_044_NumberOfDiscIntersections/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_044_NumberOfDiscIntersections/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorithm-sorting/O01_algorithms_sorting_044_NumberOfDiscIntersections/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitIgnore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarrayDivision/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarrayDivision/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SubarrayDivision/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WF5DlSvu4gp4aGQEK9sV2noirf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SubarrayDivision.MainKt" />
+      <module name="algorithm_hackerrank.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="336ccf09-fb5f-4b35-9b6f-f3fb90fed03a" name="Changes" comment="" />
+      <created>1696315372552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696315372552</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

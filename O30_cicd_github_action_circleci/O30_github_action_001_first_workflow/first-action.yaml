@@ -1,0 +1,14 @@
+name: First Worflow
+on: workflow_dispatch
+jobs: 
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Green
+        run: echo "print Green"
+      - name: Running Multi-Line Shell Commands
+        run: |
+            echo ""First Output"
+            echo ""Second Output"
+      - name: Print GoodByte
+        run: echo "Done -byte!"

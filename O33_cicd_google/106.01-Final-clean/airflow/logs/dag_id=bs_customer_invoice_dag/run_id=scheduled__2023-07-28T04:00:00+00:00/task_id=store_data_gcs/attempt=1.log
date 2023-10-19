@@ -1,0 +1,14 @@
+[2023-07-29T04:00:03.830+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.store_data_gcs scheduled__2023-07-28T04:00:00+00:00 [queued]>
+[2023-07-29T04:00:03.835+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.store_data_gcs scheduled__2023-07-28T04:00:00+00:00 [queued]>
+[2023-07-29T04:00:03.836+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-29T04:00:03.843+0000] {taskinstance.py:1327} INFO - Executing <Task(LocalFilesystemToGCSOperator): store_data_gcs> on 2023-07-28 04:00:00+00:00
+[2023-07-29T04:00:03.847+0000] {standard_task_runner.py:57} INFO - Started process 18853 to run task
+[2023-07-29T04:00:03.850+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bs_customer_invoice_dag', 'store_data_gcs', 'scheduled__2023-07-28T04:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/bs_customer_invoice_chinook_dag.py', '--cfg-path', '/tmp/tmpmtgshaz0']
+[2023-07-29T04:00:03.851+0000] {standard_task_runner.py:85} INFO - Job 61: Subtask store_data_gcs
+[2023-07-29T04:00:03.884+0000] {task_command.py:410} INFO - Running <TaskInstance: bs_customer_invoice_dag.store_data_gcs scheduled__2023-07-28T04:00:00+00:00 [running]> on host 53e9620c1516
+[2023-07-29T04:00:03.936+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='npdangkhoa2020@gmail.com' AIRFLOW_CTX_DAG_OWNER='okza' AIRFLOW_CTX_DAG_ID='bs_customer_invoice_dag' AIRFLOW_CTX_TASK_ID='store_data_gcs' AIRFLOW_CTX_EXECUTION_DATE='2023-07-28T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-28T04:00:00+00:00'
+[2023-07-29T04:00:03.943+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-07-29T04:00:08.123+0000] {gcs.py:538} INFO - File /opt/***/data/extract_transform_customer_invoice.csv uploaded to data/extract_transform_customer_invoice.csv in gft-demo-gcs-bucket bucket
+[2023-07-29T04:00:08.139+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bs_customer_invoice_dag, task_id=store_data_gcs, execution_date=20230728T040000, start_date=20230729T040003, end_date=20230729T040008
+[2023-07-29T04:00:08.176+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-29T04:00:08.199+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

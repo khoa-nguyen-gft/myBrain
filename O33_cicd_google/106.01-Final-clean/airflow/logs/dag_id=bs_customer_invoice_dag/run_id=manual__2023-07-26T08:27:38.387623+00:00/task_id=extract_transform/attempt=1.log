@@ -1,0 +1,14 @@
+[2023-07-26T08:27:41.382+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.extract_transform manual__2023-07-26T08:27:38.387623+00:00 [queued]>
+[2023-07-26T08:27:41.389+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bs_customer_invoice_dag.extract_transform manual__2023-07-26T08:27:38.387623+00:00 [queued]>
+[2023-07-26T08:27:41.389+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-26T08:27:41.397+0000] {taskinstance.py:1327} INFO - Executing <Task(_PythonDecoratedOperator): extract_transform> on 2023-07-26 08:27:38.387623+00:00
+[2023-07-26T08:27:41.405+0000] {standard_task_runner.py:57} INFO - Started process 497 to run task
+[2023-07-26T08:27:41.409+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bs_customer_invoice_dag', 'extract_transform', 'manual__2023-07-26T08:27:38.387623+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/bs_customer_invoice_chinook_dag.py', '--cfg-path', '/tmp/tmp93jq9f5m']
+[2023-07-26T08:27:41.412+0000] {standard_task_runner.py:85} INFO - Job 41: Subtask extract_transform
+[2023-07-26T08:27:41.472+0000] {task_command.py:410} INFO - Running <TaskInstance: bs_customer_invoice_dag.extract_transform manual__2023-07-26T08:27:38.387623+00:00 [running]> on host 53e9620c1516
+[2023-07-26T08:27:41.534+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='npdangkhoa2020@gmail.com' AIRFLOW_CTX_DAG_OWNER='okza' AIRFLOW_CTX_DAG_ID='bs_customer_invoice_dag' AIRFLOW_CTX_TASK_ID='extract_transform' AIRFLOW_CTX_EXECUTION_DATE='2023-07-26T08:27:38.387623+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-26T08:27:38.387623+00:00'
+[2023-07-26T08:27:41.536+0000] {logging_mixin.py:149} INFO - extract transform
+[2023-07-26T08:27:41.557+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-26T08:27:41.565+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bs_customer_invoice_dag, task_id=extract_transform, execution_date=20230726T082738, start_date=20230726T082741, end_date=20230726T082741
+[2023-07-26T08:27:41.581+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-26T08:27:41.600+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

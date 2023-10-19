@@ -1,0 +1,9 @@
+# Run Test In Local Machine: 
+
+* Example: to call the code
+
+    ```bash
+    gsutil cp airflow/data/extract_transform_customer_invoice.csv gs://108-demo-gsutil/input/extract_transform_customer_invoice.csv
+    
+    python3 pipline/pipline-invoice.py 
+    ```

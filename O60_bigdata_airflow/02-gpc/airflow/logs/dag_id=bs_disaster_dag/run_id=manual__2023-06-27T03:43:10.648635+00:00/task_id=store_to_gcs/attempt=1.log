@@ -1,0 +1,26 @@
+[2023-06-27T03:43:16.288+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:43:10.648635+00:00 [queued]>
+[2023-06-27T03:43:16.294+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:43:10.648635+00:00 [queued]>
+[2023-06-27T03:43:16.295+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-27T03:43:16.302+0000] {taskinstance.py:1327} INFO - Executing <Task(LocalFilesystemToGCSOperator): store_to_gcs> on 2023-06-27 03:43:10.648635+00:00
+[2023-06-27T03:43:16.310+0000] {standard_task_runner.py:57} INFO - Started process 490 to run task
+[2023-06-27T03:43:16.314+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bs_disaster_dag', 'store_to_gcs', 'manual__2023-06-27T03:43:10.648635+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/bs_disaster_dag.py', '--cfg-path', '/tmp/tmpvx3kek0_']
+[2023-06-27T03:43:16.317+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask store_to_gcs
+[2023-06-27T03:43:16.376+0000] {task_command.py:410} INFO - Running <TaskInstance: bs_disaster_dag.store_to_gcs manual__2023-06-27T03:43:10.648635+00:00 [running]> on host 87fd6b97b27b
+[2023-06-27T03:43:16.434+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bs_disaster_dag' AIRFLOW_CTX_TASK_ID='store_to_gcs' AIRFLOW_CTX_EXECUTION_DATE='2023-06-27T03:43:10.648635+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-27T03:43:10.648635+00:00'
+[2023-06-27T03:43:16.448+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 93, in execute
+    impersonation_chain=self.impersonation_chain,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 165, in __init__
+    impersonation_chain=impersonation_chain,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 234, in __init__
+    self.extras: dict = self.get_connection(self.gcp_conn_id).extra_dejson
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/connection.py", line 434, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `google_cloud_default` isn't defined
+[2023-06-27T03:43:16.451+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=bs_disaster_dag, task_id=store_to_gcs, execution_date=20230627T034310, start_date=20230627T034316, end_date=20230627T034316
+[2023-06-27T03:43:16.458+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 4 for task store_to_gcs (The conn_id `google_cloud_default` isn't defined; 490)
+[2023-06-27T03:43:16.486+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-27T03:43:16.500+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
