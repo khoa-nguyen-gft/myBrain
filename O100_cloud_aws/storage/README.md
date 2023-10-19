@@ -6,7 +6,6 @@
 # AWS Storage 
 + [What is AWS Storage?](#what-is-aws-storage)
 + [What is difference between Block, File and Object Store?](#what-is-difference-between-block-file-and-object-store)
-+ [What is AD(Active Directory) in Windows Authentication?](#what-is-adactive-directory-in-windows-authentication)
 
 + ## Block Storage
     + [What is difference between EBS and EC2 Instance Store?](#what-is-difference-between-ebs-instance-store)
@@ -16,14 +15,18 @@
     + [What is AWS File Storage?](#what-is-aws-file-storage)
     + [What is difference between Amazon Elastic File System (EFS) and Amazon FSx?](#what-is-difference-between-amazon-elastic-file-system-efs-and-amazon-fsx)
     + [What is difference between Amazon FSx for Lustre, Amazon FSx for Windows file server, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?](#what-is-difference-between-amazon-fsx-for-lustre-amazon-fsx-for-windows-file-server-amazon-fsx-for-netapp-ontap-and-amazon-fsx-for-openzfs)
-    + [What is AWS Storage Gateway(File Gateway)?](#what-is-aws-storage-gatewayfile-gateway)
-    
 
 + ## Object Storage
     + [What is S3 Stogage classes Comparison?](#what-is-s3-stogage-classes-comparison)
 
 
 + ## On-Premises Storage
+    + [What is AWS Storage Gateway(File Gateway)?](#what-is-aws-storage-gatewayfile-gateway)
+
+# Advance
++ [What is AD(Active Directory) in Windows Authentication?](#what-is-adactive-directory-in-windows-authentication)
++ [What is difference between NFS (Network File System), SMB (Server Message Block) and SAM (Security Account Manager)?](#what-is-difference-between-nfs-network-file-system-smb-server-message-block-and-sam-security-account-manager)
+
 ----
 
 ### What is AWS Storage?
@@ -34,17 +37,10 @@
 
 + **Block** provides block-level storage, which means that it is used to create virtual disks that can be used by EC2 instances to store data. 
 + **File** provides file-level storage, which means that it is used to create a file system that can be accessed by multiple EC2 instances.
-+ **Object** is designed for storing and retrieving large volumes of data with high durability, availability, and security.
++ **Object** is designed for storing and retrieving large volumes of data with high durability, availability, and security.f
 
 ![Alt text](images/What%20is%20difference%20between%20block,%20File%20and%20Object%20Store.png)
 
-
-[Table of Contents](#aws-storage)
-
-### What is AD(Active Directory) in Windows Authentication?
-- **Active Directory (AD)** trong Windows Authentication là một phần của hệ thống xác thực và quản lý danh tính trong môi trường Microsoft Windows. AD là một dịch vụ quản lý danh tính, quản lý quyền truy cập và tài khoản người dùng trong mạng lưới của một tổ chức. Nó cung cấp các dịch vụ liên quan đến xác thực người dùng và quản lý phân quyền trong hệ thống.
-
-![Alt text](./images/AD.png)
 
 [Table of Contents](#aws-storage)
 
@@ -109,15 +105,39 @@
 
 [Table of Contents](#aws-storage)
 
-### What is AWS Storage Gateway(File Gateway)?
-![Alt text](./images/AWS%20Storage%20Gateway.png)
-
-[Table of Contents](#aws-storage)
-
-
 ## Object Storage
 
 ### What is S3 Stogage classes Comparison?
 ![Alt text](./images/S3%20Stogage%20classes%20Comparison.png)
 ![Alt text](./images/Pasted%20Graphic%2011.png)
+[Table of Contents](#aws-storage)
+
+
+## On-Premises Storage
+### What is AWS Storage Gateway (File Gateway)?
+![Alt text](./images/AWS%20Storage%20Gateway.png)
+
+[Table of Contents](#aws-storage)
+
+# Advance
+
+### What is AD(Active Directory) in Windows Authentication?
+- **Active Directory (AD)** trong Windows Authentication là một phần của hệ thống xác thực và quản lý danh tính trong môi trường Microsoft Windows. AD là một dịch vụ quản lý danh tính, quản lý quyền truy cập và tài khoản người dùng trong mạng lưới của một tổ chức. Nó cung cấp các dịch vụ liên quan đến xác thực người dùng và quản lý phân quyền trong hệ thống.
+
+![Alt text](./images/AD.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is difference between NFS (Network File System), SMB (Server Message Block) and SAM (Security Account Manager)?
+
+- **SAM (Security Account Manager):** SAM is not a file-sharing protocol like NFS or SMB. It is a database that stores user account information, including usernames and password hashes. SAM is used for local user authentication on Windows systems.
+
+- **SMB (Server Message Block):** SMB is a network-based file-sharing protocol developed by Microsoft and widely used in Windows environments for sharing files, printers, and other resources.
+
+- **NFS (Network File System):** NFS is a network-based file-sharing protocol primarily used in UNIX/Linux environments for sharing files and directories across a network.
+
+![Alt text](.//images/What%20is%20difference%20between%20Block,%20File%20and%20Object%20Store2.png)
+
+
 [Table of Contents](#aws-storage)
