@@ -337,7 +337,6 @@ for unstructured data
 
 [Table of Contents](#unstructured-data-storage)
 
-
 # Web Session
 ### what is different ways to preserve state across HTTP requests in Web Session? 
 - **Cookies**: 

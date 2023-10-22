@@ -284,6 +284,8 @@ perform a load balancing function
 
 [Table of Contents](#api-gateway)
 
+
+
 # CDN
 
 ## What is CDN?
@@ -298,7 +300,7 @@ perform a load balancing function
 - CDNs provide service by caching our website content on their edge servers which are relocated at different Points of Presence (PoP)
 ![Alt text](./images/With%20CDN.png)
 
-[Table of Contents](#main-title)
+[Table of Contents](#content-delivery-network-cdn)
 
 
 ## What is Wide World Wait - Problem?
@@ -307,14 +309,14 @@ perform a load balancing function
     + Slow internet connection 
     + Overloaded web server
 
-[Table of Contents](#main-title)
+[Table of Contents](#content-delivery-network-cdn)
 
 ## What is CDN - Quality Attributes?
 - Performance - Faster page loads
 - High availability - issues/slowness are less noticeable
 - Security - Protection against Distributed Denial of Service attacks (DDoS)
 
-[Table of Contents](#main-title)
+[Table of Contents](#content-delivery-network-cdn)
 
 
 ## What is CDN - strategy?
@@ -327,4 +329,4 @@ perform a load balancing function
     - Some content delivery network providers support this model directly
     - Others enable this strategy by setting a long TTL for our assets so that the cache never expires
 
-[Table of Contents](#main-title)
+[Table of Contents](#content-delivery-network-cdn)
