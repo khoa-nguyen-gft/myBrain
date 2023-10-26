@@ -13,6 +13,7 @@
 + ## File Storage
     + [What is AWS File Storage?](#what-is-aws-file-storage)
     + [What is difference between Amazon EFS (Elastic File System) and Amazon FSx?](#what-is-difference-between-amazon-efs-elastic-file-system-and-amazon-fsx)
+    + [What is difference between Amazon FSx for Lustre, Amazon FSx for Windows, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?](#what-is-difference-between-amazon-fsx-for-lustre-amazon-fsx-for-windows-file-server-amazon-fsx-for-netapp-ontap-and-amazon-fsx-for-openzfs)
 
 + ## Object Storage
     + [What is S3 Stogage Classes Comparison?](#what-is-s3-stogage-classes-comparison)
@@ -26,7 +27,6 @@
 + ## File Storage
     + [What is AD(Active Directory) in Windows Authentication?](#what-is-adactive-directory-in-windows-authentication)
     + [What is difference between NFS(Network File System), DFSR (Distribute File System Replication), SMB (Server Message Block) and SAM (Security Account Manager)?](#what-is-difference-between-nfsnetwork-file-system-dfsr-distribute-file-system-replication-smb-server-message-block-and-sam-security-account-manager)
-    + [What is difference between Amazon FSx for Lustre, Amazon FSx for Windows, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?](#what-is-difference-between-amazon-fsx-for-lustre-amazon-fsx-for-windows-file-server-amazon-fsx-for-netapp-ontap-and-amazon-fsx-for-openzfs)
 
 ----
 
@@ -80,6 +80,35 @@
 
 - **FSx (Amazon FSx for Windows or FSx for Lustre)**: FSx is a managed file storage service designed for specific use cases. FSx for Windows is for Windows-based workloads, including Windows file shares and Windows applications, while FSx for Lustre is designed for high-performance computing and data analytics.
 ![Alt text](images/FSx.png)
+
+
+### What is difference between Amazon FSx for Lustre, Amazon FSx for Windows file server, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?
+
+
++ **Amazon FSx for Windows File Server** supports DFS namespaces and DFS replication. This is the best solution for replacing the on-premises infrastructure. 
+
++ **Amazon FSx for Lustre (Linux + Cluster):** Lustre is a type of parallel distributed file system, for large-scale computing
+    ![Alt text](images/Lustre.png)
+
++ **Amazon FSx for NetApp ONTAP**:
+    + **Amazon FSx for NetApp ONTAP**: Yêu cầu hiệu suất cao: Bạn cần hiệu suất cao và độ trễ thấp cho ứng dụng quan trọng với yêu cầu I/O đặc biệt.
+    + Storage shrinks or grows automatically
+    + Snapshots, replication, low-cost, compression and data de-duplication
+
+    ![Alt text](images/NetApp.png)
+
++ **Amazon FSx for OpenZFS** 
+    + **Amazon FSx for OpenZFS**: OpenZFS cung cấp một giải pháp tương đối tiết kiệm cho nhu cầu lưu trữ dữ liệu tổng quan 
+    + Up to 1,000,000 IOPS with < 0.5ms latency
+    + Snapshots, compression and low-cost 
+    + Point-in-time instantaneous cloning (helpful for testing new workloads)
+
+    ![Alt text](images/OpenZFS.png)
+
+- **NOTE:**
+    - **HPC (High Performance Computing)**: 
+
+[Table of Contents](#aws-storage)
 
 
 ## Object Storage
@@ -148,33 +177,5 @@
 
 [Table of Contents](#aws-storage)
 
-
-### What is difference between Amazon FSx for Lustre, Amazon FSx for Windows file server, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?
-
-
-+ **Amazon FSx for Windows File Server** supports DFS namespaces and DFS replication. This is the best solution for replacing the on-premises infrastructure. 
-
-+ **Amazon FSx for Lustre (Linux + Cluster):** Lustre is a type of parallel distributed file system, for large-scale computing
-    ![Alt text](images/Lustre.png)
-
-+ **Amazon FSx for NetApp ONTAP**:
-    + **Amazon FSx for NetApp ONTAP**: Yêu cầu hiệu suất cao: Bạn cần hiệu suất cao và độ trễ thấp cho ứng dụng quan trọng với yêu cầu I/O đặc biệt.
-    + Storage shrinks or grows automatically
-    + Snapshots, replication, low-cost, compression and data de-duplication
-
-    ![Alt text](images/NetApp.png)
-
-+ **Amazon FSx for OpenZFS** 
-    + **Amazon FSx for OpenZFS**: OpenZFS cung cấp một giải pháp tương đối tiết kiệm cho nhu cầu lưu trữ dữ liệu tổng quan 
-    + Up to 1,000,000 IOPS with < 0.5ms latency
-    + Snapshots, compression and low-cost 
-    + Point-in-time instantaneous cloning (helpful for testing new workloads)
-
-    ![Alt text](images/OpenZFS.png)
-
-- **NOTE:**
-    - **HPC (High Performance Computing)**: 
-
-[Table of Contents](#aws-storage)
 
 
