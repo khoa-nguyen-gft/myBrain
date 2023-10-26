@@ -250,7 +250,7 @@ different records
 
 ### What is Command Query Responsibility Segregation (CQRS) Database?
  - Command Query Responsibility Segregation (CQRS): Separate read and write operations. Better performance on read part using right technology for reading, and preventing conflicts with update commands. Scale each part separately. Leads to eventual consistency.
-![Alt text](./images/CORS%20PATTERN2.png)
+![Alt text](./images/CQRS%20PATTERN2.png)
 
 
 [Table of Contents](#main-title)

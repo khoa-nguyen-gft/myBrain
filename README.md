@@ -45,6 +45,8 @@
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
       + [Build Tool (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
       + [Continuous Deployment (GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
+      + [Monitoring Logging (Sumo Logic)](./O36_cicd_monitoring/README.md)
+
 
 - **Functional Requirements:**
    + [Banking Domain](./O51_functional_bank/README.md)
