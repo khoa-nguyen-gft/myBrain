@@ -1,7 +1,6 @@
 # Love Challenge Code
 
-![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
-
+![Alt text](image-1.png)
 ## System Design:
 - **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
 ![Alt text](images/System%20Design.png)
@@ -254,4 +253,4 @@
 
 ![Alt text](<image (1).png>)
 ![Alt text](image-1.png)
-![Alt text](image-2.png)
+![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
