@@ -11,7 +11,6 @@
       - [Kafka](./O10_messaging_kafka/interview/README.md)
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
-
    + [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
       - [DynamoDB](./O41_database_dynamoDB/interview/README.md)
       - [PostgreSQL](./O42_database_postgreSQL/README.md)
@@ -45,6 +44,8 @@
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
       + [Build Tool (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
       + [Continuous Deployment (GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
+      + [Monitoring Logging (Sumo Logic)](./O36_cicd_monitoring/README.md)
+
 
 - **Functional Requirements:**
    + [Banking Domain](./O51_functional_bank/README.md)

@@ -26,6 +26,9 @@
     + [What is Data processing Strategies (Batch Processing, Real-Time Processing)?](#what-is-data-processing-strategiesbatch-processing-real-time-processing)
 
 
+# Advances
+- ## Big Data:
+    + [What is the architecture of Big Data?](#what-is-the-architecture-of-big-data)
 
 ---
 
@@ -279,4 +282,20 @@ operations
 - In many cases, we need the properties of both strategies
 
 ![Alt text](./images//What%20is%20Data%20processing%20Strategies(Batch%20Processing,%20Real%20Time%20Processing).png)
+
+[Table of Contents](#big-data-architecure-patterns)
+
+
+### What is the architecture of Big Data?
+-  This architecture consists of 6 layers, which ensure a secure flow of data.
+
+    + Ingestion Layer(Micro Service, Kafka, Kafka connect, S3 Raw Zone)
+    + Data Collector Layer(S3, Primary ETL, S3 Processal Zone)
+    + Processing Layer()
+    + Storage Layer 
+    + Query Layer 
+    + Visualization Layer
+
+![Alt text](./What%20is%20the%20architecture%20of%20Big%20Data.png)
+
 [Table of Contents](#big-data-architecure-patterns)
