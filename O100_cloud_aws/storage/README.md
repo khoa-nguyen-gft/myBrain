@@ -17,6 +17,9 @@
 
 + ## Object Storage
     + [What is S3 Stogage Classes Comparison?](#what-is-s3-stogage-classes-comparison)
+    + [What is Difference between ServerSide Encryption (SSE) and Client-Side Encryption (CSE)?](#what-is-difference-between-serverside-encryption-sse-and-client-side-encryption-cse)
+    + [What is Difference between SSE-S3 && SSE-KMS && SSE-C in Server-Side Encryption?](#what-is-difference-between-sse-s3--sse-kms--sse-c-in-server-side-encryption)
+    + [What is difference between Bucket Policy and Default Encryption?](#what-is-difference-between-bucket-policy-and-default-encryption)
 
 + ## On-Premises Storage
     + [What is AWS Storage Gateway (File Gateway)?](#what-is-aws-storage-gateway-file-gateway)
@@ -27,6 +30,7 @@
 + ## File Storage
     + [What is AD(Active Directory) in Windows Authentication?](#what-is-adactive-directory-in-windows-authentication)
     + [What is difference between NFS(Network File System), DFSR (Distribute File System Replication), SMB (Server Message Block) and SAM (Security Account Manager)?](#what-is-difference-between-nfsnetwork-file-system-dfsr-distribute-file-system-replication-smb-server-message-block-and-sam-security-account-manager)
+    + [What is Encryption In Transit(SSL/TLS)?](#what-is-encryption-in-transitssltls)
 
 ----
 
@@ -116,6 +120,58 @@
 ### What is S3 Stogage classes Comparison?
 ![Alt text](./images/S3%20Stogage%20classes%20Comparison.png)
 ![Alt text](./images/Pasted%20Graphic%2011.png)
+
+[Table of Contents](#aws-storage)
+
+### What is Difference between ServerSide Encryption (SSE) and Client-Side Encryption (CSE)?
+- Server-Side Encryption (SSE) and Client-Side Encryption (CSE) are two different approaches to encrypting data, typically used in the context of cloud storage or data transmission. 
+    + **Server-Side Encryption (SSE):** Encryption is performed on the server where your data is stored (e.g., a cloud storage provider's server).
+
+    + **Client-Side Encryption (CSE):** 
+        + Use client libraries such as Amazon S3 Client-Side Encryption Library
+        + CIients must encrypt data themselves before sending to Amazon S3
+        + Clients must decrypt data themselves when retrieving from Amazon S3
+        + Customer fully manages the keys and encryption cycle
+
+    ![Alt text](./images/Pasted%20Graphic%2030.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is Difference between SSE-S3 && SSE-KMS && SSE-C in Server-Side Encryption?
+
+- **Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)**  
+    + Enabled by Default
+    + Encrypts S3 objects using keys handled, managed, and owned by AWS
+    + Object is encrypted server-side
+    + Encryption type is `AES-256`
+    + Must set header `"x-amz-server-side-encryption”: "AES256"`
+
+    ![Alt text](./images/Pasted%20Graphic%2027.png)
+
+* **Server-Side Encryption with KMS Keys stored in AWS KMS (SSE-KMS)**
+    - Leverage AWS Key Management Service (AWS KMS) to manage encryption keys
+    - Object is encrypted server-side
+    - Must set header `"x-amz-server-side-encryption": "aws:kms"`
+
+    ![Alt text](./images/Pasted%20Graphic%2028.png)
+* S**erver-Side Encryption with Customer-Provided Keys (SSE-C)**
+    - When you want to manage your own encryption keys
+    - HTTPS must be used
+    - Encryption key must provided in HT TP headers, for every HTTP request made
+
+    ![Alt text](./images/Pasted%20Graphic%2029.png)
+
+[Table of Contents](#aws-storage)
+
+### What is difference between Bucket Policy and Default Encryption?
+- These features are used to control access to data stored in S3 buckets and to ensure the encryption of data at rest.
+    + **Bucket Policy:** A bucket policy is a resource-based access policy for an S3 bucket. It defines who can access the objects in the bucket and what actions they can perform.
+
+    + **Default Encryption:** Default encryption is a feature that ensures that all objects stored in an S3 bucket are encrypted by default when they are written to the bucket.
+
+    ![Alt text](.//images/difference%20between%20Bucket%20Policy%20and%20Default%20Encryption.png)
+
 [Table of Contents](#aws-storage)
 
 
@@ -178,4 +234,14 @@
 [Table of Contents](#aws-storage)
 
 
+### What is Encryption In Transit(SSL/TLS)?
 
++ Amazon S3 exposes two endpoints:
+    + HTTP Endpoint — non encrypted
+    + HTTPS Endpoint — encryption in flight
++  HTTPS is recommended
++ HTTPS is mandatory for SSE-C
+
+![Alt text](.//images/Pasted%20Graphic%2031.png)
+
+[Table of Contents](#aws-storage)
