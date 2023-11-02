@@ -19,7 +19,7 @@
     + [What is difference "DPD Days Past Due" and Write-off (viết mất) in "Debt collection" (thu nợ)?](#what-is-difference-dpd-days-past-due-and-write-off-viết-mất-in-debt-collection-thu-nợ)
     + [What is difference between Hạn mức tín dụng (Credit Limit) và Hạn mức tín dụng tổng hợp (Combined Credit Limit) ?](#what-is-difference-between-hạn-mức-tín-dụng-credit-limit-và-hạn-mức-tín-dụng-tổng-hợp-combined-credit-limit)
     + [What is difference "Start Credit Risk Assessment Command" and "Credit Risk Data Collected Event"?](#what-is-difference-start-credit-risk-assessment-command-and-credit-risk-data-collected-event)
-    + [What is difference CCL (Combined Credit Limit) Customer and ACRA (Accounting and Corporate Regulatory Authority)?](#what-is-difference-ccl-combined-credit-limit-customer-and-acra-accounting-and-corporate-regulatory-authority)
+    + [What is difference CCL (Common Credit Limit) Customer and ACRA (Accounting and Corporate Regulatory Authority)?](#what-is-difference-ccl-common-credit-limit-customer-and-acra-accounting-and-corporate-regulatory-authority)
     + [What is Notice of Assessment (NOA)?](#what-is-notice-of-assessment-noa)
     + [What is Debt Management Program (DMP)?](#what-is-debt-management-programdmp)
 
@@ -132,10 +132,10 @@
 [Banking Domain](#banking-domain)
 
 
-### What is difference CCL (Combined Credit Limit) Customer and ACRA (Accounting and Corporate Regulatory Authority)?
-- **Accounting and Corporate Regulatory Authority (ACRA)**: ACRA là một tổ chức ở Singapore, và không phải là thuật ngữ tài chính. ACRA chịu trách nhiệm quản lý và điều hành các vấn đề liên quan đến kế toán, quản lý doanh nghiệp và quy định doanh nghiệp. 
+### What is difference CCL (Common Credit Limit) Customer and ACRA (Accounting and Corporate Regulatory Authority)?
+- **Accounting Corporate Regulatory Authority (ACRA)**: ACRA là một tổ chức ở Singapore, và không phải là thuật ngữ tài chính. ACRA chịu trách nhiệm quản lý và điều hành các vấn đề liên quan đến kế toán, quản lý doanh nghiệp và quy định doanh nghiệp. 
 
-- **Combined Credit Limit (CCL)**: CCL là một thuật ngữ trong lĩnh vực tài chính và ngân hàng, như đã được giải thích ở trên. Nó liên quan đến giới hạn tín dụng tổng hợp mà một khách hàng hoặc doanh nghiệp có sẵn trong tài khoản của họ từ các nguồn tín dụng khác nhau, chẳng hạn như thẻ tín dụng và khoản vay.
+- **Common Credit Limit (CCL)**: CCL là một thuật ngữ trong lĩnh vực tài chính và ngân hàng, như đã được giải thích ở trên. Nó liên quan đến giới hạn tín dụng tổng hợp mà một khách hàng hoặc doanh nghiệp có sẵn trong tài khoản của họ từ các nguồn tín dụng khác nhau, chẳng hạn như thẻ tín dụng và khoản vay.
     - CCL customer:  
         + Regulated Customer:
             + Annual Income < 120k
