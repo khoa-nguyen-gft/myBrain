@@ -37,7 +37,11 @@
     
     + ## Websocket
         + [What is Websocket Protocol?](#what-is-websocket-protocol)
-          
+
+## Idempotency
++ [What is Handling functions idempotence?](#what-is-handling-functions-idempotence)
+
+
 ## Other
 + [What is long polling?](#what-is-long-polling)
 + [What is AMQP (Advanced Message Queuing Protocol)?](#what-is-amqp-protocol)
@@ -365,6 +369,16 @@
 ![Alt text](.//images/What%20is%20Websocket%20Protocol.png)
 
 [Table of Contents](#main-title)
+
+
+
+## Idempotency
+### What is Handling functions idempotence?
+
+![Alt text](images/What%20is%20Handling%20functions%20idempotence.png)
+
+
+[Table of Contents](#idempotency)
 
 ## Other
 
