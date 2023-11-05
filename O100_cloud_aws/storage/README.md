@@ -16,13 +16,18 @@
 
 + ## Object Storage
     + [What is S3 Stogage Classes Comparison?](#what-is-s3-stogage-classes-comparison)
+    + [What is difference between Standard Bucket And Requester Pays Bucket in S3?](#what-is-difference-between-standard-bucket-and-requester-pays-bucket-in-s3)
+    + [What is Event Notification in S3?](#what-is-event-notification-in-s3)
     + [What is Audit Access Logs in S3?](#what-is-audit-access-logs-in-s3)
     + [What is S3 Presigned URL?](#what-is-s3-presigned-url)
     + [What is S3 Glacier Vault Lock?](#what-is-s3-glacier-vault-lock)
+    + [What is S3 Object Lock?](#what-is-s3-object-lock)
     + [What is  Amazon S3 Access Points?](#what-is-amazon-s3-access-points)
     + [What is Amazon S3 Object Lambda?](#what-is-amazon-s3-object-lambda)
-
-
+    + [What is S3 Performance?](#what-is-s3-performance)
+    + [What is S3 Batch Operation?](#what-is-s3-batch-operation)
+    + [What is S3 Lifecycle Policy?](#what-is-s3-lifecycle-policy)
+    + S3 Analytics
 
 + ## On-Premises Storage
     + [What is AWS Storage Gateway (File Gateway)?](#what-is-aws-storage-gateway-file-gateway)
@@ -133,8 +138,40 @@
 ## Object Storage
 
 ### What is S3 Stogage classes Comparison?
+* You can transition objects between storage classes 
+* For infrequently accessed object, move them to Standard IA
+* For archive objects that you don't need fast access to, move them to Glacier or Glacier Deep Archive
+* Moving objects can be automated using a Lifecycle Rules
+
+
 ![Alt text](./images/S3%20Stogage%20classes%20Comparison.png)
 ![Alt text](./images/Pasted%20Graphic%2011.png)
+
+[Table of Contents](#aws-storage)
+
+### What is difference between Standard Bucket And Requester Pays Bucket in S3?
+
+* **Standard Bucket:** bucket owners pay for all
+Amazon S3 storage and data transfer costs associated with their bucket
+* **Requester Pays Buckets**: the
+requester instead of the bucket owner
+pays the cost of the request and the
+data download from the bucket
+    * Helpful when you want to share large datasets with other accounts
+    * The requester must be authenticated in AWS (cannot be anonymous)
+
+
+![Alt text](.//images/Requester%20Pays%20Buckets.png)
+
+
+[Table of Contents](#aws-storage)
+
+
+
+### What is Event Notification in S3?
+* S3 event notifications typically deliver events in seconds but can sometimes take a minute or longer
+
+![Alt text](./images/What%20is%20S3%20Notification.png)
 
 [Table of Contents](#aws-storage)
 
@@ -161,12 +198,33 @@
 
 ### What is S3 Glacier Vault Lock?
 
-* Adopt aWORM (Write Once ReadMany) model
-* Create aVault Lock Policy
+* Adopt a WORM (Write Once Read Many) model
+* Create a Vault Lock Policy
 * Lock the policy for future edits (can no longer be changed or deleted)
 * Helpful for compliance and data retention
 
 ![Alt text](./images/S3%20Glacier%20Vault%20Lock.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is S3 Object Lock?
+
+* Adopt a WORM (Write Once Read Many) model
+* Block an object version deletion for a specified amount of time
++ **Retention Mode:**
+    * **Retention mode - Compliance:**
+        + Object versions can't be overwritten or deleted by any user; including the root user
+        * Objects retention modes can't be changed, and retention periods can't be shortened
+    + **Retention mode - Governance:**
+        * Most users can't overwrite or delete an object version or alter its lock settings
+        * Some users have special permissions to change the retention or delete the object
+
++ **Retention Period:** protect the object for a fixed period, it can be extended
+
++ **Legal Hold:** protect the object indefinitely, independent from retention period 
+
+![Alt text](./images/S3%20Object%20Lock.png)
 
 [Table of Contents](#aws-storage)
 
@@ -199,8 +257,44 @@ Access Point (Gateway or Interface Endpoint)
 [Table of Contents](#aws-storage)
 
 
+### What is S3 Performance?
+- **Upload Files:**
+    -  **Multi-Part Upload:**
+        + recommended for files > 100MB,  must use for files > 5GB
+        + Can help parallelize uploads (speed up transfers)
+    ![Alt text](.//images/Multi-Part Upload.png)
+    - **S3 Transfer Acceleration**
+        * Increase transfer speed by transferring the file to an AWS edge location which will forward the data to the S3 bucket in the target region
+        * Compatible with multi-part upload
+    ![Alt text](.//images/S3%20Transfer Acceleratio.png)
+
+- **Download Files:**
+    - Parallelize GETs by requesting specific byte ranges
+    - Better resilience in case of failures
+    - Can be used to retrieve only partial
+    - Can be used to speed up downloads data (for example the head of a file)
+![Alt text](.//images/Pasted%20Graphic%204.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is S3 Batch Operation?
+- A job consists of a list of objects, the action to perform, and optional parameters
+- S3 Batch Operations manages retries, tracks progress, sends completion notifications, generate reports ... 
+- You can use S3 Inventory to get object list and use S3 Select to filter your objects 
+
+![Alt text](.//images/S3%20Batch%20Operation.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is S3 Lifecycle Policy?
+
+[Table of Contents](#aws-storage)
+
 
 ## On-Premises Storage
+
 ### What is AWS Storage Gateway (File Gateway)?
 - "AWS Storage Gateway" is primarily used for connecting on-premises storage to cloud storage.
 - It consists of a software device installed on-premises and can be used with SMB shares but it actually stores the data on S3. It is also used for migration. However, in this case the company need to replace the file server farm and Amazon FSx is the best choice for this job.
