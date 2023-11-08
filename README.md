@@ -5,7 +5,13 @@
 - **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
 ![Alt text](images/System%20Design.png)
 - [**System Design Overview**](./O03_system_design/interviews/README.md)
-     
+
+- **Functional Requirements:**
+   + [Banking Domain](./O51_functional_bank/README.md)
+      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
+      + [Credit-Risk](./O52_functional_bank_credit_risk)
+   + [Stock Domain](./O51_functional_stock/articles/README.md)
+
 - **Non-Functional Requirements:**
    + [Large Scale Systems Architectural](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
@@ -45,12 +51,6 @@
       + [Build Tool (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
       + [Continuous Deployment (GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
       + [Monitoring Logging (Sumo Logic)](./O36_cicd_monitoring/README.md)
-
-
-- **Functional Requirements:**
-   + [Banking Domain](./O51_functional_bank/README.md)
-      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
-   + [Stock Domain](./O51_functional_stock/articles/README.md)
 ---
 
 
