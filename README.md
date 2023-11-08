@@ -12,9 +12,9 @@
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
    + [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
-      - [DynamoDB](./O41_database_dynamoDB/interview/README.md)
+      - [AWS Databses (DynamoDB)](./O41_database_dynamoDB/interview/README.md)
       - [PostgreSQL](./O42_database_postgreSQL/README.md)
-      - [AWS Storages](./O100_cloud_aws/storage/README.md)
+      - [AWS Storages(EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
 
    + [Availability(Fault Tolerance), Performance(Throughput, Latency), Durability(Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
