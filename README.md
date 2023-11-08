@@ -49,7 +49,7 @@
 
 - **Functional Requirements:**
    + [Banking Domain](./O51_functional_bank/README.md)
-      + [Thought Machine](./O50_functional_tm/interview/README.md)
+      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
    + [Stock Domain](./O51_functional_stock/articles/README.md)
 ---
 
