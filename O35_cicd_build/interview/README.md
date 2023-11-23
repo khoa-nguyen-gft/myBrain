@@ -11,6 +11,11 @@
     + [What is Gradle?](#what-is-gradle)
 
     + [What is difference between `settings.grandle.kts` and file `build.gradle`?](#what-is-difference-between-settingsgrandlekts-and-file-buildgradle)
+    + [What is difference between `plugin`, `implementation` in gradle?](#what-is-difference-between-plugin-implementation-in-gradle)
+    + [What is difference between `testImplementation` and `implementation` in gradle?](#what-is-difference-between-implementation-testimplementation-and-testruntimeonly-in-gradle)
+
+
+
 + ## Bazel
     + [What is Bazel?](#what-is-postgresql)
     + [What is difference between WORKSPACE file and BUILD in bazel?](#what-is-difference-between-workspace-file-and-build-in-bazel)
@@ -89,6 +94,64 @@ tasks {
 
 [Table of Contents](#gradle)
 
+
+### What is difference between `plugin`, `implementation` in gradle?
+- A **`plugin`** is a class that implements the Plugin interface, which defines the basic functionality of a Gradle build. Plugins can extend or modify the behavior of the core plugins that are provided by Gradle, such as JavaPlugin, KotlinPlugin, or AndroidPlugin. Plugins can also be created by third-party developers to add new features or integrations to Gradle.
+
+```gradle
+plugins {
+    id 'java-gradle-plugin'
+}
+```
+
+- An **`implementation`** is a configuration that declares dependencies on artifacts that are used by your project. Dependencies are references to external libraries or modules that provide some functionality or data for your project. For example, if you want to use the Jackson library to parse JSON data in your Java application, you need to add it as a dependency in your build.gradle file.
+
+```gradle
+dependencies {
+    implementation 'org.springframework.security:spring-security-core:5.6.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+}
+```
+
+- The main difference between `plugin` and `implementation` is that plugin is used to configure the core behavior of your project, while implementation is used to declare dependencies on external artifacts. Plugins can affect how your project builds, tests, runs, or publishes its results. Dependencies can affect how your project accesses or uses other libraries or modules.
+
+
+
+
+
+[Table of Contents](#gradle)
+
+
+### What is difference between `implementation`, `testImplementation`,  and `testRuntimeOnly` in gradle?
+-  **`implementation`** applies dependencies to all source sets, including the test source set
+
+-  **`testImplementation`** is a configuration that applies dependencies only to the test source set, 
+- **`testRuntimeOnly`**: This configuration is used to declare dependencies that are required for the execution of your test code only. Dependencies declared in this configuration will not be visible to other modules that depend on your module.
+
+
+
+```
+For example, if you have a dependency on junit in your app module, you can use either of these configurations:
+
+implementation 'junit:junit:4.12'
+
+testImplementation 'junit:junit:4.12'
+
+// The first one will include the junit dependency in your app module and its dependencies, while the second one will only include it in your app module and not in its dependencies.
+
+```
+
+[Table of Contents](#gradle)
+
+
+### What is difference between `gradlew `and `gradlew.bat` in gradle?
+- `gradlew` and `gradlew.bat` are scripts used in Gradle-based projects. Gradle is a build automation tool primarily used for Java projects but capable of handling builds in various programming languages.
+
+- When you execute commands like ./gradlew build (on Unix-based systems) or gradlew.bat build (on Windows), these scripts handle fetching the correct Gradle version if needed and then execute the specified Gradle tasks for the project.
+
+
+
+[Table of Contents](#gradle)
 
 # Bazel
 
