@@ -5,7 +5,13 @@
 - **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
 ![Alt text](images/System%20Design.png)
 - [**System Design Overview**](./O03_system_design/interviews/README.md)
-     
+
+- **Functional Requirements:**
+   + [Banking Domain](./O51_functional_bank/README.md)
+      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
+      + [Credit risk](./O52_functional_bank_credit_risk/README.md)
+   + [Stock Domain](./O51_functional_stock/articles/README.md)
+
 - **Non-Functional Requirements:**
    + [Large Scale Systems Architectural](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
@@ -40,17 +46,11 @@
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
 
-   - **CI/CD:**
+   - **DevOps:**
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
-      + [Build Tool (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
-      + [Continuous Deployment (GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
-      + [Monitoring Logging (Sumo Logic)](./O36_cicd_monitoring/README.md)
-
-
-- **Functional Requirements:**
-   + [Banking Domain](./O51_functional_bank/README.md)
-      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
-   + [Stock Domain](./O51_functional_stock/articles/README.md)
+      + [Build Tools (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
+      + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
+      + [Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
 ---
 
 
@@ -131,18 +131,17 @@
    3) [Code Spring Boot with Mapstruct](./O20_Services_spring/O20_Services_spring_003_mapstruct/)
 
 
-## [Devops: Bazel](./images/O30_cicd_github_action/)
+## [Devops: Bazel](./images/O35_cicd_build/)
 - **Bazel** is a build system (analogous to make, ant, etc.) that promises better dependency analysis, faster builds and better reproducibility. One of the goals of Bazel is to make it easy to be extended to support multiple languages; Currently extensions exist for most of the popular programming languages.
 
 
 ![Alt text](images/Bazel.png)
 
-   0) [Bazel Articles](./O31_cicd_bazel/interview/README.md)
-   1) [introduction to bazel](./O31_cicd_bazel/O31_cicd_bazel_001_first_example/)
-   2) [Bazel with local dependencies](./O31_cicd_bazel/O31_cicd_bazel_002_local_dependencies/)
-   3) [Bazel with external dependencies](./O31_cicd_bazel/O31_cicd_bazel_003_external_dependencies/)
-   4) [Bazel with third party dependencies](./O31_cicd_bazel/O31_cicd_bazel_004_third_party_dependencies/)
-   4) [Bazel with Spring Boot](./O31_cicd_bazel/O31_cicd_bazel_005_with_spring_boot/)
+   1) [introduction to bazel](./O35_cicd_build/O31_cicd_bazel_001_first_example/)
+   2) [Bazel with local dependencies](./O35_cicd_build/O31_cicd_bazel_002_local_dependencies/)
+   3) [Bazel with external dependencies](./O35_cicd_build/O31_cicd_bazel_003_external_dependencies/)
+   4) [Bazel with third party dependencies](./O35_cicd_build/O31_cicd_bazel_004_third_party_dependencies/)
+   4) [Bazel with Spring Boot](./O35_cicd_build/O31_cicd_bazel_005_with_spring_boot/)
 
 
 ## [Services: GraphQL](./O80_api_graphql/)
