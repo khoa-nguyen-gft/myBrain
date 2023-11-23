@@ -2,6 +2,14 @@
 
 # CI/CD
 + [What is CI/CD?](#what-is-cicd)
++ [What is `pipline` in CI?](#what-is-pipline-in-ci)
++ [What is difference between CI and IaC (infrastructure-as-code)?](#diffe)
+
+
+# Harness
++ [What is Harness?](#what-is-harness)
++ [What is difference Harness FirstGen and Harness NextGen?](#what-is-difference-harness-firstgen-and-harness-nextgen)
++ [Why do we need microservice-shared-build pipline in Harness nextGen(CI)?](#why-do-we-need-microservice-shared-build-pipline-in-harness-nextgenci)
 
 # Github Action
 + [What is Github Action?](#what-is-github-action)
@@ -21,14 +29,74 @@
 + [What is Orbs?](#what-is-orbs)
 
 
-    
 ----
+## CI/CD
 
-## What is CI/CD?
+### What is CI/CD?
 
 ![Alt text](images/cicd.png)
 
-[Table of Contents](#github-action)
+[Table of Contents](#cicd)
+
+
+### What is pipline in CI?
+- A pipeline refers to a series of automated steps that are executed sequentially to build, test, and verify code changes. 
+- These pipelines are typically triggered by code commits or other events, and they are designed to ensure that code changes are integrated into the codebase seamlessly
+
+
+[Table of Contents](#cicd)
+
+### What is difference between CI and IaC (infrastructure-as-code)?
+- Continuous Integration (CI) and Ia(infrastructure-as-code), while distinct, often work together within a broader DevOps context to manage and deploy infrastructure efficiently.
+- **Continuous Integration (CI):**
+  + CI is a development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run. CI helps teams identify and address issues early in the development process by automating the integration and validation of code changes.
+
+![Alt text](./images/What%20is%20difference%20between%20CI%20and%20IaC.png)
+
+
++ **Infrastructure-as-code (IaC)**: 
+  + Terraform is an infrastructure-as-code (IaC) tool used to define and provision infrastructure resources. It allows you to describe your infrastructure in a declarative configuration language and then manage those resources through code.
+
++ Relationship between CI and Terraform:
+  + Automated Infrastructure Deployment
+  + Testing Infrastructure Changes
+  + Versioning and Collaboration
+  + Integration with Deployment Pipelines
+  + Validation and Approval:
+
+
+
+[Table of Contents](#cicd)
+
+
+
+## Harness
+### What is Harness?
+
+![Alt text](./images/Harness-3.png)
+![Alt text](./images/Harness-4.png)
+
+[Table of Contents](#harness)
+
+
+### What is difference Harness FirstGen and Harness NextGen?
+
+![Alt text](./images/difference%20Harness%20FirstGen%20and%20Harness%20NextGen.png)
+
+[Table of Contents](#harness)
+
+
+
+### Why do we need microservice-shared-build pipline in Harness nextGen(CI)?
+- `microservice-shared-build` pipelines in Harness NextGen are beneficial for organizations that develop and deploy microservices applications. They offer several advantages that can streamline the development and deployment process and improve overall efficiency.
+  + Reduced duplication and improved consistency
+  + Centralized dependency management
+
+
+[Table of Contents](#harness)
+
+
+## Github Action
 
 ### What is Github Action?
 - GitHub Actions is a CI/CD tool that provides automation and integration capabilities for software development workflows, helping developers streamline their processes and increase the efficiency of their development pipelines.
@@ -37,6 +105,8 @@
 ![Alt text](images/GitHub%20Action.png)
 
 [Table of Contents](#github-action)
+
+
 
 ## What is difference between Git, Github and Github Action?
 - **Git**: Git is a distributed version control system for tracking changes in source code during software development. 
@@ -281,3 +351,4 @@ workflows:
 ```
 
 [Table of Contents](#github-action)
+

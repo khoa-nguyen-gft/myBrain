@@ -7,8 +7,7 @@
 
 # Banking Domain
 + [What is BFSI ("Banking, Financial Services, and Insurance")?](#wwhat-is-bfsi)
-+ [What is difference between NTB(New To Bank), ETB (Existing To Bank) and LOC (Loan On Card)?](#what-is-difference-between-ntb-new-to-bank-etb-existing-to-bank-and-loc-loan-on-card)
-+ [What is difference between NTB CC(New To Bank Credit Card), ETB CC(Existing To Bank Credit Card) and CLI (Credit Limit Increase) and NTB LOC (New To Bank Loan On Card)?](#what-is-difference-between-ntb-ccnew-to-bank-credit-card-etb-ccexisting-to-bank-credit-card-and-cli-credit-limit-increase-and-ntb-loc-new-to-bank-loan-on-card)
++ [What is difference between NTB (New To Bank), ETB (Existing To Bank) and LOC (Loan On Card)?](#what-is-difference-between-ntb-new-to-bank-etb-existing-to-bank-and-loc-loan-on-card)
 + [What is CBS (Credit Bureau of Singapore)?](#what-is-cbscredit-bureau-of-singapore)
 + [What is "Lending Account" và "Loan Account"?](#what-is-lending-account-và-loan-account)
 
@@ -42,20 +41,23 @@
 
 
 ### What is difference between NTB (New To Bank), ETB (Existing To Bank) and LOC (Loan On Card)?
+
+
+|             |     NTB     |     ETB    |
+| ----------- | ----------- |----------- |
+|      CC     |    NTB CC   |  ETB CC    |
+|      LOC    |    NTB LOC  |     N/A    |
+
+**Note**:
 + NTB (New to Bank)
 + ETB (Existing to bank)
 + LOC (Loan On Card)
++ CC  (Credit Card)
++ CLI (Credit Limit Increase)
+
 
 [Banking Domain](#banking-domain)
 
-
-### What is difference between NTB CC(New To Bank Credit Card), ETB CC(Existing To Bank Credit Card) and CLI (Credit Limit Increase) and NTB LOC (New To Bank Loan On Card)?
-+ NTB CC: (New To Bank Credit Card)
-+ ETB CC: (Existing To Bank Credit Card)
-+ CLI: (Credit Limit Increase)
-+ NTB LOC: (New To Bank Loan On Card)
-
-[Banking Domain](#banking-domain)
 
 
 ### What is CBS(Credit Bureau of Singapore)?
@@ -148,6 +150,11 @@
         - No CCL refresh scenario: expired in 8h
 
 
+|      /      |     CRS     |     Comment    |
+| ----------- | ----------- |----------- |
+|      CCL    |   CRS CCL   |  Credit Risk System - Credit Card Limit    |
+|      ACRA   |   CRS ACRA  |  Credit Risk System - ACRA   |
+
 
 [Banking Domain](#banking-domain)
 
@@ -179,3 +186,8 @@
 + SCB-RTOB (Standard Chartered-Response To Strust Bank) 
 
 [Banking Domain](#banking-domain)
+
+
+
+### 
+# EUC: End User Computing
