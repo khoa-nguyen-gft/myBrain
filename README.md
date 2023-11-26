@@ -4,53 +4,66 @@
 ## System Design:
 - **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
 ![Alt text](images/System%20Design.png)
-- [**System Design Overview**](./O03_system_design/interviews/README.md)
+- ## [**System Design Overview**](./O03_system_design/interviews/README.md)
 
-- **Functional Requirements:**
-   + [Banking Domain](./O51_functional_bank/README.md)
+- ## **Functional Requirements:**
+   + ### [Banking Domain](./O51_functional_bank/README.md)
       + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
-      + [Credit risk](./O52_functional_bank_credit_risk/README.md)
-   + [Stock Domain](./O51_functional_stock/articles/README.md)
+      + [Credit Risk](./O52_functional_bank_credit_risk/README.md)
+   + ### [Stock Domain](./O51_functional_stock/articles/README.md)
 
-- **Non-Functional Requirements:**
-   + [Large Scale Systems Architectural](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
+- ## **Non-Functional Requirements:**
+   + ### [Large Scale Systems Architectural](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
+         + [Demo Kafka](#messaging-kafka)
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
-   + [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
-      - [AWS Databses (DynamoDB)](./O41_database_dynamoDB/interview/README.md)
-      - [PostgreSQL](./O42_database_postgreSQL/README.md)
-      - [AWS Storages(EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
-
-   + [Availability(Fault Tolerance), Performance(Throughput, Latency), Durability(Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
+   + ### [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
+      - [NoSQL Databses (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
+      - [SQL Databses (PostgreSQL)](./O42_database_postgreSQL/README.md)
+      - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
+   + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
 
-   + [API Design System](./O03_system_design/interviews/README-API.md)
+   + ### [API Design System](./O03_system_design/interviews/README-API.md)
       + [Spring](./O20_Services_spring/interview/README.md)
-      + [GraphQL](./O80_api_graphql/interview/README.md)
+         + [Demo Spring](#services-spring-boot)
 
-- [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md): 
+      + [GraphQL](./O80_api_graphql/interview/README.md)
+         + [Demo GraphQL](#services-graphql)
+
+- ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
    - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
    - [Lab Banking Desgin](./O04_system_design_labs/002-bank/README.md)
    - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
    - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
-- **Coding:**
-   - **Data Type and Data Structure:**
+- ## **Coding:**
+   - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
 
         
-   - **Object Oriented Programming Principles:**
+   - ### **Object Oriented Programming Principles:**
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
 
-   - **DevOps:**
+   - ### **Big Data:**
+      + [Demo Airflow](#big-data-airflow)
+      + [Apache Beam](#services-spring-boot)
+
+   - ### **DevOps:**
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
       + [Build Tools (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
+         + [Grandle](#devops-grandle)
+         + [Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
+         + [GitHub Action](#devops-github-action)
       + [Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
+   - ### **MLOps:**
+      + [MLOps](./O110_mlops/README.md)
+
 ---
 
 
