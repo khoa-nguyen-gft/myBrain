@@ -19,8 +19,8 @@
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
    + ### [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
-      - [NoSQL Databses (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
-      - [SQL Databses (PostgreSQL)](./O42_database_postgreSQL/README.md)
+      - [NoSQL Databases (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
+      - [SQL Databases (PostgreSQL)](./O42_database_postgreSQL/README.md)
       - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
    + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
@@ -56,10 +56,10 @@
    - ### **DevOps:**
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
       + [Build Tools (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
-         + [Grandle](#devops-grandle)
-         + [Bazel](#devops-bazel)
+         + [Demo Grandle](#devops-grandle)
+         + [Demo Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
-         + [GitHub Action](#devops-github-action)
+         + [Demo GitHub Action](#devops-github-action)
       + [Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
