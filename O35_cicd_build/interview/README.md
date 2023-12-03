@@ -11,7 +11,7 @@
     + [What is Gradle?](#what-is-gradle)
 
     + [What is difference between `settings.grandle.kts` and file `build.gradle`?](#what-is-difference-between-settingsgrandlekts-and-file-buildgradle)
-    + [What is difference between `plugin`, `implementation` in gradle?](#what-is-difference-between-plugin-implementation-in-gradle)
+    + [What is difference between buildscript, plugin, implementation in gradle?](#what-is-difference-between-buildscript-plugin-implementation-in-gradle)
     + [What is difference between `testImplementation` and `implementation` in gradle?](#what-is-difference-between-implementation-testimplementation-and-testruntimeonly-in-gradle)
 
 
@@ -38,9 +38,6 @@
 - It is designed for the multi-project build, which can be quite large. It introduces a Java and Groovy-based DSL(Domain Specific Language)
 
 [Table of Contents](#gradle)
-
-
-
 
 
 ### What is difference between `settings.grandle.kts` and file `build.gradle`?
@@ -95,7 +92,14 @@ tasks {
 [Table of Contents](#gradle)
 
 
-### What is difference between `plugin`, `implementation` in gradle?
+### What is difference between `buildscript`, `plugin`, `implementation` in gradle?
+- `buildscript` is used to configure the build script itself. It defines dependencies and repositories needed to execute the build script. Inside 
+
+```gradle
+buildscript {
+    apply from: 'gradle/artifactroty.gradle'
+}
+```
 - A **`plugin`** is a class that implements the Plugin interface, which defines the basic functionality of a Gradle build. Plugins can extend or modify the behavior of the core plugins that are provided by Gradle, such as JavaPlugin, KotlinPlugin, or AndroidPlugin. Plugins can also be created by third-party developers to add new features or integrations to Gradle.
 
 ```gradle

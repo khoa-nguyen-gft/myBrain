@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_021_player_with_flashlight;
+package _00_algorithm_testing_comapny._021_player_with_flashlight;
 
 public class SolutionHint {
     public static int solution(String direction, int radius, int[] x, int[] y) {

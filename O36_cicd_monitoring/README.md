@@ -1,7 +1,10 @@
 ## [Main title](/README.md)
 
 
-# Monitoring & Logging
+# Observability and Monitoring Loggings
++ [Why do we need Observability and Monitoring Loggings?](#why-do-we-need-observability-and-monitoring-loggings)
++ [What is Observability?](#what-is-observability)
+
 + ## Cloud Watch
 
 
@@ -16,6 +19,31 @@
 
 
 ----
+
+### Why do we need Observability and Monitoring Loggings?
+- Debuging problem microservices
+    + How do we trace transactions across multiple services, containers and try to Find where exactly the problem or bug is?
+    + How do we combine all the logs from multiple services into a central location where they can be indexed, searched, filtered, and grouped to 
+    + Find bugs that are contributing to a problem? 
+
+- Monitoring performance of service calls
+    + How can we track the path of a specific chain service call through our microservices network, and see how
+long it took to complete at each microservice?
+
+- Monitoring services metric and health
+    + How can we easily and efficiently monitor the metrics like CPU usage, JVM metrics, etc. For all the microservices applications in our network?
+    + How can we monitor the status and health of all of our microservices applications in a single place, and create alerts and notifications For any abnormal behavior of the services?
+
+[Table of Contents](#monitoring--logging)
+
+
+### What is difference between Observability and Monitoring?
+- **Observability** is the ability to understand the internal state of a system by observing its outputs. In the context of microservices, observability is achieved by collecting and analyzing data from a variety of sources, such as metrics, logs, and traces.
+    + **Metrics**: Metrics are quantitative measurements of the health of a system. They can be used to track things like CPU usage, memory usage, and response times.
+    + **Logs**: Logs are a record of events that occur in a system. They can be used to track things like errors, exceptions, and other unexpected events.
+    + **Traces**: Traces are a record of the path that a request takes through a system. They can be used to track the performance of arequest and to identify bottlenecks.
+
+
 
 ## What is Sumo Logic?
 - **Sumo Logic** is a cloud-based machine data analytics platform and log management solution that helps organizations gain real-time insights into their applications, infrastructure, and security. It is commonly used for monitoring and troubleshooting various aspects of IT systems, including applications, servers, networks, and security events.
