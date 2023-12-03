@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_031_prefix_sums_MinAvgTwoSlice;
+package _01_hackerrank._01_minAvgTwoSlice;
 
 class SolutionHint {
     public static int solution(int[] A) {

@@ -1,4 +1,4 @@
-package _01_hackerrank.subarrayDivision;
+package _01_hackerrank._01_subarrayDivision;
 
 public class Demo {
     public static void main(String args[]) {

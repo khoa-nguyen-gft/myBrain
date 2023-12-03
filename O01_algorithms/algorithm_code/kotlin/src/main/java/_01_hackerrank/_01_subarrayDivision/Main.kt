@@ -1,4 +1,4 @@
-package _01_hackerrank._01_subarray_division
+package _01_hackerrank._01_subarrayDivision
 
 
 fun birthday(s: Array<Int>, d: Int, m: Int): Int {

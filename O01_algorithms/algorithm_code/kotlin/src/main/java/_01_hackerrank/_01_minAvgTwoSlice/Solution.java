@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_031_prefix_sums_MinAvgTwoSlice;
+package _01_hackerrank._01_minAvgTwoSlice;
 
 import java.util.Arrays;
 
