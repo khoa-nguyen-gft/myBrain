@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_032_sorting_MaxProductOfThree;
+package _01_hackerrank.sorting_042_MaxProductOfThree;
 
 import java.util.Arrays;
 
