@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_021_player_with_flashlight;
+package _00_algorithm_testing_comapny._021_player_with_flashlight;
 
 public class Solution {
     private static class Direction {
