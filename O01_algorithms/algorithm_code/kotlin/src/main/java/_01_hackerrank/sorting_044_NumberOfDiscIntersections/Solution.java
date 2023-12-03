@@ -1,9 +1,9 @@
-import java.util.Arrays;
+package _01_hackerrank.sorting_044_NumberOfDiscIntersections;
 
 public class Solution {
 
     public static int solution(int[] A) {
-      
+        return 0;
     }
 
     public static void main(String[] args) {

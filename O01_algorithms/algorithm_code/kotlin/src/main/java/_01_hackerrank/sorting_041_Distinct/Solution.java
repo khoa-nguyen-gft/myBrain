@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_032_sorting_Distinct;
+package _01_hackerrank.sorting_041_Distinct;
 
 import java.util.HashMap;
 import java.util.Map;

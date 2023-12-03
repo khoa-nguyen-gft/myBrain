@@ -1,3 +1,5 @@
+package _01_hackerrank.sorting_043_Triangle;
+
 import java.util.Arrays;
 
 public class Solution {
