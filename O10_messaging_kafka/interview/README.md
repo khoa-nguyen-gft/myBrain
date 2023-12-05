@@ -11,6 +11,7 @@
 ## Broker
 + [What is Partition?](#what-is-partition)
 + [What is Replication?](#what-is-replication)
+
 ## Producer
 + [What is Producer?](#what-is-producer)
 + [What is difference between Round-Robin and Message Key?](#what-is-difference-between-round-robin-and-message-key)
@@ -30,9 +31,10 @@
 
 ## Other
 + [What is Kafka Multiple Clusters?](#what-is-kafka-multiple-clusters)
-+ ### @KafkaListener
-    + [What is difference between id, clientIdPrefix, and concurrency in  KafkaListener?](#what-is-difference-between-id-clientidprefix-and-concurrency-in-kafkalistener)
-    + [What is difference between @Header, @Payload in KafkaListener?](#what-is-difference-between-header-payload-in-kafkalistener)
++ [What is difference between id, clientIdPrefix, and concurrency in  KafkaListener?](#what-is-difference-between-id-clientidprefix-and-concurrency-in-kafkalistener)
++ [What is difference between @Header, @Payload in KafkaListener?](#what-is-difference-between-header-payload-in-kafkalistener)
++ [Why do we need the key when send the message to Kafka?](#why-do-we-need-the-key-when-send-the-message-to-kafka)
++ [Why do we need `executeInTransaction`?](#why-do-we-need-executeintransaction)
 
 ---
 ## What is Apache Kafka?
@@ -143,6 +145,7 @@ Kafka caters single consumer abstraction that generalized both of the above- the
     ![Alt text](images/What%20is%20Idempotent.png)
 
 [Table of Contents](#apache-kafka)
+
 
 ## Consumer
 
@@ -257,3 +260,32 @@ Kafka caters single consumer abstraction that generalized both of the above- the
 ![Alt text](./@Header,%20@Payload-1.png)
 
 [Table of Contents](#apache-kafka)
+
+
+### Why do we need the key when send the message to kafka?
++ **Partitioning**: Messages with the same key will always go to the same partition within a topic. This ensures that messages related to the same entity or that require ordering are stored in the same partition,
++ **Deterministic Processing**: If you want specific messages to be processed in a particular order or by a particular consumer, assigning the same key ensures that these messages are handled by the same consumer in a consumer group.
+- **Message Routing**: When messages are produced with keys, the Kafka brokers can use the key to distribute messages among partitions. Kafka's default partitioner uses the key to determine the partition for a message.
+
+- **Grouping and Aggregation**: In some scenarios, messages with the same key might need to be grouped or aggregated together for processing, making it easier to handle related data.
+
+
+
+[Table of Contents](#apache-kafka)
+
+
+### Why do we need `executeInTransaction`?
+- In Spring Kafka, the executeInTransaction method is part of the KafkaTemplate and is used to perform operations within a transactional context. Transactions in Spring Kafka offer a way to ensure message production and consumption are performed atomically, either both happening successfully or neither happening at all. 
+
+```java
+KafkaTemplate<String, String> template = new KafkaTemplate<>(producerProps);
+
+template.executeInTransaction(new TransactionCallback<String, String>() {
+    @Override
+    public String doInTransaction(Producer producer) throws Exception {
+        producer.send("my-topic", "hello");
+        return consumer.receive("my-topic").value();
+    }
+});
+
+```

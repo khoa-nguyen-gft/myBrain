@@ -59,8 +59,9 @@
          + [Demo Grandle](#devops-grandle)
          + [Demo Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
-         + [Demo GitHub Action](#devops-github-action)
-      + [Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
+         + [GitHub Action](#devops-github-action)
+      + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
+
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
 
@@ -78,30 +79,30 @@
 ![Alt text](images/Sorting%20Algorithm.png)
 
 + **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.
-   - [Code Distinct](./O01_algorithms/algorithm_codility/java/O01_algorithms_sorting_041_Distinct): Compute number of distinct values in an array.
-   - [Code MaxProductOfThree](./O01_algorithms/algorithm_codility/java/O01_algorithms_sorting_042_MaxProductOfThree/): Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
-   - [Code Triangle](./O01_algorithms/algorithm_codility/java/O01_algorithms_sorting_043_Triangle/): Determine whether a triangle can be built from a given set of edges.
-   - [Code NumberOfDiscIntersections](./O01_algorithms/algorithm_codility/java/O01_algorithms_sorting_044_NumberOfDiscIntersections/): Compute the number of intersections in a sequence of discs.
-   - [Code MinAvgTwoSlice](./O01_algorithms/algorithm_codility/java/O01_algorithms_prefix_sums_031_MinAvgTwoSlice): Find the minimal average of any slice containing at least two elements.
-- [**Company Testing Algorithm**](./O01_algorithms/algorithm-testing-comapny) 
-   - [Code Count Total Numbers Cars pass by speed camera.](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_001_count_total_numbers_cars_pass_by_speed) 
-   - [Code Find a pair of char in string array.](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_002_find_a_pair_of_char_in_string_array)
-   - [Code Find first unique number.](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_003_find_first_unique_number)
-   - [Code Two wooden sticks](./O01_algorithms_004_two_wooden_sticks)
-   - [Code Max sum of two non attacking rooks](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_005_max_sum_of_two_non_attacking_rooks)
-   - [Code Minimum Number of characters to delete](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_006_minimum_number_of_characters_to_delete)
-   - [Code Shortest unique substring of String](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_007_shortest_unique_substring_of_String)
-   - [Code The Start of The Journey](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_008_the_start_of_the_journey)
-   - [Code Appear AA AB and BB times respectively](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_009_appear_AA_AB_and_BB_times_respectively)
-   - [Code Game Round](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_010_game_round)
-   - [Code Maximum positive value](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_011_maximum_positive_value)
-   - [Code Obtained sequence of string](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_012_obtained_sequence_of_string)
-   - [Code Number of trees in the K-th section](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_013_number_of_trees_in_the_kth_section)
-   - [Code Two strings S and T consisting](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_014_two_strings_S_and_T_consisting)
-   - [Code There are N hospitals numbered](./O01_algorithms/algorithm-testing-comapny/01_algorithms_015_there_are_n_hospitals_numbered)
-   - [Code Given array A returns the minimum number](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_016_given_array_A_returns_the_minimum_number)
-   - [[HARD] Code Player with flashlight](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_021_player_with_flashlight)
-   - [[HARD] Code Battleships](./O01_algorithms/algorithm-testing-comapny/O01_algorithms_022_battleships)
+   - [Code Distinct](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_041_Distinct): Compute number of distinct values in an array.
+   - [Code MaxProductOfThree](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_042_MaxProductOfThree/): Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+   - [Code Triangle](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_043_Triangle/): Determine whether a triangle can be built from a given set of edges.
+   - [Code NumberOfDiscIntersections](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_044_NumberOfDiscIntersections/): Compute the number of intersections in a sequence of discs.
+
+- [**Company Testing Algorithm**](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny) 
+   - [Code Count Total Numbers Cars pass by speed camera.](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_001_count_total_numbers_cars_pass_by_speed) 
+   - [Code Find a pair of char in string array.](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_002_find_a_pair_of_char_in_string_array)
+   - [Code Find first unique number.](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_003_find_first_unique_number)
+   - [Code Two wooden sticks](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_004_two_wooden_sticks)
+   - [Code Max sum of two non attacking rooks](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_005_max_sum_of_two_non_attacking_rooks)
+   - [Code Minimum Number of characters to delete](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_006_minimum_number_of_characters_to_delete)
+   - [Code Shortest unique substring of String](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_007_shortest_unique_substring_of_String)
+   - [Code The Start of The Journey](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_008_the_start_of_the_journey)
+   - [Code Appear AA AB and BB times respectively](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_009_appear_AA_AB_and_BB_times_respectively)
+   - [Code Game Round](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_010_game_round)
+   - [Code Maximum positive value](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_011_maximum_positive_value)
+   - [Code Obtained sequence of string](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_012_obtained_sequence_of_string)
+   - [Code Number of trees in the K-th section](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_013_number_of_trees_in_the_kth_section)
+   - [Code Two strings S and T consisting](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_014_two_strings_S_and_T_consisting)
+   - [Code There are N hospitals numbered](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_015_there_are_n_hospitals_numbered)
+   - [Code Given array A returns the minimum number](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_016_given_array_A_returns_the_minimum_number)
+   - [[HARD] Code Player with flashlight](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_021_player_with_flashlight)
+   - [[HARD] Code Battleships](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_022_battleships)
 
 
 ## [Devops: Grandle](./O35_cicd_gradle/)
