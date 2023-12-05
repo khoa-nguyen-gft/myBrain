@@ -38,6 +38,13 @@
 
 [Table of Contents](#cicd)
 
+### What is difference between CI (Continous Interation) and CD (Continous Delivery) ?
+- **Continuous Integration** is automation of our code build and test. If everything is good, the artifact generated from this process will be stored in software repositories.
+- **Continuous Delivery** is a software development practice where code changes are automatically prepared for a release to production.
+
+![Alt text](./images/CI.png)
+
+[Table of Contents](#cicd)
 
 ### What is pipline in CI?
 - A pipeline refers to a series of automated steps that are executed sequentially to build, test, and verify code changes. 
