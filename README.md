@@ -27,7 +27,7 @@
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
 
    + ### [API Design System](./O03_system_design/interviews/README-API.md)
-      + [Spring](./O20_Services_spring/interview/README.md)
+      + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
          + [Demo Spring](#services-spring-boot)
 
       + [GraphQL](./O80_api_graphql/interview/README.md)
@@ -61,7 +61,7 @@
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
          + [GitHub Action](#devops-github-action)
       + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
-
+      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
 
