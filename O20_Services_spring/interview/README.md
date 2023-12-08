@@ -12,7 +12,7 @@
     + [What is difference between @Primary and @Qualifier?](#what-is-difference-between-primary-and-qualifier)
     + [What is difference between @Inject, @Autowired and @Resource?](#what-is-difference-between-inject-autowired-and-resource)
 
-    ## Spring AOP
+    # Spring AOP
     + [What is AOP(Aspect Oriented Programming)?](#what-is-aop)
     + [What is the difference between Aspect and Advice?](#what-is-difference-between-aspect-and-advice)
     + [What is the difference between JoinPoint and Pointcut?](#what-is-defference-between-joinpoint-and-pointcut)
@@ -39,6 +39,7 @@
     + [Explain persistence life cycle of an object?](#explain-persistence-life-cycle-of-an-object)
     + [What is @GeneratedValue?](#what-is-generatedvalue)
 
+
 # Test
 + [What is Test Pyramid?](#what-is-test-pyramid)
 + [What is difference between BDD (Behavior-Driven Development) and TDD (Test-Driven Development)?](#what-is-difference-between-bdd-behavior-driven-development-and-tdd-test-driven-development)
@@ -56,11 +57,15 @@
     ## Spring Framwork Testing 
     + [What is Integration Testing with JUnit 5?](#what-is-integration-testing-with-junit-5)
     + [What is Testcontainers in JUnit 5?](#what-is-testcontainers-in-junit-5)
+    + [What is difference between @EmbeddedKafka and test container?](#what-is-difference-between-embeddedkafka-and-test-container)
+    + [What is @AutoConfigurationEmbeddedDatabase?](#what-is-autoconfigurationembeddeddatabase)
 
     ## Wiremock
     + [What is Wiremock?](#what-is-wiremock)
 
 
+# Advances
+ + [What and Why are use ConditionalOnProperty?](#what-and-why-are-use-conditionalonproperty)
 
 -----
 ### What is Spring?
@@ -448,6 +453,24 @@
 
 - Testcontainers is particularly useful in scenarios where you need to perform integration testing with external dependencies or services.
 
+
+[Table of Contents](#test)
+
+
+### What is difference between @EmbeddedKafka and test container?
+- @EmbeddedKafka and Testcontainers are two different approaches used in testing environments, especially for applications interacting with external services like Kafka or databases. Here's a breakdown of their differences:
+    +  `@EmbeddedKafka` is a feature provided by Spring Kafka, designed specifically for embedding an Apache Kafka broker within the test environment for integration testing.
+        + Purpose: It's used to create an in-memory Kafka broker solely for testing Spring-based applications that interact with Kafka. This helps to isolate and simplify testing scenarios without relying on an external Kafka setup.
+    + `Testcontainers` is a Java library that allows you to easily create disposable containers (like Docker containers) for various services such as databases (e.g., PostgreSQL, MySQL), message brokers (e.g., Kafka, RabbitMQ), or any other services needed for testing.
+        + It's a more general-purpose tool used for spinning up isolated containers (like Docker containers) during testing. These containers run actual instances of the services required by your application.
+
+
+### What is @AutoConfigurationEmbeddedDatabase?
+
+`@AutoConfigurationEmbeddedDatabase`
+This annotation, as mentioned earlier, is an example or a conceptual representation of a hypothetical annotation that might exist in a Spring or Spring Boot context. It could potentially be imagined as a marker for Spring Boot to automatically configure an embedded database, similar to how Spring Boot's auto-configuration works, simplifying the setup process for testing or development environments.
+
+
 [Table of Contents](#test)
 
 
@@ -459,3 +482,41 @@
 ![Alt text](.//images/What%20is%20Wiremock.png)
 
 [Table of Contents](#test)
+
+
+# Advances
+
+### What and Why are use `ConditionalOnProperty`?
+- `@ConditionalOnProperty` is used to conditionally enable or disable certain configurations based on the presence or value of a property in the application.properties or application.yml file.
+    + `havingValue` attribute allows you to specify the expected value for the property
+    + `matchIfMissing` is used to set a default behavior if the property is missing.
+
+
+
+```java
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.stereotype.Component;
+
+//You want to conditionally enable a certain component only when myapp.feature.enabled is set to true. If the property is missing, it should default to false.
+
+@Component
+@ConditionalOnProperty(
+    prefix = "myapp.feature",
+    name = "enabled",
+    havingValue = "true",
+    matchIfMissing = false
+)
+public class MyFeatureComponent {
+    // Your conditional bean or component logic here
+}
+
+//+ `havingValue`: Specifies the expected value for the property. Here, it's `true`, so the bean will be created only if myapp.feature.enabled has a value of `true`.
+
+//`matchIfMissing`: If set to `true`, the component will be created when the property is missing. In this example, it's false, meaning if the property is missing, the component won't be created.
+
+
+```
+
+
+
+ [Table of Contents](#advances)
