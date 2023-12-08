@@ -35,7 +35,7 @@
 + [What is difference between @Header, @Payload in KafkaListener?](#what-is-difference-between-header-payload-in-kafkalistener)
 + [Why do we need the key when send the message to Kafka?](#why-do-we-need-the-key-when-send-the-message-to-kafka)
 + [Why do we need `executeInTransaction`?](#why-do-we-need-executeintransaction)
-
++ [Why do use use `max.poll.records` and `max.poll.interval.ms`?](#why-do-use-use-maxpollrecords-and-maxpollintervalms)
 ---
 ## What is Apache Kafka?
 Apache Kafka is a publish-subscribe messaging system developed by Apache written in Scala. It is a distributed, partitioned and replicated log service.
@@ -289,3 +289,55 @@ template.executeInTransaction(new TransactionCallback<String, String>() {
 });
 
 ```
+
+### Why do use use `max.poll.records` and `max.poll.interval.ms`?
+- The `max.poll.records` configuration parameter in Apache Kafka determines the maximum number of records that a consumer can fetch in a single poll request to the Kafka broker. This parameter can have an impact on the performance, throughput, and resource utilization of your Kafka consumers.
+
+- The `max.poll.interval.ms` configuration parameter in Apache Kafka is used to control the maximum amount of time the consumer is allowed to remain idle (i.e., not calling poll()) before it is considered inactive and subsequently evicted from its consumer group.
+
+
+```java
+import org.apache.kafka.clients.consumer.*;
+import org.apache.kafka.common.serialization.StringDeserializer;
+
+import java.time.Duration;
+import java.util.Collections;
+import java.util.Properties;
+
+public class KafkaConsumerExample {
+    public static void main(String[] args) {
+        String bootstrapServers = "localhost:9092";
+        String groupId = "my-group";
+        String topic = "my-topic";
+
+        Properties properties = new Properties();
+        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
+        properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        
+        // Set max.poll.interval.ms
+        properties.put(ConsumerConfig.MAX_POLL_INTERVAL_MS_CONFIG, "600000"); // 10 minutes
+        
+        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
+        consumer.subscribe(Collections.singletonList(topic));
+
+        try {
+            while (true) {
+                ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100)); // Poll every 100 milliseconds
+                for (ConsumerRecord<String, String> record : records) {
+                    System.out.println("Received message: " + record.value());
+                    // Process the received message here
+                }
+                // Manually commit offsets if needed: consumer.commitSync();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            consumer.close();
+        }
+    }
+}
+
+```
+
