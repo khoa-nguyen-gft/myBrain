@@ -4,6 +4,7 @@
 # Observability and Monitoring Loggings
 + [Why do we need Observability and Monitoring Loggings?](#why-do-we-need-observability-and-monitoring-loggings)
 + [What is Observability?](#what-is-observability)
++ [What is difference between Observability abd Monitoring?](#what-is-difference-between-observability-abd-monitoring)
 + [What is difference between Metrics, Logs and Traces in Observability?](#what-is-difference-between-metrics-logs-and-traces-in-observability)
 + [What is the best Practices in Distributed Logging?](#what-is-the-best-practices-in-distributed-logging)
 + [What is the Metrics?](#what-is-the-metrics)
@@ -51,6 +52,17 @@ long it took to complete at each microservice?
 ![Alt text](./images/Observability.png)
 
 [Table of Contents](#observability-and-monitoring-loggings)
+
+### What is difference between Observability abd Monitoring?
+
++ In other words, monitoring is about collecting data and observability is about understanding data. 
+
++ Monitory is reacting to problems while observavility is Fixing them in real time.
+
+![Alt text](./images/What%20is%20difference%20between%20Observability%20abd%20Monitoring.png)
+
+[Table of Contents](#observability-and-monitoring-loggings)
+
 
 ### What is difference between Metrics, Logs and Traces in Observability? 
 
