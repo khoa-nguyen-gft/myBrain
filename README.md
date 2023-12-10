@@ -30,6 +30,8 @@
       + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
          + [Demo Spring](#services-spring-boot)
 
+      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
+
       + [GraphQL](./O80_api_graphql/interview/README.md)
          + [Demo GraphQL](#services-graphql)
 
@@ -49,9 +51,7 @@
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
 
-   - ### **Big Data:**
-      + [Demo Airflow](#big-data-airflow)
-      + [Demo Apache Beam](#services-spring-boot)
+- ## **DevOps && DevOpsSec && MLOps:**
 
    - ### **DevOps:**
       + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
@@ -61,9 +61,12 @@
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
          + [GitHub Action](#devops-github-action)
       + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
-      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
+
+- ## **Big Data:**
+   + [Demo Airflow](#big-data-airflow)
+   + [Demo Apache Beam](#services-spring-boot)
 
 ---
 
@@ -198,7 +201,6 @@
 
 ![Alt text](./images/Airflow.png)
 - [Developer Starter](./O60_bigdata_airflow/00-install/) contains everything needed in order to get started Data.
-- [Why and when should I consider Airflow](./O60_bigdata_airflow/00-when/)
 - [[Lab] First step with Airflow](./O60_bigdata_airflow/01-hello-airflow/)
 - [Basic concepts of Airflow(DAGs, Tasks, Operators, Task dependencies)](./O60_bigdata_airflow/00-concepts/)
 - [[Lab] Airflow pipelines upload data Google Cloud Storage](./O60_bigdata_airflow/02-gpc/)

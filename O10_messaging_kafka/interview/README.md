@@ -28,6 +28,8 @@
 + [What is the Kafka Performance Optimization Availability and Durability (At-Most Once, At least Once, and Exactly Once)?](#what-is-the-kafka-performance-optimization-availability-and-durability-at-most-once-at-least-once-and-exactly-once)
 + [What is the Kafka Performance Optimization Latency and Throughput?](#what-is-the-kafka-performance-optimization-latency-and-throughput)
 
+## Snapshot, Command
++ [What is the difference between Restful and Kafka in Materialized Views?](#what-is-the-difference-between-restful-and-kafka-in-materialized-views)
 
 ## Other
 + [What is Kafka Multiple Clusters?](#what-is-kafka-multiple-clusters)
@@ -221,6 +223,33 @@ Kafka caters single consumer abstraction that generalized both of the above- the
 
     - **fetch.max.wait.ms**  specifies the maximum amount of time (in milliseconds) that the consumer is willing to wait for data to arrive in response to a fetch request.
     ![Alt text](images/fetch.min.bytes.png)
+
+[Table of Contents](#apache-kafka)
+
+
+
+## What is the difference between Restful and Kafka in Materialized Views?
+- **Materialized Views** are a feature in databases that optimize query performance by storing the results of a query. They are used within databases to enhance read performance by precomputing and storing query results.
+    + **RestFul service:** Example when A customer need to payment, the payment services need to call Customer, deposit, balance service to take payment. it take a lot of time.
+
+                            -> [Restful Customer]
+    [Customer] -> [Payment] -> [Restful Account]
+                            -> [Restful Deposit]
+                            -> [Restful Fraud]
+
+    + **Kafka**: All updated from customer, Deposit, Balances service will be send the snapsot the payment service and the payment services base the information to take payment to customer. And the payment will be faster.
+
+                            <- [Kafka Snaphot Customer Topic] <- [Customer]
+    [Customer] -> [Payment] <- [Kafka Snaphot Account Topic]  <- [Account]
+                            <- [Kafka Snaphot Deposit Topic]  <- [Deposit]
+                            <- [Kafka Snaphot Fraud Topic]    <- [Fraud]
+
+- Why Materialized Views
+    + Reduce the latency
+    + Offline available
+    + Easy developer Testing
+
+
 
 [Table of Contents](#apache-kafka)
 
