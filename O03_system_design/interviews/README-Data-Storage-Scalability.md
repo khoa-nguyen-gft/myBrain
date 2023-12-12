@@ -16,9 +16,9 @@
 
 
 ### [Non-Relational Database (DynamoDB, MongoDB)](#nosql)
-+ [What is NoSQL?](#what-is-nosql)
++ [What is NoSQL (Non-Relational Databases)?](#what-is-nosql)
 + [What is the difference between Relational Databases and Non-Relational Databases?](#what-is-difference-between-relational-databases-and-non-relational-databases)
-+ [What is Trade-offs in Non-Relational Database?](#what-is-trade-offs-in-non-relational-database)
++ [What are Trade-offs in Non-Relational Database?](#what-is-trade-offs-in-non-relational-database)
 + [What is Non-Relational Database - Categories?](#what-is-non-relational-database---categories)
 
 
