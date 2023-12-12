@@ -18,22 +18,22 @@
          + [Demo Kafka](#messaging-kafka)
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
-   + ### [Large Scale Data Storage at Global Scale](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
+   + ### [Large Scale Data Storage(Databases, NOSQL, Storages)](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
       - [NoSQL Databases (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
       - [SQL Databases (PostgreSQL)](./O42_database_postgreSQL/README.md)
       - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
+        
+   + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
+      + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
+         + [Demo Spring](#services-spring-boot)
+      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
+      + [GraphQL](./O80_api_graphql/interview/README.md)
+         + [Demo GraphQL](#services-graphql)
+
    + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
 
-   + ### [API Design System](./O03_system_design/interviews/README-API.md)
-      + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
-         + [Demo Spring](#services-spring-boot)
-
-      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
-
-      + [GraphQL](./O80_api_graphql/interview/README.md)
-         + [Demo GraphQL](#services-graphql)
 
 - ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
    - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
