@@ -2,11 +2,14 @@
 
 
 # Security
-+ ## Authentication
++ [What is the main security in microservices?](#what-is-the-main-security-in-microservices)
+
++ ## Authentication and Authorization
     + [What is AD (Active Directory) in Windows Authentication?](#what-is-adactive-directory-in-windows-authentication)
     + [What is S3-MFA (Mutti-Factor Authentication)?](#what-is-s3-mfa-mutti-factor-authentication)
+    + [What is difference between public key and private key in Authentication?](#what-is-difference-between-public-key-and-private-key-in-authentication)
 
-+ ## Encryption
++ ## Data Encryption
     + [What is Difference between ServerSide Encryption (SSE) and Client-Side Encryption (CSE)?](#what-is-difference-between-serverside-encryption-sse-and-client-side-encryption-cse)
     + [What is Difference between SSE-S3 && SSE-KMS && SSE-C in Server-Side Encryption?](#what-is-difference-between-sse-s3--sse-kms--sse-c-in-server-side-encryption)
     + [What is difference between Bucket Policy and Default Encryption?](#what-is-difference-between-bucket-policy-and-default-encryption)
@@ -21,10 +24,31 @@
 
 
 # Security
+
+### What is the main security in microservices?
++ **Authentication and Authorization**: Implement robust authentication mechanisms to ensure that only authenticated and authorized users or services can access resources. This involves using techniques like tokens (JWT, OAuth) or certificates to authenticate and grant appropriate permissions.
+
+
+- **Transport Layer Security**: Ensure secure communication between services by using encryption protocols like HTTPS/SSL/TLS to protect data while it's in transit.
+
+- **Data Encryption**: Protect sensitive data at rest by encrypting it within databases or storage systems to prevent unauthorized access in case of a breach.
+
+- **Securing APIs**: Ensure that APIs are secure by implementing input validation, output encoding, and protecting against common vulnerabilities such as injection attacks (SQL injection, XSS).
+
+- **Container Security**: Secure the containers in which microservices run by regularly updating images, scanning for vulnerabilities, and ensuring proper isolation and access control within container orchestration platforms.
+
+- **Secrets Management**: Properly manage and secure sensitive information such as API keys, credentials, and other secrets. Use secure storage and rotation mechanisms to minimize the risk of exposure.
+
+
+[Table of Contents](#security)
+
+
+
 ## Authentication
 
 ### What is AD(Active Directory) in Windows Authentication?
 - **Active Directory (AD)** trong Windows Authentication là một phần của hệ thống xác thực và quản lý danh tính trong môi trường Microsoft Windows. AD là một dịch vụ quản lý danh tính, quản lý quyền truy cập và tài khoản người dùng trong mạng lưới của một tổ chức. Nó cung cấp các dịch vụ liên quan đến xác thực người dùng và quản lý phân quyền trong hệ thống.
+
 
 ![Alt text](./images/AD.png)
 
@@ -45,7 +69,15 @@
 
 [Table of Contents](#aws-storage)
 
+### What is difference between public key and private key in Authentication?
++ **Public Key**: This is openly distributed and used to encrypt data or verify digital signatures. It's widely shared and accessible to anyone. For authentication purposes, a public key is utilized by the sender to encrypt a message or data. 
 
++ **Private Key**: This is kept securely by the individual or entity to whom the public key corresponds. It's used to decrypt messages that were encrypted using the matching public key. For authentication, the private key is used to decrypt the data that was encrypted with its corresponding public key.
+
+![Alt text](./images/What%20is%20difference%20between%20public%20key%20and%20private%20key%20in%20Authentication.png)
+
+
+[Table of Contents](#aws-storage)
 
 ## Encryption
 
