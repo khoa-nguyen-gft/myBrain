@@ -5,10 +5,12 @@
 + [What are the key differences between Oracle and PostgreSQL?](#what-are-the-key-differences-between-oracle-and-postgresql)
 + [What are the different Object Relational Database && Relational Database?](#what-are-the-different-object-relational-database--relational-database)
 
-    ## Optimize
+    ## Optimizing DB Query
+    + [How is the Optimizing DB?](#how-is-the-optimizing-db)
     + [What do you understand by a partitioned table in PostgreSQL?](#what-do-you-understand-by-a-partitioned-table-in-postgresql)
     + [What do you understand by parallel query in PostgreSQL? How does it work?](#what-do-you-understand-by-parallel-query-in-postgresql-how-does-it-work)
     + [What is the key difference between multi-version and lock models?](#what-is-the-key-difference-between-multi-version-and-lock-models)
+    + [What is `EXPLAIN` in PostgreSQL?](#what-is-explain-in-postgresql)
 
     ## DataTypes
     + [What are the different data types used in PostgreSQL?](#what-are-the-different-data-types-used-in-postgresql)
@@ -28,7 +30,6 @@
 ### What are the key differences between Oracle and PostgreSQL?
 + **PostgreSQL**
     + PostgreSQL is open-source and free to use.
-
     + PostgreSQL is a free, open-source object-relational database management system that follows SQL standards and extensibility.
 
 + **Oracle**
@@ -54,11 +55,28 @@
 
  [Table of Contents](#postgresql)
 
+
+## Optimizing DB Query
+
+### How is the Optimizing DB?
++ Undertand the query
+    + Which table is it use
+    + How is it use that.
++ Explain and Analyze the query: 
+    + `EXPLAIN (BUFERS, ANALYZE) <your query>` 
++ INDEX the column in WHERE and JOIN 
++ LIMIT the Row
++ LIMIT the Column query when the Content Row is too large
++ Avoid complex caculations
+
+[Table of Contents](#postgresql)
+
+
+
 ### What do you understand by a partitioned table in PostgreSQL?
 - In PostgreSQL, a partitioned table is a logical structure used to split a large table into smaller pieces. These small pieces of the tables are called partitions.
 
 ![Alt text](.//images/What%20do%20you%20understand%20by%20a%20partitioned%20table%20in%20PostgreSQL.png)
-
 
 
  [Table of Contents](#postgresql)
@@ -75,6 +93,17 @@ The key difference between Multi-Version Concurrency Control and lock models is 
 
  [Table of Contents](#postgresql)
 
+
+
+### What is Explain in PostgreSQL?
+
+In PostgreSQL, an explain query plan shows the execution steps that the database uses to run a query. The explain plan provides information on the type of operations performed, such as sequential scans, index scans, or nested loop joins, as well as the estimated cost of each operation. Here is how to read an explain plan in PostgreSQL:
+
+![Alt text](./images/hat%20is%20Explain%20in%20PostgreSQL.png)
+
+ [Table of Contents](#postgresql)
+
+## DataTypes
 
 ### What are the different data types used in PostgreSQL?
 - Following is a list of the different data types supported by and used in PostgreSQL?
