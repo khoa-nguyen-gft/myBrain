@@ -28,10 +28,19 @@
 + [What is the Kafka Performance Optimization Availability and Durability (At-Most Once, At least Once, and Exactly Once)?](#what-is-the-kafka-performance-optimization-availability-and-durability-at-most-once-at-least-once-and-exactly-once)
 + [What is the Kafka Performance Optimization Latency and Throughput?](#what-is-the-kafka-performance-optimization-latency-and-throughput)
 
-## Snapshot, Command
-+ [What is the difference between Restful and Kafka in Materialized Views?](#what-is-the-difference-between-restful-and-kafka-in-materialized-views)
 
-## Other
+## Transaction
++ [What is Transaction in Kafka?](#what-is-transaction-in-kafka)
++ [How to combine Database Transaction and Kafka Transation?](#how-to-combine-database-transaction-and-kafka-transation)
+
+
+## Banking Design
++ [What is the difference between Restful and Kafka in Materialized Views?](#what-is-the-difference-between-restful-and-kafka-in-materialized-views)
++ [What and why do we need `compacted topic` as a source in Materialized Views?](#what-and-why-do-we-need-compacted-topic-as-a-source-in-materialized-views)
++ [How to Build Non-Compacted Topic in Materialized Views?](#how-to-build-non-compacted-topic-in-materialized-views)
+
+
+## Advance Knowledge
 + [What is Kafka Multiple Clusters?](#what-is-kafka-multiple-clusters)
 + [What is difference between id, clientIdPrefix, and concurrency in  KafkaListener?](#what-is-difference-between-id-clientidprefix-and-concurrency-in-kafkalistener)
 + [What is difference between @Header, @Payload in KafkaListener?](#what-is-difference-between-header-payload-in-kafkalistener)
@@ -227,23 +236,53 @@ Kafka caters single consumer abstraction that generalized both of the above- the
 [Table of Contents](#apache-kafka)
 
 
+### What is Transaction in Kafka?
+
+- In Kafka, transactions play a crucial role in ensuring data consistency and reliability when producing and consuming messages. Transactions enable producers and consumers to work together to achieve atomicity and durability, ensuring that messages are reliably processed across different Kafka topics and partitions.
+
+- **Kafka Transation**
+    - **Phạm Vi Giao Dịch:** Giao dịch trong Kafka liên quan đến việc đảm bảo tính nguyên vẹn của dữ liệu khi chuyển từ producer đến Kafka, qua Kafka và đến consumer, đảm bảo atomicity (tính nguyên vẹn) qua chuỗi xử lý dữ liệu.
+    - **Exactly Once Semantics (Tính Chính Xác Một Lần):** Kafka hỗ trợ tính chính xác một lần (exactly once semantics) trong việc xử lý dữ liệu, đảm bảo rằng mỗi message được xử lý duy nhất một lần, không có bản ghi trùng lặp.
+    
+![Alt text](./images/What%20is%20Transaction%20in%20Kafka.png)
+
+[Table of Contents](#apache-kafka)
+
+
+
+### How to combine Database Transaction and Kafka Transation?
+- We can use transaction Database same with Kafka Transaction. Because Kafka is an append-only log. it does not support rollback(remove what was appended). 
+- Solution: One of them must committed first.
+    + Commit Database First
+    + Commit Kafka First
+
+[Table of Contents](#apache-kafka)
+
+
+## Banking Design
+
 
 ## What is the difference between Restful and Kafka in Materialized Views?
 - **Materialized Views** are a feature in databases that optimize query performance by storing the results of a query. They are used within databases to enhance read performance by precomputing and storing query results.
+    
     + **RestFul service:** Example when A customer need to payment, the payment services need to call Customer, deposit, balance service to take payment. it take a lot of time.
 
+```JSON
                             -> [Restful Customer]
     [Customer] -> [Payment] -> [Restful Account]
                             -> [Restful Deposit]
                             -> [Restful Fraud]
+```
 
-    + **Kafka**: All updated from customer, Deposit, Balances service will be send the snapsot the payment service and the payment services base the information to take payment to customer. And the payment will be faster.
++ **Kafka**: All updated from customer, Deposit, Balances service will be send the snapsot the payment service and the payment services base the information to take payment to customer. And the payment will be faster.
+
+```JSON
 
                             <- [Kafka Snaphot Customer Topic] <- [Customer]
     [Customer] -> [Payment] <- [Kafka Snaphot Account Topic]  <- [Account]
                             <- [Kafka Snaphot Deposit Topic]  <- [Deposit]
                             <- [Kafka Snaphot Fraud Topic]    <- [Fraud]
-
+```
 - Why Materialized Views
     + Reduce the latency
     + Offline available
@@ -252,6 +291,45 @@ Kafka caters single consumer abstraction that generalized both of the above- the
 
 
 [Table of Contents](#apache-kafka)
+
+
+### What and why do we need `compacted topic` as a source in Materialized Views?
+- `A Compacted Topic` in Apache Kafka is a specific type of topic where messages are retained based on their keys. The purpose of a compacted topic as a source lies in its ability to retain only the latest value for each unique key within the topic.
+
+![Alt text](./images/What%20and%20why%20do%20we%20need%20compacted%20topic%20as%20a%20source.png)
+
+- Here's why and when you might need a compacted topic as a source:
+
+    + `Maintaining Current State:` In many applications, especially those dealing with stateful data like user profiles, device status, or configuration settings, it's crucial to maintain the latest state for each entity or key.
+
+    + `Reducing Data Redundancy:` By storing only the latest value for each key, compacted topics help in reducing data redundancy and optimizing storage
+
+    + `Efficient Stream Processing:` When using Kafka for stream processing, having compacted topics as a source ensures that downstream applications or consumers receive the most up-to-date information for processing. 
+
+    + `Change Data Capture (CDC):` Compact topics are valuable for capturing changes in data. They enable systems to track and propagate only the changes or updates that occur for specific entities or records
+
+
+
+[Table of Contents](#apache-kafka)
+
+
+### How to Build Non-Compacted Topic in Materialized Views?
+- **Dag and owner services**: the Airflow will strigger every 1 seconds to call microservices 
+```
+     [Arflow] -->  [Microservice Service] --> [Kafka.Snapshot]
+                           |
+                           |
+                        Database    
+```
+
+- **Debezium CDC snapshot mode:**
+![Alt text](.//images/Debezium%20CDC%20snapshot%20mode.png)
+
+
+
+
+
+
 
 # Other
 
