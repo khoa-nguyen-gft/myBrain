@@ -9,19 +9,20 @@
 + [What is a difference On-premises and Cloud Base?](#what-is-a-difference-on-premises-and-cloud-base)
 
 
-### [Relational Database](#relational-database-1)
+### [Relational Database (PostgreSQL)](#relational-database-1)
 + [What is a Relational Database?](#what-is-a-relational-database)
 + [What is a ACID (Atomic, Consistency, Isolate, Durability)?](#what-is-a-acid)
 + [When and When not to choose a Relational Database?](#when-and-when-not-to-choose-a-relational-database)
 
 
-### [Non-Relational Database](#nosql)
+### [Non-Relational Database (DynamoDB, MongoDB)](#nosql)
 + [What is NoSQL?](#what-is-nosql)
 + [What is the difference between Relational Databases and Non-Relational Databases?](#what-is-difference-between-relational-databases-and-non-relational-databases)
 + [What is Trade-offs in Non-Relational Database?](#what-is-trade-offs-in-non-relational-database)
 + [What is Non-Relational Database - Categories?](#what-is-non-relational-database---categories)
 
-## [Unstructured Data Storage](#unstructured-data-storage-1)
+
+## [Unstructured Data Storage (EBS, FSx, S3, File Gateway)](#unstructured-data-storage-1)
 + [What is Unstructured Data Storage?](#what-is-unstructured-data-storage)
 + [Why do we need Unstructured Data Storage?](#why-do-we-need-unstructured-data-storage)
 + [what is the use case for Unstructured Data Storage?](#what-is-the-use-case-for-unstructured-data-storage)
@@ -37,7 +38,6 @@
 + [What is Command Query Responsibility Segregation (CQRS) Database?](#what-is-command-query-responsibility-segregation-cqrs-database)
 + [What is Database Cluster?](#what-is-database-cluster)
 + [When do you choose Partition Tolerance in Distributed Database?](#when-do-you-choose-partial-in-distributed-database)
-
 
 
 ## [Web Session](#web-session-1)
