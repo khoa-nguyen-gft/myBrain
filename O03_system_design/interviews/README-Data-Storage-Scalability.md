@@ -2,7 +2,7 @@
 
 
 # Data Storage 
-+ [What is CAP(Consistency, Availability, Partial Tolerance)?](#what-is-cap)
++ [What is CAP (Consistency, Availability, Partial Tolerance)?](#what-is-cap)
 + [What is a Database?](#what-is-a-database)
 + [What is a difference throughtput of database?](#what-is-a-difference-throughtput-of-database)
 + [What is a difference capability of database?](#what-is-a-difference-capability-of-database)
