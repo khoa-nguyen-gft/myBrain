@@ -24,7 +24,7 @@
       - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
         
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
-      + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
+      + [Spring Framwork (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
          + [Demo Spring](#services-spring-boot)
       + [GraphQL](./O80_api_graphql/interview/README.md)
          + [Demo GraphQL](#services-graphql)
