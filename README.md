@@ -42,6 +42,7 @@
    - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
 - ## **Coding:**
+   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
    - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
