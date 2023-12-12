@@ -26,13 +26,13 @@
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
       + [Spring (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
          + [Demo Spring](#services-spring-boot)
-      + [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
       + [GraphQL](./O80_api_graphql/interview/README.md)
          + [Demo GraphQL](#services-graphql)
 
    + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
+      - [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
 
 
 - ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
