@@ -11,7 +11,7 @@
 
 ### [Relational Database](#relational-database-1)
 + [What is a Relational Database?](#what-is-a-relational-database)
-+ [What is a ACID(Atomic, Consistency, Isolate, Durability)?](#what-is-a-acid)
++ [What is a ACID (Atomic, Consistency, Isolate, Durability)?](#what-is-a-acid)
 + [When and When not to choose a Relational Database?](#when-and-when-not-to-choose-a-relational-database)
 
 
