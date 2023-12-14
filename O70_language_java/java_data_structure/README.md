@@ -12,7 +12,10 @@
     + [What is difference between String && StringBuffer && StringBuilder && CharSequence?](#what-is-difference-between-string--stringbuffer--stringbuilder--charsequence)
     + [What is difference between Byte && Char && String?](#what-is-difference-between-byte--char--string)
     + [What is difference between Float && Double && java.lang.Double && BigDecimal?](#what-is-difference-between-float--double--javalangdouble--bigdecimal)
-    + [What is difference Instant && Date?](#what-is-difference-instant--date)
+
+    + ## Date:
+        + [What is difference Instant && Date?](#what-is-difference-instant--date)
+        + [What is difference between Instant, OffsetDateTime, and ZonedDateTime?](#what-is-difference-between-instant-offsetdatetime-and-zoneddatetime)
 
 ## Collection
 + [What is the Collection framework in Java?](#what-is-the-collection-framework-in-java)
@@ -56,9 +59,17 @@
 + [What is Stream API?](#what-is-stream-api)
 
 
-## Other
+## Exception
++ [What is difference between Exception and Error?](#what-is-difference-between-exception-and-error)
 
++ [What is difference between Checked and Unchecked Exceptions?](#what-is-difference-between-checked-and-unchecked-exceptions)
++ [What is rules for Catching Exceptions?](#what-is-rules-for-catching-exceptions)
++ [ What is difference `final`, `finally`, and `finalize` keywords?](#what-is-difference-final-finally-and-finalize-keywords)
+
+
+## Other
 + [What is difference Java 8 && Java 11?](#what-is-difference-java-8--java-11)
++ [What is Java Collection Factory Methods in JDK-9?](#what-is-java-collection-factory-methods-in-jdk-9)
 
 ---
 
@@ -146,6 +157,37 @@
 
 ### What is difference Instant && Date?
 ![Alt text](images/b0d10299-c87f-4f6b-9b69-e43f37a66b74.png)
+
+[Table of Contents](#main-title)
+
+
+### What is difference between Instant, OffsetDateTime, and ZonedDateTime?
++ `Instant` represents an absolute point in time without any timezone or offset information.
++ `OffsetDateTime` includes date and time along with an offset from UTC, but not a specific time zone.
++ `ZonedDateTime` includes date, time, and a specific time zone, accounting for daylight saving time changes and other time zone rules.
+
+![Alt text](./images/Instant,%20OffsetDateTime,%20and%20ZonedDateTime.png)
+
+```java
+Instant instant = Instant.now(); // Current timestamp
+Instant specificInstant = Instant.parse("2023-12-14T10:15:30Z"); // Parsing a specific timestamp
+
+
+OffsetDateTime offsetDateTime = OffsetDateTime.now(); // Current date and time with an offset
+OffsetDateTime specificOffsetDateTime = OffsetDateTime.parse("2023-12-14T10:15:30+02:00"); // Parsing with a specific offset
+
+
+ZonedDateTime zonedDateTime = ZonedDateTime.now(); // Current date and time in the system default time zone
+ZonedDateTime specificZonedDateTime = ZonedDateTime.parse("2023-12-14T10:15:30+02:00[Europe/Paris]"); // Parsing with a specific time zone
+
+
+```
+- **NOTE**:
+    + **Offset** là sự chênh lệch thời gian giữa một vị trí cụ thể và thời gian tiêu chuẩn, thường là sự chênh lệch tính bằng số giờ và phút so với múi giờ UTC.
+        + Ví dụ, nếu múi giờ tiêu chuẩn là UTC+02:00 và chúng ta đang ở UTC+03:00, thì offset sẽ là +01:00 (+1 giờ so với múi giờ tiêu chuẩn).
+
+- When choosing between these classes, consider the use case: `Instant` for machine timestamps, `OffsetDateTime` for dealing with offsets, and `ZonedDateTime` when working with specific time zones.
+
 
 [Table of Contents](#main-title)
 
@@ -410,14 +452,67 @@ public class SortHashMap {
 [Table of Contents](#data-structures-and-algorithms)
 
 
+# Exception
+
+
+### What is difference between Exception and Error?
+-  Exception Handling in Java is one of the powerful mechanisms to handle runtime errors so that the normal flow of the application can be maintained.
+    + **Exception**: can be handled
+    + **Error**: Can’t be handled. 
+   
+![Alt text](./images/Found%20Exception.png)
+
+
+[Table of Contents](#exception)
+
+
+### What is difference between Checked and Unchecked Exceptions?
+- **Checked Exceptions:** Checked exceptions are the exceptions that are checked at `compile` time by the compiler. Any method that might throw a checked exception must declare it using the throws keyword in its method signature or handle it using a try-catch block.
+
+- **Unchecked Exceptions:** Unchecked exceptions, also known as `runtime` exceptions, are not checked at compile time. These exceptions typically occur due to programming errors, such as logic errors, improper use of methods, null pointer dereference, etc.
+
+![Alt text](./images/What%20is%20difference%20between%20Checked%20and%20Uncheck.png)
+
+[Table of Contents](#exception)
+
+
+### What is rules for Catching Exceptions?
+
+`Rule01`: All catch blocks must be ordered from most specific to most general (Ex: catch for ArithmeticException must come before catching for Exception)
+
+
+`Rule02`: We can't specify multiple Exceptions related to each other in multilevel inheritance.    
+
+![Alt text](./images/rules.jpg)
+
+
+[Table of Contents](#exception)
+
+
+### What is difference `final`, `finally`, and `finalize` keywords?
+
++ `final` is a keyword in Java that can be applied to variables, methods, and classes, each with its own purpose:
+
++ `finally` is a block associated with exception handling. It's used in conjunction with try and catch blocks. The code within the finally block always executes regardless of whether an exception is thrown or not. 
+
++ `finalize` is a method defined in the Object class in Java. It's called by the garbage collector before an object is destroyed to perform cleanup operations or release resources associated with that object. However, using finalize() for resource cleanup is discouraged because its invocation and timing are not guaranteed, and it's considered a less reliable way to release resources.
+
+![Alt text](.//images/Lifetime%20of%20tinalizable%20object%20obj.gif)
+
+[Table of Contents](#exception)
+
+
+# Other
+
+### What is difference Java 8 && Java 11?
+![Alt text](./images/What%20is%20difference%20Java%208%20&&%20Java%2011.png)
+
+[Table of Contents](#main-title)
+
+
 ### What is Java Collection Factory Methods in JDK-9?
 - Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list, set and map of small number of elements.
 
 ![Alt text](.//images/What%20is%20Java%20Collection%20Factory%20Methods%20in%20JDK-9.png)
 
 [Table of Contents](#data-structures-and-algorithms)
-
-### What is difference Java 8 && Java 11?
-![Alt text](./images//What%20is%20difference%20Java%208%20&&%20Java%2011.png)
-
-[Table of Contents](#main-title)
