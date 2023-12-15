@@ -70,6 +70,7 @@
  + [what is difference between `insertable` and `updatable` in @column?](#what-is-difference-between-insertable-and-updatable-in-column)
 + [What is DTO (Data Transfer Object) Pattern?](#what-is-dto-data-transfer-object-pattern)
 + [What is difference between @ExceptionHandler && @ControllerAdvice && ResponseStatusException?](#what-is-difference-between-exceptionhandler--controlleradvice--responsestatusexception)
+
 -----
 ### What is Spring?
 - It is a lightweight, loosely coupled, and integrated framework for developing enterprise applications in Java.
@@ -557,10 +558,7 @@ public class MyFeatureComponent {
 
 ```
 
-
-
  [Table of Contents](#advances)
-
 
 ### What is difference between `insertable` and `updatable` in @column?
 
@@ -635,3 +633,4 @@ public class BaseEntity {
     ![Alt text](.//images/Pasted%20Graphic%2057.png)
 
  [Table of Contents](#advances)
+
