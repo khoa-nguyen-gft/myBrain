@@ -71,7 +71,9 @@
 
 ---
 ## [Microservices](./O21_Services_microservices/)
-+ [Demo CRUD Customer Account](./O21_Services_microservices/_02_crud_account/accounts/readme.md)
++ Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
++ Each service is owned by a small team and has a narrow scope of responsibility
+   + [Demo CRUD Customer Account](./O21_Services_microservices/_02_crud_account/accounts/readme.md)
 
 ## [Algorithm and Data Structure](./O01_algorithms)
 
@@ -82,7 +84,7 @@
 - **Algorithm** is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. 
 ![Alt text](images/Sorting%20Algorithm.png)
 
-+ **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of element in the respective data structure.
++ **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
    - [Code Distinct](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_041_Distinct): Compute number of distinct values in an array.
    - [Code MaxProductOfThree](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_042_MaxProductOfThree/): Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
    - [Code Triangle](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_043_Triangle/): Determine whether a triangle can be built from a given set of edges.
