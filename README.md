@@ -73,7 +73,9 @@
 ## [Microservices](./O21_Services_microservices/)
 + Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
 + Each service is owned by a small team and has a narrow scope of responsibility
-   + [Demo CRUD Customer Account](./O21_Services_microservices/_02_crud_account/accounts/readme.md)
+   + [Demo CRUD Customer Account](./O21_Services_microservices/historical/_02_crud_account/accounts/readme.md)
+   + [Demo CRUD Customer Account With OpenAPI](./O21_Services_microservices/historical/_03_account_with_openapi/)
+   + [Demo CRUD Customer Accounts, Cards and Loans With OpenAPI](./O21_Services_microservices/historical/_04_accounts_cards_loans/)
 
 ## [Algorithm and Data Structure](./O01_algorithms)
 
