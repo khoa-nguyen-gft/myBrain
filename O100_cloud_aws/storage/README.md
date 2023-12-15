@@ -27,15 +27,20 @@
     + [What is S3 Performance?](#what-is-s3-performance)
     + [What is S3 Batch Operation?](#what-is-s3-batch-operation)
     + [What is S3 Lifecycle Policy?](#what-is-s3-lifecycle-policy)
-    + S3 Analytics
+
 
 + ## On-Premises Storage
     + [What is AWS Storage Gateway (File Gateway)?](#what-is-aws-storage-gateway-file-gateway)
     + [What is difference Volume Gateway, File Gateway and Tape Gateway in AWS Storage Gateway?](#what-is-difference-volume-gateway-file-gateway-and-tape-gateway-in-aws-storage-gateway)
     + [What is difference between SAN (Storage Area Network) and NAS (Network Attached Storage)?](#what-is-difference-between-san-storage-area-network-and-nas-network-attached-storage)
     + [What is difference between NFS(Network File System), DFSR (Distribute File System Replication), SMB (Server Message Block) and SAM (Security Account Manager)?](#what-is-difference-between-nfsnetwork-file-system-dfsr-distribute-file-system-replication-smb-server-message-block-and-sam-security-account-manager)
+    + [What is difference between Amazon FSx for Lustre, Amazon FSx for Windows, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?](#what-is-difference-between-amazon-fsx-for-lustre-amazon-fsx-for-windows-file-server-amazon-fsx-for-netapp-ontap-and-amazon-fsx-for-openzfs)
 
-
++ ## AWS Data & Analytics
+    + [What is AWS Athena?](#what-is-aws-athena)
+    + [What is AWS Redshift?](#what-is-aws-redshift)
+    + [What is AWS OpenSearch?](#what-is-aws-opensearch)
+    + [What is AWS EMR?](#what-is-aws-emr)
 ----
 
 ### What is AWS Storage?
@@ -326,3 +331,126 @@ Access Point (Gateway or Interface Endpoint)
 
 [Table of Contents](#aws-storage)
 
+
+### What is difference between Amazon FSx for Lustre, Amazon FSx for Windows file server, Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS?
+
+
++ **Amazon FSx for Windows File Server** supports DFS namespaces and DFS replication. This is the best solution for replacing the on-premises infrastructure. 
+
++ **Amazon FSx for Lustre (Linux + Cluster):** Lustre is a type of parallel distributed file system, for large-scale computing
+    ![Alt text](images/Lustre.png)
+
++ **Amazon FSx for NetApp ONTAP**:
+    + **Amazon FSx for NetApp ONTAP**: Yêu cầu hiệu suất cao: Bạn cần hiệu suất cao và độ trễ thấp cho ứng dụng quan trọng với yêu cầu I/O đặc biệt.
+    + Storage shrinks or grows automatically
+    + Snapshots, replication, low-cost, compression and data de-duplication
+
+    ![Alt text](images/NetApp.png)
+
++ **Amazon FSx for OpenZFS** 
+    + **Amazon FSx for OpenZFS**: OpenZFS cung cấp một giải pháp tương đối tiết kiệm cho nhu cầu lưu trữ dữ liệu tổng quan 
+    + Up to 1,000,000 IOPS with < 0.5ms latency
+    + Snapshots, compression and low-cost 
+    + Point-in-time instantaneous cloning (helpful for testing new workloads)
+
+    ![Alt text](images/OpenZFS.png)
+
+- **NOTE:**
+    - **HPC (High Performance Computing)**: 
+
+[Table of Contents](#aws-storage)
+
+
+
+### What is AWS EMR?
+* EMR stands for “Elastic MapReduce” 
+* EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data 
+* The clusters can be made of hundreds of EC2 instances 
+* EMR comes bundled with Apache Spark, HBase, Presto, Flink... 
+* EMR takes care of all the provisioning and configuration 
+* Auto-scaling and integrated with Spot instances 
+* Use cases: data processing, machine learning, web indexing, big data... 
+
+[Table of Contents](#aws-storage)
+
+
+### What is AWS QuickSight?
+- Serverless machine learning-powered business intelligence service to create interactive dashboards 
+- Fast, automatically scalable, embeddable, with per-session pricing
+- Use cases: 
+    * Business analytics
+    * Building visualizations 
+    * Perform ad-hoc analysis
+    * Get business insights using data
+* Integrated with RDS, Aurora, Athena, Redshift, S3... 
+* in-memory computation using SPICE engine if data is imported into QuickSight
+* Enterprise edition: Fosshoikty to setup Column-Level security (CLS) 
+
+![Alt text](./images/What%20is%20AWS%20QuickSight.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is AWS Glue?
+* Managed extract, transform, and load (ETL) service 
+* Useful to prepare and transform data for analytics 
+* Fully serverless service 
+
+![Alt text](./images/What%20is%20AWS%20Glue.png)
+![Alt text](./images/%20What%20is%20AWS%20Glue2.png)
+
+[Table of Contents](#aws-storage)
+
+
+## AWS Data & Analytics
+### What is AWS Athena?
+
+* Serverless query service to analyze data stored in Amazon S3 
++ Uses standard SQL language to query the files (built on Presto) 
+* Supports CSV, JSON, ORC, Avro, and Parquet 
+* Pricing: $5.00 per TB of data scanned 
++ Commonly used with Amazon Quicksight for reporting/dashboards 
++ Use cases: Business intelligence / analytics / reporting, analyze & query VPC Flow Logs, ELB Logs, CloudTrail trails, etc... 
++ Partition datasets in S3 for easy querying on virtual columns
+```
+    s3//yourBucket/pathToTable
+        /<PARTITION_COLUMN_NAME>=<VALUE>
+        /<PARTITION_COLUMN_NAME>=<VALUE>
+        /<PARTITION_COLUMN_NAME>=<VALUE>
+        etc...
+```
+
+ Example: s3:/athena-examples/flight/parquet/year=199 | /month= | /day=1/
+
+![Alt text](./images/What%20is%20AWS%20Athena.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is AWS Redshift?
+* Redshift is based on PostgreSQL, but it's not used for OLTP
+* It's OLAP — online analytical processing (analytics and data warehousing)
+* 10x better performance than other data warehouses, scale to PBs of data
+* Columnar storage of data (instead of row based) & parallel query engine
+* Pay as you go based on the instances provisioned
+* Has a SQL interface for performing the queries
+* Bl tools such as Amazon Quicksight or Tableau integrate with it
+* vs Athena: faster queries / joins / aggregations thanks to indexes
+
+![Alt text](./images/What%20is%20AWS%20Redshift.png)
+
+[Table of Contents](#aws-storage)
+
+
+### What is AWS OpenSearch?
+* Amazon OpenSearch is successor to Amazon ElasticSearch
+* In DynamoDB, queries only exist by primary key or indexes...
+* With OpenSearch, you can search any field, even partially matches
+* It's common to use OpenSearch as a complement to another database
+* Two modes: managed cluster or serverless cluster
+* Does not natively support SQL (can be enabled via a plugin)
+* Ingestion from Kinesis Data Firehose, AWS loT, and CloudWatch Logs
+* Security through Cognito & IAM, KMS encryption, TLS
+* Comes with OpenSearch Dashboards (visualization)
+
+![Alt text](./images/What%20is%20AWS%20OpenSearch.png)

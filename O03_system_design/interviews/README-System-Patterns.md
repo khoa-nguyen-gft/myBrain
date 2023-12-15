@@ -8,9 +8,13 @@
 + [Why is System Architecture Patterns?](#why-is-system-architecture-patterns)
     ## Three-Tier Architecture Pattern
     + [What is Multi-tier architecture?](#what-is-multi-tier-architecture)
+    + [What is cross-cutting concernt?](#what-is-cross-cutting-concernt)
+    ## SOA Pattern
+    + [What is SOA architecture?](#what-is-soa-architecture)
+
     ## Microservices Pattern
-    + [What is the difference between Monolithic and Microservices Systems?](#what-is-difference-between-monolithic-and-microservices-systems)
     + [What is Microservices Systems?](#what-is-microservices-systems)
+    + [What is the difference between Monolithic and Microservices Systems?](#what-is-difference-between-monolithic-and-microservices-systems)
     + [What is Microservices Best Practices?](#what-is-microservices-best-practices)
     ## Event-Driven Architecture
     + [What is Distributed Systems?](#what-is-distributed-systems)
@@ -76,7 +80,36 @@
 
 ![Alt text](./images/Multi-tier%20architecture.png)
 
+[Table of Contents](#main-title)
+
+### What is cross-cutting concernt?
+- **A Cross-Cutting** concern refers to a software engineering concept where aspects or features of a system affect multiple parts or layers of that system. 
+
+![Alt text](.//images/cross-cutting%20concernt.png)
+
+[Table of Contents](#main-title)
+
+
+## SOA
+## What is SOA architecture?
+- SOA emerged as an approach to combat the challenges of large, monolithic applications. 
+- It is an architectural style that focuses on organizing software systems as a collection of loosely coupled, interoperable services. It provides a way to design and develop large-scale applications by decomposing them into smaller, modular services that can be independently developed, deployed, and managed.
+
+![Alt text](./images/SOA%20architecture.png)
+
+
+[Table of Contents](#main-title)
+
 ## Microservices Pattern
+
+### What is Microservices Systems?
+- Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
+- Each service is owned by a small team and has a narrow scope of responsibility
+
+![Alt text](.//images/Microservices%20Systems.png)
+
+[Table of Contents](#main-title)
+
 
 
 ### What is difference between Monolithic and Microservices Systems?
@@ -111,14 +144,6 @@
     ![Alt text](images/Microservices.png)
 
 [Table of Contents](#main-title)
-
-
-### What is Microservices Systems?
-- Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
-- Each service is owned by a small team and has a narrow scope of responsibility
-
-[Table of Contents](#main-title)
-
 
 
 ### What is Microservices Best Practices?

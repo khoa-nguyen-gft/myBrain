@@ -1,3 +1,10 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 **/*.zip filter=lfs diff=lfs merge=lfs -text
 books/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions.zip filter=lfs diff=lfs merge=lfs -text
+
+
+**/**/build
+**/**/.gradle
+**/**/.idea
+
+
