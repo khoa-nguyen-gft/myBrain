@@ -8,3 +8,4 @@ books/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions.zip filter=lfs
 **/**/.idea
 
 
+.DS_Store

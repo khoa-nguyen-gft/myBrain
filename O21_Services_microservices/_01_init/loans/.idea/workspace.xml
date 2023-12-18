@@ -5,79 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4fb7033-fe22-46ab-a5ef-ecbd52026b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/AccountApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_00_init/account.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../account.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/AccountApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/audit/AuditorAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/constants/AccountsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/constants/AccountsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_0_up_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_0_up_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_1_createAccount_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_1_createAccount_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_2_fetchAccountDetails_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_2_fetchAccountDetails_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_3_updateAccount_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_3_updateAccount_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_4_deleteAccount_calls.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_4_deleteAccount_calls.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/controller/AccountController_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/controller/AccountController_structure.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/dto/AccountsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/dto/CustomerDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/dto/ErrorResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/dto/ResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/entity/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/mapper/AccountsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/mapper/AccountsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/service/IAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/java/com/easybyte/accounts/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/java/com/eazybytes/accounts/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/test/java/com/easybyte/accounts/AccountApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/test/java/com/eazybytes/accounts/AccountApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/AccountApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/audit/AuditorAwareImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/constants/AccountsConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_0_up_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_1_createAccount_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_2_fetchAccountDetails_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_3_updateAccount_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_4_deleteAccount_calls.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/controller/AccountController_structure.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/dto/AccountsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/dto/CustomerDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/dto/ErrorResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/dto/ResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/entity/Accounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/mapper/AccountsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/mapper/CustomerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/repository/AccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/repository/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/service/IAccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/java/com/easybyte/accounts/service/impl/AccountServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/main/resources/sql/schedule.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../_02_crud_account/accounts/src/test/java/com/easybyte/accounts/AccountApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../accounts/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../O03_system_design/interviews/README-System-Patterns.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../O03_system_design/interviews/README-System-Patterns.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accounts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cards/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cards/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +77,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
@@ -247,83 +188,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="loans" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="loans" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="loans" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="loans" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="loans" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="loans" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>

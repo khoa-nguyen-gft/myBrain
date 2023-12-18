@@ -2,7 +2,7 @@ server:
   port: 9090
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb;INIT=RUNSCRIPT FROM 'src/main/resources/sql/schedule.sql';
+    url: jdbc:h2:mem:testdb;INIT=RUNSCRIPT FROM 'classpath:sql/schedule.sql';
     driverClassName: org.h2.Driver
     username: sa
     password: ''

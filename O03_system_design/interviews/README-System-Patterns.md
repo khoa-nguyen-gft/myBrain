@@ -9,18 +9,21 @@
     ## Three-Tier Architecture Pattern
     + [What is Multi-tier architecture?](#what-is-multi-tier-architecture)
     + [What is cross-cutting concernt?](#what-is-cross-cutting-concernt)
+
     ## SOA Pattern
-    + [What is SOA architecture?](#what-is-soa-architecture)
+    + [What is SOA (Service-oriented architecture) architecture?](#what-is-soa-architecture)
 
     ## Microservices Pattern
     + [What is Microservices Systems?](#what-is-microservices-systems)
     + [What is the difference between Monolithic and Microservices Systems?](#what-is-difference-between-monolithic-and-microservices-systems)
     + [What is Microservices Best Practices?](#what-is-microservices-best-practices)
+
     ## Event-Driven Architecture
     + [What is Distributed Systems?](#what-is-distributed-systems)
     + [What is Race Conditions in Distributed Systems?](#what-is-race-conditions-in-distributed-systems)
     + [What is Event-Driven Architecture (EDA)?](#what-is-event-driven-architecture-eda)
     + [What is EDA Patterns (Event Sourcing, CQRS (Command Query Responsibility Segregation))?](#what-is-event-driven-architecture-eda-pattern)
+
     ## Big Data Architecture Patterns
     + [What is Big Data(Volume, Variety, Velocity)?](#what-is-big-data)
     + [What is Volumn in Big Data?](#what-is-volumn-in-big-data)
@@ -33,6 +36,9 @@
 # Advances
 - ## Big Data:
     + [What is the architecture of Big Data?](#what-is-the-architecture-of-big-data)
+    + [How to right side and indetify service boundaries of microservices?](#how-to-right-side-and-indetify-service-boundaries-of-microservices)
+
+
 
 ---
 
@@ -322,5 +328,15 @@ operations
     + Visualization Layer
 
 ![Alt text](./What%20is%20the%20architecture%20of%20Big%20Data.png)
+
+[Table of Contents](#big-data-architecure-patterns)
+
+
+### How to right side and indetify service boundaries of microservices?
+- One of the most challenging aspects of building a successful microservices system is the
+identification of proper microservice boundaries and defining the size of each microservice.
+Below are the most common Followed approaches in the industry,
+    + **Domain-Driven Sizing**: Since many of our modifications or enhancements driven by the business. needs, we can size/define boundaries of our microservices that are closely aligned with Domain-Driven design & Business capabilities. But this process takes lot of time and need good domain knowledge.
+    + **Event Storming Sizing**:  Conducting an interactive Fun session among various stake holder to identify the list of important events in the system like ‘Completed Payment’, ‘Search for a Product’ etc. Based on the events we can identify ‘Commands’, ‘Reactions’ and can try to group them to a domain-driven services.
 
 [Table of Contents](#big-data-architecure-patterns)

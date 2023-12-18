@@ -61,6 +61,7 @@
          + [Demo Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
          + [GitHub Action](#devops-github-action)
+      + [Containerization (Docker, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
       + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
@@ -71,6 +72,7 @@
 
 ---
 ## [Microservices](./O21_Services_microservices/)
+![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
 + Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
 + Each service is owned by a small team and has a narrow scope of responsibility
    + [Demo CRUD Customer Account](./O21_Services_microservices/historical/_02_crud_account/accounts/readme.md)
@@ -273,4 +275,4 @@
 
 ![Alt text](<image (1).png>)
 ![Alt text](image-1.png)
-![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
+
