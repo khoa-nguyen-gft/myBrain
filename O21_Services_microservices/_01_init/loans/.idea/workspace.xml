@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4fb7033-fe22-46ab-a5ef-ecbd52026b1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../accounts/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../accounts/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../O03_system_design/interviews/README-System-Patterns.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../O03_system_design/interviews/README-System-Patterns.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cards/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cards/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accounts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../accounts/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../O37_cicd_containerization/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../O37_cicd_containerization/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -61,7 +61,7 @@
          + [Demo Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
          + [GitHub Action](#devops-github-action)
-      + [Containerization (Docker, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
+      + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
       + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
@@ -78,6 +78,7 @@
    + [Demo CRUD Customer Account](./O21_Services_microservices/historical/_02_crud_account/accounts/readme.md)
    + [Demo CRUD Customer Account With OpenAPI](./O21_Services_microservices/historical/_03_account_with_openapi/)
    + [Demo CRUD Customer Accounts, Cards and Loans With OpenAPI](./O21_Services_microservices/historical/_04_accounts_cards_loans/)
+   + [Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
 
 ## [Algorithm and Data Structure](./O01_algorithms)
 

@@ -33,6 +33,7 @@
     + [What is Data processing Strategies (Batch Processing, Real-Time Processing)?](#what-is-data-processing-strategiesbatch-processing-real-time-processing)
 
 
+
 # Advances
 - ## Big Data:
     + [What is the architecture of Big Data?](#what-is-the-architecture-of-big-data)
