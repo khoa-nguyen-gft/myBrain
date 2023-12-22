@@ -40,6 +40,10 @@
     + [What is @GeneratedValue?](#what-is-generatedvalue)
     + [What is @MappedSuperclass?](#what-is-mappedsuperclass)
 
+    # Spring Cloud
+    + [What is Spring Cloud?](#what-is-spring-cloud)
+    + [ What is Spring Cloud Bus?](#what-is-spring-cloud-bus)
+
 
 # Test
 + [What is Test Pyramid?](#what-is-test-pyramid)
@@ -70,6 +74,7 @@
  + [what is difference between `insertable` and `updatable` in @column?](#what-is-difference-between-insertable-and-updatable-in-column)
 + [What is DTO (Data Transfer Object) Pattern?](#what-is-dto-data-transfer-object-pattern)
 + [What is difference between @ExceptionHandler && @ControllerAdvice && ResponseStatusException?](#what-is-difference-between-exceptionhandler--controlleradvice--responsestatusexception)
++ [How to read properties in Spring Boot apps?](#what-is-autowiring-in-spring)
 
 -----
 ### What is Spring?
@@ -387,9 +392,23 @@
 [Table of Contents](#spring-jpa)
 
 
+### What is Spring Cloud?
+- Spring Cloud provides Frameworks For developers to quickly build some of the common patterns of Microservices
+
+![Alt text](.//images/What%20is%20Spring%20Cloud.png)
 
 
 
+[Table of Contents](#spring-cloud)
+
+
+### What is Spring Cloud Bus?
+- Spring Cloud Bus is a feature within the Spring Cloud framework that facilitates communication between distributed microservices in a Spring-based application. It uses a lightweight message broker (like RabbitMQ or Kafka) to broadcast messages/events across the entire application or specific services.
+
+![Alt text](.//images/What%20is%20Spring%20Cloud%20Bus.png)
+
+
+[Table of Contents](#spring-cloud)
 
 # Test
 ### What is Test Pyramid?
@@ -633,4 +652,13 @@ public class BaseEntity {
     ![Alt text](.//images/Pasted%20Graphic%2057.png)
 
  [Table of Contents](#advances)
+
+
+### How to read properties in Spring Boot apps?
+- In Spring Boot, there are multiple approaches to reading properties. Below are the most commonly used approaches,
+![Alt text](./images/How%20to%20read%20properties%20in%20Spring%20Boot%20apps.png)
+
+ [Table of Contents](#advances)
+
+
 

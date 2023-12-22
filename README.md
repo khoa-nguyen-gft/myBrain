@@ -36,13 +36,16 @@
 
 
 - ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
+   + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
+
+- ## System Design Labs
    - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
    - [Lab Banking Desgin](./O04_system_design_labs/002-bank/README.md)
    - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
    - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
+
 - ## **Coding:**
-   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
    - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
@@ -51,6 +54,8 @@
    - ### **Object Oriented Programming Principles:**
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
+
+   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
 
 - ## **DevOps && DevOpsSec && MLOps:**
 
@@ -69,13 +74,18 @@
    + [Demo Airflow](#big-data-airflow)
    + [Demo Apache Beam](#services-spring-boot)
 
+
 ---
 ## [Microservices](./O21_Services_microservices/)
+![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
 + Microservices Architecture organizes our business logic as a collection of loosely coupled and independently deployed services
 + Each service is owned by a small team and has a narrow scope of responsibility
    + [Demo CRUD Customer Account](./O21_Services_microservices/historical/_02_crud_account/accounts/readme.md)
    + [Demo CRUD Customer Account With OpenAPI](./O21_Services_microservices/historical/_03_account_with_openapi/)
    + [Demo CRUD Customer Accounts, Cards and Loans With OpenAPI](./O21_Services_microservices/historical/_04_accounts_cards_loans/)
+   + [Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
+   + [Accounts, Cards and Loans deployment using docker compose and Spring Config](./O21_Services_microservices/historical/_06_acocunt_cards_loads_with_docker_compose/)
+
 
 ## [Algorithm and Data Structure](./O01_algorithms)
 
@@ -273,4 +283,4 @@
 
 ![Alt text](<image (1).png>)
 ![Alt text](image-1.png)
-![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
+

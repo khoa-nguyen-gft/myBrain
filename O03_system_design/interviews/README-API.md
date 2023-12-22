@@ -45,6 +45,7 @@
 ## Other
 + [What is long polling?](#what-is-long-polling)
 + [What is AMQP (Advanced Message Queuing Protocol)?](#what-is-amqp-protocol)
++ [What all kind of API Protocols?](#what-all-kind-of-api-protocols)
 
 ----
 ## What is an Application Programming Interface (API)?
@@ -394,7 +395,8 @@
 [Table of Contents](#main-title)
 
 
+### What all kind of API Protocols?
 
-![Alt text](./images/api.png)
+![Alt text](.//images/What%20all%20kind%20of%20API%20Protocols.png)
 
-
+[Table of Contents](#main-title)
