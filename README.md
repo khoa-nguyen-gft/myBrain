@@ -36,13 +36,16 @@
 
 
 - ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
+   + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
+
+- ## System Design Labs
    - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
    - [Lab Banking Desgin](./O04_system_design_labs/002-bank/README.md)
    - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
    - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
+
 - ## **Coding:**
-   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
    - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
@@ -51,6 +54,8 @@
    - ### **Object Oriented Programming Principles:**
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
+
+   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
 
 - ## **DevOps && DevOpsSec && MLOps:**
 
@@ -61,7 +66,6 @@
          + [Demo Bazel](#devops-bazel)
       + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
          + [GitHub Action](#devops-github-action)
-      + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
       + [Observability and Monitoring Loggings (Sumo Logic)](./O36_cicd_monitoring/README.md)
    - ### **MLOps:**
       + [MLOps](./O110_mlops/README.md)
@@ -69,6 +73,7 @@
 - ## **Big Data:**
    + [Demo Airflow](#big-data-airflow)
    + [Demo Apache Beam](#services-spring-boot)
+
 
 ---
 ## [Microservices](./O21_Services_microservices/)
@@ -79,6 +84,8 @@
    + [Demo CRUD Customer Account With OpenAPI](./O21_Services_microservices/historical/_03_account_with_openapi/)
    + [Demo CRUD Customer Accounts, Cards and Loans With OpenAPI](./O21_Services_microservices/historical/_04_accounts_cards_loans/)
    + [Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
+   + [Accounts, Cards and Loans deployment using docker compose and Spring Config](./O21_Services_microservices/historical/_06_acocunt_cards_loads_with_docker_compose/)
+
 
 ## [Algorithm and Data Structure](./O01_algorithms)
 

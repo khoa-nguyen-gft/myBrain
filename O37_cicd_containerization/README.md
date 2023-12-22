@@ -1,5 +1,10 @@
 ## [Main title](/README.md)
 
+## CNCF
++ [What is CNCF?](#what-is-cncf)
++ [What is important of CNCF(Cloud Native Computer Applications)?](#what-is-cncfcloud-native-computer-applications)
++ [what is 15 factor methodology in cloud?](#what-is-15-factor-methodology-in-cloud)
++ [What is difference between liveness and readiness Probes?](#what-is-difference-between-liveness-and-readiness-probes)
 
 ## Docker
 + [What is containerize?](#what-is-containerize)
@@ -9,10 +14,8 @@
 + [What is difference between FROM, MAINTAINER, COPY và ENTRYPOINT in Dockerfile?](#what-is-difference-between-from-maintainer-copy-và-entrypoint-in-dockerfile)
 + [What is difference between RUN, ENTRYPOINT and CMD in Dockerfile?](#what-is-difference-between-run-cmd-entrypoint-in-dockerfile)
 
-## CNCF
-+ [What is CNCF?](#what-is-cncf)
-+ [What is important of CNCF(Cloud Native Computer Applications)?](#what-is-cncfcloud-native-computer-applications)
-+ [what is 15 factor methodology in cloud?](#what-is-15-factor-methodology-in-cloud)
+
+
 ## Kuberante
 
 ## HELM
@@ -26,6 +29,68 @@
 + [What are items of 15-Factor methodology?](#what-are-items-of-15-factor-methodology)
 
 ---
+
+
+
+## CNCF
+### What is CNCF(Cloud Native Computer Applications)?
+- Cloud-native applications are software applications designed specifically to leverage
+cloud computing principles and take Full advantage of cloud-native technologies and
+services. These applications are built and optimized to run in cloud environments,
+utilizing the scalability, elasticity, and Flexibility offered by the cloud.
+
+![Alt text](./images/CNCF.png)
+
+[Table of Contents](#cncf)
+
+### What is important of CNCF(Cloud Native Computer Applications)?
+
+- **Scalability & Elasticity**: Designed to scale horizontally, allowing them to handle increased loads by adding more instances of services. They can also automatically scale up or down based on demand, thanks to cloud-native orchestration platforms like Kubernetes
+
+
+- **DevOps Practices**: Embrace DevOps principles, promoting collaboration between development and operations teams. They often incorporate continuous integration, continuous delivery, and automated deployment pipelines to streamline the software development and deployment processes.
+
+
+- **Resilience & Fault Tolerance**: Designed to be resilient in the Face of Failures. They utilize techniques such as distributed architecture, load balancing, and automated failure recovery to ensure high availabilty and Fault tolerance.
+
+
+- **Cloud-Native Services**:  This allows developers to focus more on application logic and less on managing infrastructure components.
+
+![Alt text](.//images/important%20of%20CNCF(Cloud%20Native%20Computer%20Applications).png)
+
+[Table of Contents](#cncf)
+
+### What is 15 factor methodology in cloud?
+
+- These principles are the result of their expertise and provide valuable insights for building web applications with specific characteristics:
+    1) **Cloud Platform Deployment:** Applications designed to be seamlessly deployed on various cloud platforms.
+
+    2) **Scalability as a Core Attribute:** Architectures that inherently support scalability.
+
+    3) **System Portability:** Applications that can run across different systems and environments.
+    
+    4) **Enabling Continuous Deployment and Agility:** Facilitating rapid and agile development cycles.
+
+![Alt text](.//images/%2012%20factor%20methodology.png)
+![Alt text](.//images/15%20factor%20methodology%20in%20cloud.png)
+
+[Table of Contents](#cncf)
+
+
+### What is difference between liveness and readiness Probes?
+- **Liveness Probe:** Kiểm tra xem container có đang hoạt động hay không.
+- **Readiness Probe:** Kiểm tra xem container có sẵn sàng để nhận traffic từ các nguồn bên ngoài hay không.
+
+- Sự khác nhau chính giữa hai loại probe này là mục tiêu của chúng: liveness probe kiểm tra container có đang hoạt động không, trong khi readiness probe kiểm tra xem container đã sẵn sàng để nhận traffic từ bên ngoài hay chưa.
+
+![Alt text](.//images/What%20is%20difference%20between%20liveness%20and%20readiness%20Probes.png)
+
+
+[Table of Contents](#docker)
+
+
+
+
 ## Docker
 ### What is containerize?
 [Table of Contents](#docker)
@@ -133,52 +198,6 @@ CMD ["default_argument"]
 ```
 
 [Table of Contents](#docker)
-
-
-## CNCF
-### What is CNCF(Cloud Native Computer Applications)?
-- Cloud-native applications are software applications designed specifically to leverage
-cloud computing principles and take Full advantage of cloud-native technologies and
-services. These applications are built and optimized to run in cloud environments,
-utilizing the scalability, elasticity, and Flexibility offered by the cloud.
-
-![Alt text](./images/CNCF.png)
-
-[Table of Contents](#cncf)
-
-### What is important of CNCF(Cloud Native Computer Applications)?
-
-- **Scalability & Elasticity**: Designed to scale horizontally, allowing them to handle increased loads by adding more instances of services. They can also automatically scale up or down based on demand, thanks to cloud-native orchestration platforms like Kubernetes
-
-
-- **DevOps Practices**: Embrace DevOps principles, promoting collaboration between development and operations teams. They often incorporate continuous integration, continuous delivery, and automated deployment pipelines to streamline the software development and deployment processes.
-
-
-- **Resilience & Fault Tolerance**: Designed to be resilient in the Face of Failures. They utilize techniques such as distributed architecture, load balancing, and automated failure recovery to ensure high availabilty and Fault tolerance.
-
-
-- **Cloud-Native Services**:  This allows developers to focus more on application logic and less on managing infrastructure components.
-
-![Alt text](.//images/important%20of%20CNCF(Cloud%20Native%20Computer%20Applications).png)
-
-[Table of Contents](#cncf)
-
-### What is 15 factor methodology in cloud?
-
-- These principles are the result of their expertise and provide valuable insights for building web applications with specific characteristics:
-    1) **Cloud Platform Deployment:** Applications designed to be seamlessly deployed on various cloud platforms.
-
-    2) **Scalability as a Core Attribute:** Architectures that inherently support scalability.
-
-    3) **System Portability:** Applications that can run across different systems and environments.
-    
-    4) **Enabling Continuous Deployment and Agility:** Facilitating rapid and agile development cycles.
-
-![Alt text](.//images/%2012%20factor%20methodology.png)
-![Alt text](.//images/15%20factor%20methodology%20in%20cloud.png)
-
-[Table of Contents](#cncf)
-
 
 
 ## Kuberante
