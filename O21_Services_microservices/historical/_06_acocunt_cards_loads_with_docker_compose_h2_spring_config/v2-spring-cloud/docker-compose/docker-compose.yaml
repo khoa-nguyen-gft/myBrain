@@ -1,7 +1,8 @@
 services:
   configserver:
-    image: "npdangkhoa/configserver:s5"
+    image: "npdangkhoa/configserver:s6"
     container_name: "configserver-ms"
+    user: root
     ports:
       - "8071:8071"
     healthcheck:

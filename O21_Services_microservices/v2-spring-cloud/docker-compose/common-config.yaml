@@ -15,7 +15,8 @@ services:
     extend:
       services: microservice-base-config
     depends_on:
-      - configserver
+      configserver:
+        condition: service_healthy
     restart: always
     environment:
       SPRING_PROFILES_ACTIVE: default

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab845e79-063a-40b4-9a8c-77fa8b76fc9e" name="Changes" comment="" />
+    <list default="true" id="ab845e79-063a-40b4-9a8c-77fa8b76fc9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/configserver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/common-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/common-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,46 +136,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AccountApplication.executor": "Run",
-    "Docker.docker-compose/docker-compose.yaml.accounts: Compose Deployment.executor": "Run",
-    "Docker.docker-compose/docker-compose.yaml.configserver: Compose Deployment.executor": "Run",
-    "Docker.docker-compose/docker-compose.yaml.loans: Compose Deployment.executor": "Run",
-    "Docker.docker-compose/docker-compose.yaml: Compose Deployment.executor": "Run",
-    "Gradle.accounts [:AccountApplication.main()].executor": "Run",
-    "Gradle.accounts [bootBuildImage].executor": "Run",
-    "Gradle.accounts [build].executor": "Run",
-    "Gradle.accounts [clean build bootBuildImage].executor": "Run",
-    "Gradle.cards [:CardsApplication.main()].executor": "Run",
-    "Gradle.cards [clean build bootBuildImage].executor": "Run",
-    "Gradle.configserver [:ConfigserverApplication.main()].executor": "Run",
-    "Gradle.configserver [bootBuildImage].executor": "Run",
-    "Gradle.configserver [clean build bootBuildImage].executor": "Run",
-    "Gradle.configserver [clean build].executor": "Run",
-    "Gradle.loans [:LoansApplication.main()].executor": "Run",
-    "Gradle.loans [clean build bootBuildImage].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "graalvm-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kany/project-local/myBrain/O21_Services_microservices/v2-spring-cloud/configserver/src/main/resources/config",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AccountApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose/docker-compose.yaml.accounts: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose/docker-compose.yaml.configserver: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose/docker-compose.yaml.loans: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.accounts [:AccountApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.accounts [bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.accounts [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.accounts [clean build bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cards [:CardsApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cards [clean build bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [:ConfigserverApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [clean build bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.configserver [clean build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.loans [:LoansApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.loans [clean build bootBuildImage].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kany/project-local/myBrain/O21_Services_microservices/v2-spring-cloud/configserver/src/main/resources/config&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/configserver/src/main/resources/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/configserver" />
       <recent name="$PROJECT_DIR$/docker-compose" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/loans/src/main/resources" />
       <recent name="$PROJECT_DIR$/cards/src/main/resources" />
-      <recent name="$PROJECT_DIR$/accounts/src/main/resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -225,30 +231,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="cards [clean build bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/cards" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-            <option value="build" />
-            <option value="bootBuildImage" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="configserver [clean build bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -274,7 +256,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -285,13 +269,26 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose/docker-compose.yaml.configserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="configserver" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose/docker-compose.yaml.configserver: Compose Deployment" />
         <item itemvalue="Gradle.accounts [clean build bootBuildImage]" />
         <item itemvalue="Gradle.configserver [clean build bootBuildImage]" />
         <item itemvalue="Gradle.accounts [bootBuildImage]" />
-        <item itemvalue="Gradle.cards [clean build bootBuildImage]" />
       </list>
     </recent_temporary>
   </component>

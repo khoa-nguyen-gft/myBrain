@@ -5,9 +5,12 @@ FROM openjdk:17-jdk-slim
 MAINTAINER eazybytes.com
 
 # Add the application's jor to the image
-COPY build/libs/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar
+COPY build/libs/configserver-0.0.1-SNAPSHOT.jar configserver-0.0.1-SNAPSHOT.jar
+
+# Install curl (or any other necessary tools)
+RUN apt-get update && apt-get install -y curl
 
 # java -jar  build/libs/accounts-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "accounts-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "configserver-0.0.1-SNAPSHOT.jar"]
 
 
