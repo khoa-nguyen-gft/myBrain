@@ -83,10 +83,12 @@
    + [Demo CRUD Customer Account](./O21_Services_microservices/historical/_02_crud_account/accounts/readme.md)
    + [Demo CRUD Customer Account With OpenAPI](./O21_Services_microservices/historical/_03_account_with_openapi/)
    + [Demo CRUD Customer Accounts, Cards and Loans With OpenAPI](./O21_Services_microservices/historical/_04_accounts_cards_loans/)
-   + [Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
-   + [Accounts, Cards and Loans deployment using docker compose, Spring Config and H2](./O21_Services_microservices/historical/_06_acocunt_cards_loads_with_docker_compose_h2_spring_config//)
+   + [Demo CRUD Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
+   + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config](./O21_Services_microservices/historical/_06_acocunt_cards_loads_with_docker_and_spring_config/)
+   + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config, Spring Discovery](./O21_Services_microservices/historical/_07_acocunt_cards_loads_with_docker_and_spring_config_and_eureka/)
 
 
+   
 ## [Algorithm and Data Structure](./O01_algorithms)
 
 ![Alt text](images/Introduction-to-Data-Structures-and-Algorithms-DSA.png)

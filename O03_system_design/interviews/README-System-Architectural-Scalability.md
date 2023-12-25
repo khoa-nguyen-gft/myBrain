@@ -31,6 +31,15 @@
 + [What is CDN - Quality Attributes?](#what-is-cdn---quality-attributes)
 + [What is CDN - strategy(Pull and Push strategy)?](#what-is-cdn---strategy)
 
+
+
+## Service Discovery & Service Registration
++ [Why not traditional load balancers for Microservices](#why-not-traditional-load-balancers-for-microservices)
++ [How is service discovery resolve this problem?](#how-is-service-discovery-resolve-this-problem)
++ [What is differences between Client-Discovery and Server Discovery?](#what-is-differences-between-client-discovery-and-server-discovery)
+
+
+
 ---
 ### What is Scalability?
 - In system design, Scalability is the capacity of a system to adapt its performance and cost to the new changes in application and system processing demands. 
@@ -330,3 +339,49 @@ perform a load balancing function
     - Others enable this strategy by setting a long TTL for our assets so that the cache never expires
 
 [Table of Contents](#content-delivery-network-cdn)
+
+
+## Service Discovery & Service Registration
+
+### Why not traditional load balancers for Microservices?
+- To address this challenge, one approach is to update DNS records with multiple IP addresses and rely on round-robin name resolution. This
+method directs requests to one of the IP addresses assigned to the service replicas in a rotating manner. However, this approach may not be
+suitable For microservices, as containers or services change frequently.` This rapid change makes it difficult to maintain accurate DNS records
+and ensure efficient communication between microservices`.
+
+![Alt text](.//images/Why%20not%20traditional%20load%20balancers%20for%20Microservices.png)
+
+![Alt text](.//images/Why%20not%20traditional%20load%20balancers%20for%20Microservices2.png)
+
+
+[Table of Contents](#service-discovery--service-registration)
+
+
+### How is Service Discovery resolve this problem?
+- For cloud native applications, service discovery is the perfect solution. It involves tracking and storing information about all running service instances in a service registry.
+- Whenever a new instance is created, it should be registered in the registry, and when it is terminated, it should be appropriately removed automatically.
+- The registry acknowledges that multiple instances of the same application can be active simultaneously. When an application needs to communicate with a backing service, it performs a
+lookup in the registry to determine the IP address to connect to. IF multiple instances are available, a load-balancing strategy is employed to evenly distribute the workload among them.
+- Microservices service discovery & registration is a way For applications and microservices to locate
+each other on a network. This includes:
+    + A central server (or servers) that maintain a global view of addresses
+    + Microservices/clients that connect to the central server to register their address when they start & ready
+    + Microservices/clients need to send their heartbeats at regular intervals to central server about their health
+    + Microservices/clients that connect to the central server to dereqister their address when they are about to shutdown
+
+
+[Table of Contents](#service-discovery--service-registration)
+
+
+### What is differences between Client-Discovery and Server-Discovery?
+![Alt text](.//images/between%20Client-Discovery%20and%20Server%20Discovery.png)
+
+-**Client-Side Service Discovery**: are responsible For registering themselves with a service registry during startup and unregistering when shutting down. When an application needs to communicate with a backing service, it queries the service registry For the associated IP address. If multiple instances of the service are available, the registry returns a list of IP addresses. The client application then selects one based on its own defined load-balancing strategy.
+    + A drawback is that client service discovery assigns more responsibility to developers.
+
+![Alt text](.//images/Client-Side%20Service%20Discovery.png)
+
+- **Server-Side Service Discovery**: solutions solve these issues. We are going to discuss the same when we are talking about Kubernetes
+
+
+[Table of Contents](#service-discovery--service-registration)

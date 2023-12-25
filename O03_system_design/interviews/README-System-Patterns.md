@@ -39,8 +39,6 @@
     + [What is the architecture of Big Data?](#what-is-the-architecture-of-big-data)
     + [How to right side and indetify service boundaries of microservices?](#how-to-right-side-and-indetify-service-boundaries-of-microservices)
 
-
-
 ---
 
 # System Architecture
