@@ -13,7 +13,7 @@
    + ### [Stock Domain](./O51_functional_stock/articles/README.md)
 
 - ## **Non-Functional Requirements:**
-   + ### [Large Scale Systems Architectural](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
+   + ### [Large Scale Systems Architectural(Load Balancing, Message Broker, API Gateway, CDN, Service Discovery)](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
          + [Demo Kafka](#messaging-kafka)
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
