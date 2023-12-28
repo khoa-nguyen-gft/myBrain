@@ -42,7 +42,8 @@
 
     # Spring Cloud
     + [What is Spring Cloud?](#what-is-spring-cloud)
-    + [ What is Spring Cloud Bus?](#what-is-spring-cloud-bus)
+    + [What is Spring Cloud Bus?](#what-is-spring-cloud-bus)
+    + [What is Spring Cloud GateWay?](#what-is-spring-cloud-gateway)
 
 
 # Test
@@ -407,6 +408,14 @@
 
 ![Alt text](.//images/What%20is%20Spring%20Cloud%20Bus.png)
 
+
+[Table of Contents](#spring-cloud)
+
+
+### What is Spring Cloud GateWay?
+- When the client makes a request to the Spring Cloud Gateway, the Gateway Handler Mapping First checks if the request matches a route. This matching is done using the predicates. If it matches the predicate then the request is sent to the pre filters followed by actual microservices. The response will travel through post Filters.
+
+![Alt text](./images/What%20is%20Spring%20Cloud%20GateWay.png)
 
 [Table of Contents](#spring-cloud)
 

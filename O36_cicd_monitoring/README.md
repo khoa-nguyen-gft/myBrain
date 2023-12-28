@@ -4,6 +4,7 @@
 # Observability and Monitoring Loggings
 + [Why do we need Observability and Monitoring Loggings?](#why-do-we-need-observability-and-monitoring-loggings)
 + [What is Observability?](#what-is-observability)
++ [What is Monitoring?](#what-is-monitoring)
 + [What is difference between Observability abd Monitoring?](#what-is-difference-between-observability-abd-monitoring)
 + [What is difference between Metrics, Logs and Traces in Observability?](#what-is-difference-between-metrics-logs-and-traces-in-observability)
 + [What is the best Practices in Distributed Logging?](#what-is-the-best-practices-in-distributed-logging)
@@ -26,6 +27,8 @@
 
 
 
+## Grafana
++ [What is Grafana?](#what-is-grafana)
 
 ----
 
@@ -53,7 +56,16 @@ long it took to complete at each microservice?
 
 [Table of Contents](#observability-and-monitoring-loggings)
 
-### What is difference between Observability abd Monitoring?
+### What is Monitoring?
+- Monitoring in microservices involves checking the telemetry data available for the application and defining alerts For known Failure states. This process collects and analyzes data from a system to identify and troubleshoot problems, as well as track the health of individual microservices and the overall health of
+the microservices network.Monitoring in microservices is important because it allows you to:
+    + `Identify and troubleshoot problems`
+    + `Track the health of your microservices`
+    + `Optimize your microservices`
+
+[Table of Contents](#observability-and-monitoring-loggings)
+
+### What is difference between Observability and Monitoring?
 
 + In other words, monitoring is about collecting data and observability is about understanding data. 
 
@@ -65,20 +77,14 @@ long it took to complete at each microservice?
 
 
 ### What is difference between Metrics, Logs and Traces in Observability? 
-
-+ **Logs**: Logs are a record of events that occur in a system. They can be used to track things like errors, exceptions, and other unexpected events.
-+ **Metrics**: Metrics are quantitative measurements of the health of a system. 
-    + Regularly sampled data
-    + Numerical values
-        o Counters 
-        o Distributions 
-        o Gauges 
++ **Metrics**: Metrics are quantitative measurements of the health of a system. They can be used to track things like CPU usage, memory usage, and response times.
     + Examples: 
-        o Request/min 
-        o Errors/hour 
-        o Latency distribution 
-        o Current CPU utilization
-        o Memory usage 
+        + Request/min 
+        + Errors/hour 
+        + Latency distribution 
+        + Current CPU utilization
+        + Memory usage 
++ **Logs**: Logs are a record of events that occur in a system. They can be used to track things like errors, exceptions, and other unexpected events.
 + **Traceing**: Traces are a record of the path that a request takes through a system. They can be used to track the performance of arequest and to identify bottlenecks.
     + Time each microService took to process it
     + May include:
@@ -353,3 +359,10 @@ freely configured. Main metadata tag
     ```
 
 
+## Grafana
+### What is Grafana?
+- Grafana is an open-source analytics and interactive visualization web application. It provides charts, graphs, and alerts For the web when connected to supported data sources. It can be easily installed using Docker or Docker Compose.
+
+![Alt text](.//images/What%20is%20Grafana.png)
+
+[Table of Contents](#grafana)
