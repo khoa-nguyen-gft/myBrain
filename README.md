@@ -86,6 +86,7 @@
    + [Demo CRUD Accounts, Cards and Loans deployment using Docker](./O21_Services_microservices/historical/_05_account_cards_loads_with_docker/)
    + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config](./O21_Services_microservices/historical/_06_acocunt_cards_loads_with_docker_and_spring_config/)
    + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config, Spring Discovery](./O21_Services_microservices/historical/_07_acocunt_cards_loads_with_docker_and_spring_config_and_eureka/)
+   + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config, Spring Discovery, Spring Gateways](./O21_Services_microservices/historical/_08_acocunt_cards_loads_dockerCompose_configserver_eurekaserver_gatewayserver/)
 
 
    
