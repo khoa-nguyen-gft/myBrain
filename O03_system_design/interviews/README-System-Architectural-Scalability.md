@@ -291,7 +291,9 @@ perform a load balancing function
     + **Connection Pooling**: API Gateways can manage connection pools to backend services. T
     + **Rate Limiting**: To prevent abuse or overuse of your services, API Gateways can enforce rate limiting policies. 
 
+![Alt text](.//images/Why%20is%20API%20Gateway%20use%20in%20Scalability%20System.png)
 [Table of Contents](#api-gateway)
+
 
 
 
