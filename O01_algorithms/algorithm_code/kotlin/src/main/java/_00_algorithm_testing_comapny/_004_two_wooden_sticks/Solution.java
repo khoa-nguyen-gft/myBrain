@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_004_two_wooden_sticks;
+package _00_algorithm_testing_comapny._004_two_wooden_sticks;
 
 public class Solution {
     public static int solution(int A, int B) {

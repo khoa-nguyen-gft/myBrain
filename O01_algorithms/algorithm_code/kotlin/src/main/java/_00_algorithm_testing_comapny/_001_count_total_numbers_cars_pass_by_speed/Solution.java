@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_001_count_total_numbers_cars_pass_by_speed.src;
+package _00_algorithm_testing_comapny._001_count_total_numbers_cars_pass_by_speed;
 
 public class Solution {
     public static int solution(String S) {

@@ -29,7 +29,7 @@
       + [GraphQL](./O80_api_graphql/interview/README.md)
          + [Demo GraphQL](#services-graphql)
 
-   + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
+   + ### [High Availability (Fault Tolerance, Resilience), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
       - [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
@@ -56,7 +56,8 @@
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
 
-   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
+   - ### [**Algorithm and Data Structure**](./O01_algorithms/interview/README.md)
+      + [Demo Algorithm and Data Structure](#algorithm-and-data-structure-1)
 
 - ## **DevOps && DevOpsSec && MLOps:**
 
@@ -74,7 +75,6 @@
    + [Demo Airflow](#big-data-airflow)
    + [Demo Apache Beam](#services-spring-boot)
 
-
 ---
 ## [Microservices](./O21_Services_microservices/)
 ![Alt text](images/90154AA1-0997-44B1-9EB1-20526CF3ACAD.PNG)
@@ -89,7 +89,6 @@
    + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config, Spring Discovery, Spring Gateways](./O21_Services_microservices/historical/_08_acocunt_cards_loads_dockerCompose_configserver_eurekaserver_gatewayserver/)
 
 
-   
 ## [Algorithm and Data Structure](./O01_algorithms)
 
 ![Alt text](images/Introduction-to-Data-Structures-and-Algorithms-DSA.png)
@@ -97,13 +96,25 @@
 - **A Data Structure** is defined as a particular way of storing and organizing data in our devices to use the data efficiently and effectively. The main idea behind using data structures is to minimize the time and space complexities. 
 
 - **Algorithm** is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. 
-![Alt text](images/Sorting%20Algorithm.png)
 
-+ **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
-   - [Code Distinct](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_041_Distinct): Compute number of distinct values in an array.
-   - [Code MaxProductOfThree](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_042_MaxProductOfThree/): Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
-   - [Code Triangle](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_043_Triangle/): Determine whether a triangle can be built from a given set of edges.
-   - [Code NumberOfDiscIntersections](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_044_NumberOfDiscIntersections/): Compute the number of intersections in a sequence of discs.
+
+- **Code Patters:**
+   - **Pattern Sliding Window:** The technique can be best understood with the window pane in the bus, considering a window of length n and the pane which is fixed in it of length k. 
+      - [Averages of subarrays of size K](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/pattern_sliding_window/_01_patter_sliding_window/findAverages/README.md)
+      - Maximum Sum Subarray of Size K (easy)
+      - Smallest Subarray with a given sum (easy)
+      - Longest Substring with K Distinct Characters (medium)
+      - Fruits into Baskets (medium)
+      - No-repeat Substring (hard)
+      - Longest Substring with Same Letters after Replacement (hard)
+      - Longest Subarray with Ones after Replacement (hard)
+
+
+   + **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+      - [Code Distinct](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_041_Distinct): Compute number of distinct values in an array.
+      - [Code MaxProductOfThree](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_042_MaxProductOfThree/): Maximize A[P] * A[Q] * A[R] for any triplet (P, Q, R).
+      - [Code Triangle](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_043_Triangle/): Determine whether a triangle can be built from a given set of edges.
+      - [Code NumberOfDiscIntersections](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_044_NumberOfDiscIntersections/): Compute the number of intersections in a sequence of discs.
 
 - [**Company Testing Algorithm**](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny) 
    - [Code Count Total Numbers Cars pass by speed camera.](./O01_algorithms/algorithm_code/kotlin/src/main/java/_00_algorithm_testing_comapny/_001_count_total_numbers_cars_pass_by_speed) 

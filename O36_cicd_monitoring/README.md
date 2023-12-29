@@ -2,11 +2,13 @@
 
 
 # Observability and Monitoring Loggings
+
 + [Why do we need Observability and Monitoring Loggings?](#why-do-we-need-observability-and-monitoring-loggings)
 + [What is Observability?](#what-is-observability)
++ [What is difference between Metrics, Logs and Traces in Observability?](#what-is-difference-between-metrics-logs-and-traces-in-observability)
+
 + [What is Monitoring?](#what-is-monitoring)
 + [What is difference between Observability abd Monitoring?](#what-is-difference-between-observability-abd-monitoring)
-+ [What is difference between Metrics, Logs and Traces in Observability?](#what-is-difference-between-metrics-logs-and-traces-in-observability)
 + [What is the best Practices in Distributed Logging?](#what-is-the-best-practices-in-distributed-logging)
 + [What is the Metrics?](#what-is-the-metrics)
 + [What is the Five (Golden) Types of Signals in Metrics?](#what-is-the-five-golden-types-of-signals-in-metrics)
@@ -17,7 +19,6 @@
 + [What is difference between springProfile, appender, và encoder in Logback?](#what-is-difference-between-springprofile-appender-và-encoder-in-logback)
 
 
-
 ## Sumo Logic
 + [What is Sumo Logic?](#what-is-sumo-logic)
 + [What is difference between Sumo Logic and another tools?](#what-is-difference-between-sumo-logic-and-another-tools)
@@ -26,23 +27,21 @@
 + [What is "Log Message Inspector"?](#what-is-log-message-inspector)
 
 
-
 ## Grafana
 + [What is Grafana?](#what-is-grafana)
 
 ----
 
 ### Why do we need Observability and Monitoring Loggings?
-- Debuging problem microservices
+- `DEBUGGING A PROBLEM IN MICROSERVICES`
     + How do we trace transactions across multiple services, containers and try to Find where exactly the problem or bug is?
     + How do we combine all the logs from multiple services into a central location where they can be indexed, searched, filtered, and grouped to 
     + Find bugs that are contributing to a problem? 
 
-- Monitoring performance of service calls
-    + How can we track the path of a specific chain service call through our microservices network, and see how
-long it took to complete at each microservice?
+- `MONITORING PERFORMANCE OF SERVICE CALLS?`
+    + How can we track the path of a specific chain service call through our microservices network, and see how long it took to complete at each microservice?
 
-- Monitoring services metric and health
+- `MONITORING SERVICES METRICS & HEALTH`
     + How can we easily and efficiently monitor the metrics like CPU usage, JVM metrics, etc. For all the microservices applications in our network?
     + How can we monitor the status and health of all of our microservices applications in a single place, and create alerts and notifications For any abnormal behavior of the services?
 
@@ -50,28 +49,10 @@ long it took to complete at each microservice?
 
 
 ### What is Observability?
-- **Observability** is the ability to understand the internal state of a system by observing its outputs. In the context of microservices, observability is achieved by collecting and analyzing data from a variety of sources, such as metrics, logs, and traces.
+- **`Observability`** is the ability to understand the internal state of a system by observing its outputs. In the context of microservices, 
+- `observability` is achieved by collecting and analyzing data from a variety of sources, such as metrics, logs, and traces.
 
 ![Alt text](./images/Observability.png)
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-### What is Monitoring?
-- Monitoring in microservices involves checking the telemetry data available for the application and defining alerts For known Failure states. This process collects and analyzes data from a system to identify and troubleshoot problems, as well as track the health of individual microservices and the overall health of
-the microservices network.Monitoring in microservices is important because it allows you to:
-    + `Identify and troubleshoot problems`
-    + `Track the health of your microservices`
-    + `Optimize your microservices`
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-### What is difference between Observability and Monitoring?
-
-+ In other words, monitoring is about collecting data and observability is about understanding data. 
-
-+ Monitory is reacting to problems while observavility is Fixing them in real time.
-
-![Alt text](./images/What%20is%20difference%20between%20Observability%20abd%20Monitoring.png)
 
 [Table of Contents](#observability-and-monitoring-loggings)
 
@@ -91,7 +72,41 @@ the microservices network.Monitoring in microservices is important because it al
         + Request headers
         + Response status code
 
++ By collecting and analyzing data from these three sources, you can comprehensively understand the internal state of your microservices architecture. This understanding can be used to identify and troubleshoot problems, improve performance, and ensure the overall health of your system.
+
 ![Alt text](./images/What%20is%20difference%20between%20Metrics,%20Logs%20and%20Traces%20in%20Observability.png)
+
+[Table of Contents](#observability-and-monitoring-loggings)
+
+
+### What is Monitoring?
+- Monitoring in microservices involves checking the telemetry data available for the application and defining alerts For known Failure states. This process collects and analyzes data from a system to identify and troubleshoot problems, as well as track the health of individual microservices and the overall health of
+the microservices network.Monitoring in microservices is important because it allows you to:
+    + `Identify and troubleshoot problems`
+    + `Track the health of your microservices`
+    + `Optimize your microservices`
+
+![Alt text](./images/What%20is%20Monitoring.png)
+
+[Table of Contents](#observability-and-monitoring-loggings)
+
+### What is difference between Observability and Monitoring?
+
++ In other words, monitoring is about collecting data and observability is about understanding data. 
+
++ Monitory is reacting to problems while observavility is Fixing them in real time.
+
+
+![Alt text](./images/What%20is%20difference%20between%20Observability%20abd%20Monitoring.png)
+
+- **`reactive` approach in Monitoring:** A reactive approach in monitoring refers to responding to issues or incidents as they occur. Instead of actively seeking out potential problems beforehand, reactive monitoring involves addressing issues that arise in real-time. This method typically involves setting up alerts or notifications that trigger when a predefined threshold or condition is met, prompting a response from operators or administrators to investigate and resolve the issue.
+
+
+[Table of Contents](#observability-and-monitoring-loggings)
+
+
+
+
 
 [Table of Contents](#observability-and-monitoring-loggings)
 

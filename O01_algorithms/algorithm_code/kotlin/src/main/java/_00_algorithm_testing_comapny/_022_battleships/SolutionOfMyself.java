@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_022_battleships;
+package _00_algorithm_testing_comapny._022_battleships;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_007_shortest_unique_substring_of_String;
+package _00_algorithm_testing_comapny._007_shortest_unique_substring_of_String;
 
 public class Solution {
     public static int solution(String s) {

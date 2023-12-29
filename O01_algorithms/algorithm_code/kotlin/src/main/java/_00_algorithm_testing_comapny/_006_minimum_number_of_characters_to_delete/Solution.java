@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_006_minimum_number_of_characters_to_delete;
+package _00_algorithm_testing_comapny._006_minimum_number_of_characters_to_delete;
 
 public class Solution {
     public static int solution(String s) {

@@ -44,6 +44,7 @@
     + [What is Spring Cloud?](#what-is-spring-cloud)
     + [What is Spring Cloud Bus?](#what-is-spring-cloud-bus)
     + [What is Spring Cloud GateWay?](#what-is-spring-cloud-gateway)
+    + [Why do we need Spring Cloud Configuration?](#why-do-we-need-spring-cloud-configuration)
 
 
 # Test
@@ -403,6 +404,7 @@
 [Table of Contents](#spring-cloud)
 
 
+
 ### What is Spring Cloud Bus?
 - Spring Cloud Bus is a feature within the Spring Cloud framework that facilitates communication between distributed microservices in a Spring-based application. It uses a lightweight message broker (like RabbitMQ or Kafka) to broadcast messages/events across the entire application or specific services.
 
@@ -418,6 +420,17 @@
 ![Alt text](./images/What%20is%20Spring%20Cloud%20GateWay.png)
 
 [Table of Contents](#spring-cloud)
+
+### Why do we need Spring Cloud Configuration?
++ As container based deployment involves a single image per microservice, it is a bad idea to bundle the configuration along with the image.
++ This approach is not at all scalable because we might have multiple environments and also we might have to take care of geographically distributed deployments where we might have different configurations as well.
++ To solve this, we can put all our configuration in a centralized config service which can be queried by the application for all its configurations at the runtime. 
+
+
+![Alt text](.//images/What%20is%20Spring%20Cloud%20Configuration.png)
+
+[Table of Contents](#spring-cloud)
+
 
 # Test
 ### What is Test Pyramid?

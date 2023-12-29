@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_016_given_array_A_returns_the_minimum_number;
+package _00_algorithm_testing_comapny._016_given_array_A_returns_the_minimum_number;
 
 import java.util.*;
 

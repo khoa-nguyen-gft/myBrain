@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_006_minimum_number_of_characters_to_delete;
+package _00_algorithm_testing_comapny._006_minimum_number_of_characters_to_delete;
 
 //References: https://www.linkedin.com/pulse/best-solutions-microsoft-interview-tasks-min-obtain-molchevskyi/
 public class SolutionHint {
