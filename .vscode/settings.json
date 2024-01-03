@@ -1,3 +1,12 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "DockerRun.DisableDockerrc": true,
+    "DockerRun.Containers": [
+        "102e082130c2",
+        "413296ea2ae4",
+        "c7627c4cdccc",
+        "de264ad75203",
+        "3aee5aec52cd",
+        "5f94f5a8c7dc"
+    ]
 }

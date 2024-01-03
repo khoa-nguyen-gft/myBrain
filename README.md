@@ -1,21 +1,14 @@
 # Love Challenge Code
 ![Alt text](image-3.png)
 
-## System Design:
-- **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
-![Alt text](images/System%20Design.png)
-- ## [**System Design Overview**](./O03_system_design/interviews/README.md)
+# System Design:
+   + **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
+   ![Alt text](images/System%20Design.png)
 
-- ## **Functional Requirements:**
-   + ### [Banking Domain](./O51_functional_bank/README.md)
-      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
-      + [Credit Risk](./O52_functional_bank_credit_risk/README.md)
-   + ### [Stock Domain](./O51_functional_stock/articles/README.md)
+   - ### [**System Design Overview**](./O03_system_design/interviews/README.md)
 
-- ## **Non-Functional Requirements:**
    + ### [Large Scale Systems Architectural(Load Balancing, Message Broker, API Gateway, CDN, Service Discovery)](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
-         + [Demo Kafka](#messaging-kafka)
       - [AWS CDN](./O100_cloud_aws/cdn/README.md)
 
    + ### [Large Scale Data Storage(Databases, NOSQL, Storages)](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
@@ -24,16 +17,13 @@
       - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
         
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
-      + [Spring Framwork (Spring Boot, Spring Test)](./O20_Services_spring/interview/README.md)
-         + [Demo Spring](#services-spring-boot)
+      + [Spring Framwork (Spring Boot, Spring Test, Log4j)](./O20_Services_spring/interview/README.md)
       + [GraphQL](./O80_api_graphql/interview/README.md)
-         + [Demo GraphQL](#services-graphql)
 
-   + ### [Availability (Fault Tolerance), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
+   + ### [High Availability (Fault Tolerance, Resilience), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
       - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
       - [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
-
 
 - ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
    + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
@@ -45,34 +35,30 @@
    - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
    - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
-
-- ## **Coding:**
+# **Coding:**
    - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
-
         
    - ### **Object Oriented Programming Principles:**
       + [Java](./O70_language_java/java_oop/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_oop/README.md)
 
-   - ### [**Algorithm and Data Structure**](#algorithm-and-data-structure-1)
+   - ### [**Algorithm and Data Structure**](./O01_algorithms/interview/README.md)
 
-- ## **DevOps && DevOpsSec && MLOps:**
+   - ## **DevOps && DevOpsSec && MLOps:**
+      - ### **DevOps:**
+         + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
+         + [Build Tools (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
+         + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
+      - ### **MLOps:**
+         + [MLOps](./O110_mlops/README.md)
 
-   - ### **DevOps:**
-      + [Version Control (Git): ](./O34_cicd_source_version_control/interview/README.md)
-      + [Build Tools (Grandle, Bazel, Maven)](./O35_cicd_build/interview/README.md)
-         + [Demo Grandle](#devops-grandle)
-         + [Demo Bazel](#devops-bazel)
-      + [CI/CD Tools (Harness, GitHub Action, CircleCI)](./O30_cicd_github_action_circleci/interview/README.md)
-         + [GitHub Action](#devops-github-action)
-   - ### **MLOps:**
-      + [MLOps](./O110_mlops/README.md)
-
-- ## **Big Data:**
-   + [Demo Airflow](#big-data-airflow)
-   + [Demo Apache Beam](#services-spring-boot)
+# **Functional Requirements:**
+   + ### [Banking Domain](./O51_functional_bank/README.md)
+      + [Core Banking (Thought Machine)](./O50_functional_tm/interview/README.md)
+      + [Credit Risk](./O52_functional_bank_credit_risk/README.md)
+   + ### [Stock Domain](./O51_functional_stock/articles/README.md)
 
 
 ---
@@ -89,7 +75,6 @@
    + [Demo CRUD Accounts, Cards and Loans deployment using Docker, Spring Config, Spring Discovery, Spring Gateways](./O21_Services_microservices/historical/_08_acocunt_cards_loads_dockerCompose_configserver_eurekaserver_gatewayserver/)
 
 
-   
 ## [Algorithm and Data Structure](./O01_algorithms)
 
 ![Alt text](images/Introduction-to-Data-Structures-and-Algorithms-DSA.png)
@@ -97,7 +82,19 @@
 - **A Data Structure** is defined as a particular way of storing and organizing data in our devices to use the data efficiently and effectively. The main idea behind using data structures is to minimize the time and space complexities. 
 
 - **Algorithm** is defined as a process or set of well-defined instructions that are typically used to solve a particular group of problems or perform a specific type of calculation. 
-![Alt text](images/Sorting%20Algorithm.png)
+
+
+- **Code Patterns:**
+   - **Pattern Sliding Window:** The technique can be best understood with the window pane in the bus, considering a window of length n and the pane which is fixed in it of length k. 
+      - [Averages of subarrays of size K](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/findAverages/README.md)
+      - [Maximum Sum Subarray of Size K (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/maximumSumSubArrayofSizeK/README.md)
+      - [Smallest Subarray with a given sum (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/smallestSubarrayWithaGivenSum/README.md)
+      - [Longest Substring with K Distinct Characters (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/longestSubstringWithKDistinctCharacters/README.md)
+      - [Fruits into Baskets (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/fruitsIntoBaskets/README.md)
+      - [No-repeat Substring (hard)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/noRepeatSubstring/README.md)
+      - Longest Substring with Same Letters after Replacement (hard)
+      - Longest Subarray with Ones after Replacement (hard)
+
 
 + **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
    - [Code Distinct](./O01_algorithms/algorithm_code/kotlin/src/main/java/_01_hackerrank/sorting_041_Distinct): Compute number of distinct values in an array.

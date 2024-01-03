@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_011_maximum_positive_value;
+package _00_algorithm_testing_comapny._011_maximum_positive_value;
 
 public class SolutionHint {
     public static int solution(int value) {

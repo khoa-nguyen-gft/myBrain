@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_015_there_are_n_hospitals_numbered;
+package _00_algorithm_testing_comapny._015_there_are_n_hospitals_numbered;
 
 import java.util.*;
 

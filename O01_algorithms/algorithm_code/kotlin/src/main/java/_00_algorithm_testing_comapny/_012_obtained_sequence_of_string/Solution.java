@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_012_obtained_sequence_of_string;
+package _00_algorithm_testing_comapny._012_obtained_sequence_of_string;
 
 public class Solution {
 

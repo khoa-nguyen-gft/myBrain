@@ -3,18 +3,23 @@
 <img src="images/What%20is%20key%20concepts%20of%20system%20design%20and%20performance.png" width=50% height=50%>
 
 
-## [Fault Tolerance (High Availability, Resilience)](#fault-tolerance-high-availability-resilience-1)
+## [High Availability [Fault Tolerance, Resilience(Circuit Breaker, Retry Pattern, Rate Limitter)]](#fault-tolerance-high-availability-resilience-1)
 + [What is Availability?](#what-is-availability)
 + [How to INCREASE Availability?](#how-to-increase-availability)
 + [What is Fault Tolerance?](#what-is-fault-tolerance)
 + [How is Failure Detection?](#how-is-failure-detection)
 + [What is Resilience?](#what-is-resilience)
++ [Why do we need Resilience?](#why-do-we-need-resilience)
 + [What is difference between Fault tolerance, high availability, and resilience?](#what-is-difference-between-fault-tolerance-high-availability-and-resilience)
++ [What is Circuit Breaker Pattern in resilience?](#what-is-circuit-breaker-pattern-in-resilience)
++ [What is Retry Pattern in resilience?](#what-is-retry-pattern)
++ [What is Rate Limitter Pattern in resilience?](#what-is-rate-limitter-pattern-in-resilience)
 
 
 ## [Durability (Redundancy, Replication)](#durability-redundancy-replication-1)
 + [What is difference Availability and Redundancy?](#what-is-difference-availability-and-redundancy)
 + [What is difference Redundancy and Replication?](#what-is-difference-redundancy-and-replication)
+
 
 
 ## [Performance (Throughput, Latency)](#performance-throughput-latency-1)
@@ -89,16 +94,67 @@
 
 ### What is Resilience?
 - Resilience refers to a system's ability to adapt and recover quickly from failures or disturbances, returning to a stable state. It encompasses not only the ability to resist failures (like fault tolerance) but also the ability to recover swiftly and continue operating effectively. 
+
+- Resilience4j is a lightweight Fault tolerance library designed for Functional programming. It offers the Following
+patterns For increasing fault tolerance due to network problems or Failure of any of the multiple services:
+
 - `Resilience4` has gained significant popularity, stepping in to fill the gap left by Hystrix. `Resilience4`
 provides a comprehensive set of Features For building resilient applications and has become a go-to choice For Java developers.
+    + `Circuit breaker` - Used to stop making requests when a service invoked is Failing
+    + `Fallback` - Alternative paths to Failing requests
+    + `Retry` - Used to make retries when a service has temporarily Failed
+    + `Rate` limit - Limits the number of calls that a service receives in a time
+    + `Bulkhead` - Limits the number of outgoing concurrent requests to a service to avoid overloading
 
 [Table of Contents](#main-title)
+
+
+### Why do we need Resilience?
+- When a microservice responds slowly or fails to Function, it can lead to the depletion of resource threads on the Edge server and intermediate services. This, in turn, has a negative impact on the overall performance of the microservice network. To handle this kind of scenarios, we can use Circuit Breaker pattern
+- The advantages with circuit breaker pattern are: 
+    + Fail Fast
+    + Fail gracefully
+    + Recover seamlessly
+
+![Alt text](.//images/Why%20do%20we%20need%20Resilience.png)
+
+[Table of Contents](#main-title)
+
 
 ### What is difference between Fault tolerance, high availability, and resilience?
 - Fault tolerance, high availability, and resilience are related concepts in the field of system design and reliability engineering
     + **Fault Tolerance:** This refers to a system's ability to continue functioning properly in the event of the failure of one or more of its components. 
     + **High Availability:** High availability (HA) refers to ensuring that a system remains operational and accessible for a high percentage of the time. 
     + **Resilience**: Resilience refers to a system's ability to adapt and recover quickly from failures or disturbances, returning to a stable state. 
+
+[Table of Contents](#main-title)
+
+### What is Circuit Breaker Pattern in resilience?
+- helps us in preventing a cascade of failures when a remote service is down.  After a number of failed attempts, we can consider that the service is unavailable/overloaded and eagerly reject all subsequent requests to it. 
+
+
+![Alt text](./images/What%20is%20Circuit%20Breaker Pattern.png)
+
+![Alt text](.//images/What%20is%20Circuit%20Breaker Pattern%20in%20resilience.png)
+
+[Table of Contents](#main-title)
+
+
+### What is Retry Pattern?
+- The retry pattern will make configured multiple retry attempts when a service has temporarily Failed. This pattern is very helpful in the scenarios like network disruption where the client request may successful after a retry attempt.
+- Here are some key components and considerations of implementing the Retry pattern in microservices:
+
+![Alt text](./images/What%20is%20Retry%20Pattern.png)
+
+[Table of Contents](#main-title)
+
+
+### What is Rate Limitter Pattern in resilience?
+- The Rate Limiter pattern in microservices is a design pattern that helps control and limit the rate of incoming requests to a service or APL It is used to prevent abuse, protect system resources, and ensure Fair usage of the service.
+- In a microservices architecture, multiple services may depend on each other and make requests to
+communicate. However, unrestricted and uncontrolled requests can lead to performance degradation, resource exhaustion, and potential denial-of-service (DoS) attacks. The Rate Limiter pattern provides a mechanism to enforce limits on the rate of incoming requests.
+
+![Alt text](.//images/What%20is%20Rate%20Limitter%20Pattern%20in%20resilience.png)
 
 [Table of Contents](#main-title)
 

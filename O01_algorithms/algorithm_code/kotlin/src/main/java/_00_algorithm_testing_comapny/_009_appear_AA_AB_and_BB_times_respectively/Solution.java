@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_009_appear_AA_AB_and_BB_times_respectively;
+package _00_algorithm_testing_comapny._009_appear_AA_AB_and_BB_times_respectively;
 
 public class Solution {
     public static int solution(int aa, int ab, int bb) {

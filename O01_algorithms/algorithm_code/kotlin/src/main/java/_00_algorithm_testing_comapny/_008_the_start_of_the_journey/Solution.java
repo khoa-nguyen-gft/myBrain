@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_008_the_start_of_the_journey;
+package _00_algorithm_testing_comapny._008_the_start_of_the_journey;
 
 import java.util.Arrays;
 

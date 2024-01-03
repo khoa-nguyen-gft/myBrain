@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_005_max_sum_of_two_non_attacking_rooks;
+package _00_algorithm_testing_comapny._005_max_sum_of_two_non_attacking_rooks;
 
 public class SolutionHit {
     public static int solution(int[][] A) {

@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_002_find_a_pair_of_char_in_string_array;
+package _00_algorithm_testing_comapny._002_find_a_pair_of_char_in_string_array;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_014_two_strings_S_and_T_consisting;
+package _00_algorithm_testing_comapny._014_two_strings_S_and_T_consisting;
 
 public class Solution {
     public static String solution(String S, String T) {

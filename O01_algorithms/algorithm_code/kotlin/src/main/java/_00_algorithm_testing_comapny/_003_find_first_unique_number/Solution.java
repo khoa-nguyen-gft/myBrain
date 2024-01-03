@@ -1,4 +1,4 @@
-package O01_algorithms.O01_algorithms_003_find_first_unique_number;
+package _00_algorithm_testing_comapny._003_find_first_unique_number;
 
 import java.util.*;
 
