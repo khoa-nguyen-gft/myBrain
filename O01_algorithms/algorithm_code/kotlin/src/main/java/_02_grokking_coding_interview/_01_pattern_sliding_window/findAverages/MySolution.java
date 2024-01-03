@@ -1,8 +1,8 @@
-package _02_grokking_coding_interview.pattern_sliding_window._01_patter_sliding_window.findAverages;
+package _02_grokking_coding_interview._01_pattern_sliding_window.findAverages;
 
 import java.util.Arrays;
 
-public class MyCode {
+public class MySolution {
     public static void main(String[] args) {
         double[] result = findAverages(5, new int[]{1, 3, 2, 6, -1, 4, 1, 8, 2});
         System.out.println(Arrays.toString(result));

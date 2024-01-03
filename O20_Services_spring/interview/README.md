@@ -70,6 +70,10 @@
     ## Wiremock
     + [What is Wiremock?](#what-is-wiremock)
 
+# Log4j
++ [What is difference between SLF4J, Logback and Log4j?](#what-is-difference-between-slf4j-logback-and-log4j)
++ [What is difference between springProfile, appender, và encoder in Logback?](#what-is-difference-between-springprofile-appender-và-encoder-in-logback)
+
 
 # Other
  + [What and Why are use ConditionalOnProperty?](#what-and-why-are-use-conditionalonproperty)
@@ -564,6 +568,66 @@ This annotation, as mentioned earlier, is an example or a conceptual representat
 ![Alt text](.//images/What%20is%20Wiremock.png)
 
 [Table of Contents](#test)
+
+
+## Log4j
+### What is difference between SLF4J, Logback and Log4j?
++ SLF4J (Simple Logging Facade for Java), Logback và Log4j đều là các công cụ logging trong Java, nhưng chúng có thể được sử dụng trong các trường hợp khác nhau dựa trên yêu cầu cụ thể của dự án và sở thích cá nhân:
+    + `SLF4J` khi bạn muốn viết mã logging không ràng buộc với một framework logging cụ thể.
+
+    + `Log4j`: Log4j là một trong những framework logging đầu tiên và được sử dụng rộng rãi trong Java. Phiên bản Log4j 2 đã được cải tiến với khả năng linh hoạt và cải thiện hiệu suất so với phiên bản trước đó. Nó cũng cung cấp các thành phần giống như Logback, cho phép định dạng và quản lý log một cách linh hoạt.
+
+    + `Logback`: Logback là một framework logging mạnh mẽ và linh hoạt, được coi là sự thay thế nâng cấp từ Log4j. Nó cung cấp hiệu suất tốt, khả năng cấu hình linh hoạt và hỗ trợ nâng cao cho logging trong Java. Logback cũng đi kèm với các thành phần như Logger, Appender, Encoder để quản lý và định dạng log.
+
+![Alt text](.//images/What%20is%20difference%20between%20SLF4J,%20Logback%20and%20Log4j.png)
+
+[Table of Contents](#log4j)
+
+### What is difference between springProfile, appender, và encoder in Logback?
+- Các thành phần cơ bản trong cấu hình Logback (một framework logging được sử dụng trong Java) như springProfile, appender, và encoder có các mục đích khác nhau trong việc quản lý và định dạng các log.
+    + `springProfile`: Trong Logback, springProfile là một đặc tính được sử dụng để kích hoạt cấu hình log dựa trên các profile Spring.
+        + Khi sử dụng với Spring Framework, bạn có thể chỉ định cấu hình log riêng biệt dựa trên các profile khác nhau trong ứng dụng của mình. Điều này có thể hữu ích khi bạn muốn log khác nhau trong các môi trường như Development, Testing, Production, vv.
+    + `appender`: Trong Logback, appender là thành phần quan trọng được sử dụng để định nghĩa nơi mà log sẽ được gửi đến (ví dụ: console, file, database).
+        + Mỗi appender định nghĩa cách mà log được xử lý và gửi đến một nguồn cụ thể. Ví dụ, có thể có appender dành cho việc ghi log vào file và một appender khác để gửi log đến console.
+    + `encoder`: encoder trong Logback xác định cách mà thông điệp log được định dạng trước khi nó được gửi đến appender.
+        + encoder có thể được sử dụng để định dạng log theo các định dạng như JSON, XML hoặc các định dạng văn bản thông thường khác. Nó có thể xác định cách mà thông tin như thời gian, cấp độ log, tên class, và thông điệp log được bố trí và biểu diễn
+
+```xml
+<configuration>
+    <!-- Sử dụng springProfile để xác định profile Spring -->
+    <springProfile name="dev">
+        <!-- Cấu hình log cho môi trường Development -->
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+            <!-- Encoder để định dạng log -->
+            <encoder>
+                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            </encoder>
+        </appender>
+        <!-- Gán appender cho root logger -->
+        <root level="debug">
+            <appender-ref ref="CONSOLE" />
+        </root>
+    </springProfile>
+    
+    <springProfile name="prod">
+        <!-- Cấu hình log cho môi trường Production -->
+        <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+            <file>logs/app.log</file>
+            <encoder>
+                <!-- Sử dụng định dạng JSON cho log -->
+                <pattern>{"timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}", "level": "%level", "logger": "%logger", "message": "%msg"}%n</pattern>
+            </encoder>
+        </appender>
+        <!-- Gán appender cho root logger -->
+        <root level="info">
+            <appender-ref ref="FILE" />
+        </root>
+    </springProfile>
+</configuration>
+
+```
+
+[Table of Contents](#log4j)
 
 
 # Other

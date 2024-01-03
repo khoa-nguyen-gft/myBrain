@@ -1,23 +1,19 @@
 ## [Main title](/README.md)
 
 
-# Observability and Monitoring Loggings
-
+## Observability Loggings
 + [Why do we need Observability and Monitoring Loggings?](#why-do-we-need-observability-and-monitoring-loggings)
 + [What is Observability?](#what-is-observability)
-+ [What is difference between Metrics, Logs and Traces in Observability?](#what-is-difference-between-metrics-logs-and-traces-in-observability)
++ [What is difference between Distributed Logging, Distributed Tracing, Metrics in Observability?](#what-is-difference-between-distributed-logging-distributed-tracing-metrics-in-observability)
++ [What is difference between Logging in Monolithic Apps and in Microservices?](#what-is-difference-between-logging-in-monolithic-apps-and-in-microservices)
 
++ [What is the best Practices of Distributed Logging in Observability?](#what-is-difference-between-distributed-logging-distributed-tracing-metrics-in-observability)
++ [What is the best Practices of Metrics in Observability?](#what-is-the-best-practices-of-metrics-in-observability)
++ [ What is Distributed Tracing in Observability? ](#what-is-distributed-tracing-in-observability)
+
+## Monitoring Loggings
 + [What is Monitoring?](#what-is-monitoring)
-+ [What is difference between Observability abd Monitoring?](#what-is-difference-between-observability-abd-monitoring)
-+ [What is the best Practices in Distributed Logging?](#what-is-the-best-practices-in-distributed-logging)
-+ [What is the Metrics?](#what-is-the-metrics)
-+ [What is the Five (Golden) Types of Signals in Metrics?](#what-is-the-five-golden-types-of-signals-in-metrics)
-
-
-## Logback
-+ [What is difference between SLF4J, Logback and Log4j?](#what-is-difference-between-slf4j-logback-and-log4j)
-+ [What is difference between springProfile, appender, và encoder in Logback?](#what-is-difference-between-springprofile-appender-và-encoder-in-logback)
-
++ [What is difference between Observability and Monitoring?](#what-is-difference-between-observability-abd-monitoring)
 
 ## Sumo Logic
 + [What is Sumo Logic?](#what-is-sumo-logic)
@@ -32,6 +28,8 @@
 
 ----
 
+# Observability Loggings
+
 ### Why do we need Observability and Monitoring Loggings?
 - `DEBUGGING A PROBLEM IN MICROSERVICES`
     + How do we trace transactions across multiple services, containers and try to Find where exactly the problem or bug is?
@@ -45,7 +43,7 @@
     + How can we easily and efficiently monitor the metrics like CPU usage, JVM metrics, etc. For all the microservices applications in our network?
     + How can we monitor the status and health of all of our microservices applications in a single place, and create alerts and notifications For any abnormal behavior of the services?
 
-[Table of Contents](#observability-and-monitoring-loggings)
+[Table of Contents](#observability-loggings)
 
 
 ### What is Observability?
@@ -54,10 +52,10 @@
 
 ![Alt text](./images/Observability.png)
 
-[Table of Contents](#observability-and-monitoring-loggings)
+[Table of Contents](#observability-loggings)
 
 
-### What is difference between Metrics, Logs and Traces in Observability? 
+### What is difference between Distributed Logging, Distributed Tracing, Metrics in Observability? 
 + **Metrics**: Metrics are quantitative measurements of the health of a system. They can be used to track things like CPU usage, memory usage, and response times.
     + Examples: 
         + Request/min 
@@ -76,8 +74,113 @@
 
 ![Alt text](./images/What%20is%20difference%20between%20Metrics,%20Logs%20and%20Traces%20in%20Observability.png)
 
-[Table of Contents](#observability-and-monitoring-loggings)
 
+[Table of Contents](#observability-loggings)
+
+
+### What is difference between Logging in Monolithic Apps and in Microservices?
+- Logs are discrete records of events that happen in software applications over time. They contain a timestamp that indicates when the event happened, as well as information about the event and its context. This information can be used to answer questions like "What happened at this time?", "Which thread was processing the event?", or "Which user/tenant was in the context?"
+
+- **Logging in Monolithic Apps**
+    + In monolithic apps, all of the code is in a single codebase. This means that all of the logs are also in a single location. This makes it easy to find and troubleshoot problems, as you only need to look in one place.
+- **Logging in Microservices**
+    - Logging in microservices is complex. This is-hasaues ssh aaauics has its own logs. This means that you need to look in multiple places to find all of the logs for a particular request.
+
+    - To address this challenge, microservices af centralized logging. Centralized logging collects logs from all of the services in the architecture and stor tion. This makes it easier to find and troubleshoot problems, as you only need to look in one place
+
+
+[Table of Contents](#observability-loggings)
+
+
+### What is the best Practices of Distributed Logging in Observability? 
+- Logs are discrete records of events that happen in software applications over time. They contain a timestamp that indicates when the event happened, as well as information about the event and its context. This information can be used to answer questions like "What happened at this time?", "Which thread was processing the event?", or "Which user/tenant was in the context?"
+    + **Centralized Logging System**
+    ![Alt text](.//images/Centralized%20Logging%20System.png)
+    + **Predefined Structure**
+    ![Alt text](.//images/Predefined%20Structure.png)
+    + **Log Level / Log Severity**
+    ![Alt text](./images/Log%20Level.png)
+    + **Correlation Id**
+    ![Alt text](./images/Correlation%20Id.png)
+    + **Contextual Information - Considerations**
+    ![Alt text](./images/ontextual%20Information-1.png)
+    ![Alt text](./images/ontextual%20Information.png)
+
+ + **Note:**
+    1. Log only necessary data 
+    2. Do NOT log: 
+        + Sensitive data
+        + PII (Personally Identifiable Information) 
+
+
+[Table of Contents](#observability-loggings)
+
+
+### What is the best Practices of Metrics in Observability?
+- Measurable or Countable signals of software that help us
+monitor the system's health and performance
+- The Five (Golden) Types of Signals
+    + Traffic
+    + Errors
+    + Latency
+    + Saturation
+    + Utilization
+
+![Alt text](./images/What%20is%20the%20Metrics.png)
+
+- **The Five (Golden) Types of Signals in Metrics**
+    + **Traffic**: Amount of demand being placed on our system per unit of time
+        + Examples:
+            + HTTP requests/sec
+            + Queries/sec
+            + Transactions/sec
+            + Events received/sec
+            + Events delivered/sec
+            + Incoming requests + outgoing requests/sec
+
+    + **Errors**: Error Rate and Error Types
+        + Examples: 
+            +  Number of application exxceptions 
+            +  HTTP response status codes (4XX, 5XX)
+            +  Response exceeding latency thresholds
+            +  Failed Events 
+            +  Failed Delivery 
+    + **Latency**: Time it takes for a service to process a request
+        + Important considerations: 
+            + Latency distribution vs average 
+            + Separate successful operations from failed operations
+        ![Alt text](./images/Latency.png)
+        ![Alt text](./images/Latency2.png)
+        
+    + **Saturation**: saturation có thể ám chỉ đến sự quá tải của một số thành phần cụ thể hoặc một số dịch vụ. Điều này có thể xảy ra khi một dịch vụ nhận được một lượng lớn yêu cầu từ các thành phần khác trong hệ thống, và do đó không thể xử lý tất cả các yêu cầu đó một cách hiệu quả. Khi một dịch vụ bị quá tải, nó có thể dẫn đến việc giảm hiệu suất hoặc thậm chí là sự cố trong toàn bộ hệ thống.
+    ![Alt text](./images/Saturation.png)
+
+
+    + **Utilization**
+        - How busy a resource is [0 - 100%]
+        ![Alt text](./images/Utilization.png)
+
+[Table of Contents](#observability-loggings)
+
+
+### What is Distributed Tracing in Observability? 
+- Not enough on its own
+- Helps narrow down the:
+    + Faulty component 
+    + Communication problem 
+- We can use logs and metrics to debug further 
+
+
+![Alt text](./images/Distributed%20Tracing.png)
+![Alt text](./images/Distributed%20Tracing-2.png)
+![Alt text](./images/Distributed%20Tracing-3.png)
+
+
+[Table of Contents](#observability-loggings)
+
+
+
+# Monitoring Loggings
 
 ### What is Monitoring?
 - Monitoring in microservices involves checking the telemetry data available for the application and defining alerts For known Failure states. This process collects and analyzes data from a system to identify and troubleshoot problems, as well as track the health of individual microservices and the overall health of
@@ -88,7 +191,7 @@ the microservices network.Monitoring in microservices is important because it al
 
 ![Alt text](./images/What%20is%20Monitoring.png)
 
-[Table of Contents](#observability-and-monitoring-loggings)
+[Table of Contents](#monitoring-loggings)
 
 ### What is difference between Observability and Monitoring?
 
@@ -102,165 +205,7 @@ the microservices network.Monitoring in microservices is important because it al
 - **`reactive` approach in Monitoring:** A reactive approach in monitoring refers to responding to issues or incidents as they occur. Instead of actively seeking out potential problems beforehand, reactive monitoring involves addressing issues that arise in real-time. This method typically involves setting up alerts or notifications that trigger when a predefined threshold or condition is met, prompting a response from operators or administrators to investigate and resolve the issue.
 
 
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-
-
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-### What is the best Practices in Distributed Logging? 
- + **Centralized Logging System**
-![Alt text](.//images/Centralized%20Logging%20System.png)
-+ **Predefined Structure**
-![Alt text](.//images/Predefined%20Structure.png)
-+ **Log Level / Log Severity**
-![Alt text](./images/Log%20Level.png)
-+ **Correlation Id**
-![Alt text](./images/Correlation%20Id.png)
- + **Contextual Information - Considerations**
- ![Alt text](./images/ontextual%20Information-1.png)
- ![Alt text](./images/ontextual%20Information.png)
-
- + **Note:**
-    1. Log only necessary data 
-    2. Do NOT log: 
-        + Sensitive data
-        + PII (Personally Identifiable Information) 
-
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-### What is the Metrics? 
-- Measurable or Countable signals of software that help us
-monitor the system's health and performance
-- The Five (Golden) Types of Signals
-    + Traffic
-    + Errors
-    + Latency
-    + Saturation
-    + Utilization
-
-![Alt text](./images/What%20is%20the%20Metrics.png)
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-### What is the Five (Golden) Types of Signals in Metrics?
-+ **Traffic**: Amount of demand being placed on our system per unit of time
-    + Examples:
-        + HTTP requests/sec
-        + Queries/sec
-        + Transactions/sec
-        + Events received/sec
-        + Events delivered/sec
-        + Incoming requests + outgoing requests/sec
-
-+ **Errors**: Error Rate and Error Types
-    + Examples: 
-        +  Number of application exxceptions 
-        +  HTTP response status codes (4XX, 5XX)
-        +  Response exceeding latency thresholds
-        +  Failed Events 
-        +  Failed Delivery 
-+ **Latency**: Time it takes for a service to process a request
-    + Important considerations: 
-        + Latency distribution vs average 
-        + Separate successful operations from failed operations
-    ![Alt text](./images/Latency.png)
-    ![Alt text](./images/Latency2.png)
-+ **Saturation**: saturation có thể ám chỉ đến sự quá tải của một số thành phần cụ thể hoặc một số dịch vụ. Điều này có thể xảy ra khi một dịch vụ nhận được một lượng lớn yêu cầu từ các thành phần khác trong hệ thống, và do đó không thể xử lý tất cả các yêu cầu đó một cách hiệu quả. Khi một dịch vụ bị quá tải, nó có thể dẫn đến việc giảm hiệu suất hoặc thậm chí là sự cố trong toàn bộ hệ thống.
-![Alt text](./images/Saturation.png)
-
-
-+ **Utilization**
-    - How busy a resource is [0 - 100%]
-    ![Alt text](./images/Utilization.png)
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-### What is Distributed Tracing?
-- Not enough on its own
-- Helps narrow down the:
-    + Faulty component 
-    + Communication problem 
-- We can use logs and metrics to debug further 
-
-
-![Alt text](./images/Distributed%20Tracing.png)
-![Alt text](./images/Distributed%20Tracing-2.png)
-![Alt text](./images/Distributed%20Tracing-3.png)
-
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
-# Logback
-
-### What is difference between SLF4J, Logback and Log4j?
-+ SLF4J (Simple Logging Facade for Java), Logback và Log4j đều là các công cụ logging trong Java, nhưng chúng có thể được sử dụng trong các trường hợp khác nhau dựa trên yêu cầu cụ thể của dự án và sở thích cá nhân:
-    + `SLF4J` khi bạn muốn viết mã logging không ràng buộc với một framework logging cụ thể.
-
-    + `Log4j`: Log4j là một trong những framework logging đầu tiên và được sử dụng rộng rãi trong Java. Phiên bản Log4j 2 đã được cải tiến với khả năng linh hoạt và cải thiện hiệu suất so với phiên bản trước đó. Nó cũng cung cấp các thành phần giống như Logback, cho phép định dạng và quản lý log một cách linh hoạt.
-
-    + `Logback`: Logback là một framework logging mạnh mẽ và linh hoạt, được coi là sự thay thế nâng cấp từ Log4j. Nó cung cấp hiệu suất tốt, khả năng cấu hình linh hoạt và hỗ trợ nâng cao cho logging trong Java. Logback cũng đi kèm với các thành phần như Logger, Appender, Encoder để quản lý và định dạng log.
-
-![Alt text](./images/What%20is%20difference%20between%20SLF4J,%20Logback%20and%20Log4j.png)
-
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-### What is difference between springProfile, appender, và encoder in Logback?
-- Các thành phần cơ bản trong cấu hình Logback (một framework logging được sử dụng trong Java) như springProfile, appender, và encoder có các mục đích khác nhau trong việc quản lý và định dạng các log.
-    + `springProfile`: Trong Logback, springProfile là một đặc tính được sử dụng để kích hoạt cấu hình log dựa trên các profile Spring.
-        + Khi sử dụng với Spring Framework, bạn có thể chỉ định cấu hình log riêng biệt dựa trên các profile khác nhau trong ứng dụng của mình. Điều này có thể hữu ích khi bạn muốn log khác nhau trong các môi trường như Development, Testing, Production, vv.
-    + `appender`: Trong Logback, appender là thành phần quan trọng được sử dụng để định nghĩa nơi mà log sẽ được gửi đến (ví dụ: console, file, database).
-        + Mỗi appender định nghĩa cách mà log được xử lý và gửi đến một nguồn cụ thể. Ví dụ, có thể có appender dành cho việc ghi log vào file và một appender khác để gửi log đến console.
-    + `encoder`: encoder trong Logback xác định cách mà thông điệp log được định dạng trước khi nó được gửi đến appender.
-        + encoder có thể được sử dụng để định dạng log theo các định dạng như JSON, XML hoặc các định dạng văn bản thông thường khác. Nó có thể xác định cách mà thông tin như thời gian, cấp độ log, tên class, và thông điệp log được bố trí và biểu diễn
-
-```xml
-<configuration>
-    <!-- Sử dụng springProfile để xác định profile Spring -->
-    <springProfile name="dev">
-        <!-- Cấu hình log cho môi trường Development -->
-        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-            <!-- Encoder để định dạng log -->
-            <encoder>
-                <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-            </encoder>
-        </appender>
-        <!-- Gán appender cho root logger -->
-        <root level="debug">
-            <appender-ref ref="CONSOLE" />
-        </root>
-    </springProfile>
-    
-    <springProfile name="prod">
-        <!-- Cấu hình log cho môi trường Production -->
-        <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-            <file>logs/app.log</file>
-            <encoder>
-                <!-- Sử dụng định dạng JSON cho log -->
-                <pattern>{"timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}", "level": "%level", "logger": "%logger", "message": "%msg"}%n</pattern>
-            </encoder>
-        </appender>
-        <!-- Gán appender cho root logger -->
-        <root level="info">
-            <appender-ref ref="FILE" />
-        </root>
-    </springProfile>
-</configuration>
-
-```
-
-[Table of Contents](#observability-and-monitoring-loggings)
-
-
+[Table of Contents](#monitoring-loggings)
 
 
 # Sumo Logic
@@ -379,5 +324,7 @@ freely configured. Main metadata tag
 - Grafana is an open-source analytics and interactive visualization web application. It provides charts, graphs, and alerts For the web when connected to supported data sources. It can be easily installed using Docker or Docker Compose.
 
 ![Alt text](.//images/What%20is%20Grafana.png)
+
+![Alt text](.//images/What%20is%20Grafana2.png)
 
 [Table of Contents](#grafana)
