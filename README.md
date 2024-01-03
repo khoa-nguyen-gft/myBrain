@@ -2,10 +2,8 @@
 ![Alt text](image-3.png)
 
 # System Design:
-   + **System Design**: is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
+   + [**System Design**](./O03_system_design/interviews/README.md): is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
    ![Alt text](images/System%20Design.png)
-
-   - ### [**System Design Overview**](./O03_system_design/interviews/README.md)
 
    + ### [Large Scale Systems Architectural(Load Balancing, Message Broker, API Gateway, CDN, Service Discovery)](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka](./O10_messaging_kafka/interview/README.md)
@@ -15,7 +13,7 @@
       - [NoSQL Databases (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
       - [SQL Databases (PostgreSQL)](./O42_database_postgreSQL/README.md)
       - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
-        
+      
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
       + [Spring Framwork (Spring Boot, Spring Test, Log4j)](./O20_Services_spring/interview/README.md)
       + [GraphQL](./O80_api_graphql/interview/README.md)
@@ -25,15 +23,15 @@
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
       - [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
 
-- ## [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
-   + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
-   + [Observability and Monitoring Loggings (Sumo Logic, Grafana)](./O36_cicd_monitoring/README.md)
+   - ### [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
+      + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
+      + [Observability and Monitoring Loggings (Sumo Logic, Grafana)](./O36_cicd_monitoring/README.md)
 
-- ## System Design Labs
-   - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
-   - [Lab Banking Desgin](./O04_system_design_labs/002-bank/README.md)
-   - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
-   - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
+   - ### System Design Labs
+      - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
+      - [Lab Banking Desgin](./O04_system_design_labs/002-bank/README.md)
+      - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
+      - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
 # **Coding:**
    - ### **Data Type and Data Structure:**
