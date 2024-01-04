@@ -6,7 +6,6 @@
 + [What is Observability?](#what-is-observability)
 + [What is difference between Distributed Logging, Distributed Tracing, Metrics in Observability?](#what-is-difference-between-distributed-logging-distributed-tracing-metrics-in-observability)
 + [What is difference between Logging in Monolithic Apps and in Microservices?](#what-is-difference-between-logging-in-monolithic-apps-and-in-microservices)
-
 + [What is the best Practices of Distributed Logging in Observability?](#what-is-difference-between-distributed-logging-distributed-tracing-metrics-in-observability)
 + [What is the best Practices of Metrics in Observability?](#what-is-the-best-practices-of-metrics-in-observability)
 + [ What is Distributed Tracing in Observability? ](#what-is-distributed-tracing-in-observability)
@@ -23,8 +22,13 @@
 + [What is "Log Message Inspector"?](#what-is-log-message-inspector)
 
 
-## Grafana
+## Grafana 
 + [What is Grafana?](#what-is-grafana)
+
+## Prometheus
++ [What is difference between Micrometer and Prometheus in metric?](#what-is-difference-between-micrometer-and-prometheus-in-metric)
+
+
 
 ----
 
@@ -56,6 +60,8 @@
 
 
 ### What is difference between Distributed Logging, Distributed Tracing, Metrics in Observability? 
++ **Logs**: Logs are a record of events that occur in a system. They can be used to track things like errors, exceptions, and other unexpected events.
+
 + **Metrics**: Metrics are quantitative measurements of the health of a system. They can be used to track things like CPU usage, memory usage, and response times.
     + Examples: 
         + Request/min 
@@ -63,7 +69,7 @@
         + Latency distribution 
         + Current CPU utilization
         + Memory usage 
-+ **Logs**: Logs are a record of events that occur in a system. They can be used to track things like errors, exceptions, and other unexpected events.
+
 + **Traceing**: Traces are a record of the path that a request takes through a system. They can be used to track the performance of arequest and to identify bottlenecks.
     + Time each microService took to process it
     + May include:
@@ -326,5 +332,18 @@ freely configured. Main metadata tag
 ![Alt text](.//images/What%20is%20Grafana.png)
 
 ![Alt text](.//images/What%20is%20Grafana2.png)
+
+[Table of Contents](#grafana)
+
+### What is difference between Micrometer and Prometheus in Metric?
+- **Micrometer** automatically exposes /actuator/metrics data into something your monitoring system can understand. All you need to do is include that vendor-specific micrometer dependency in your application. Think SLF4J, but For metrics.
+
+- **Prometheus**: The most common Format For exporting metrics is
+the one used by Prometheus, which is “an open-source systems monitoring and alerting toolkit". Just as Loki aggregates and stores event logs,
+Prometheus does the same with metrics.
+
+![Alt text](.//images/What%20is%20difference%20between%20Micrometer%20and%20Prometheus.png)
+
+![Alt text](.//images/Prometheus.png)
 
 [Table of Contents](#grafana)

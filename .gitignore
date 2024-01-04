@@ -20,3 +20,7 @@ O21_Services_microservices/_01_init/cards/.DS_Store
 O21_Services_microservices/_01_init/cards/src/.DS_Store
 O21_Services_microservices/_01_init/loans/.DS_Store
 O100_cloud_aws/.DS_Store
+
+**/**/.data
+
+O21_Services_microservices/v2-spring-cloud/docker-compose/grafana/.data

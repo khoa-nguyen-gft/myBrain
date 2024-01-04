@@ -10,7 +10,7 @@
 ## [Load Balancing](#Load-balancing-1)
 + [What is Load Balancing?](#what-is-load-balancing)
 + [What is a list of Load Balancing Algorithms?](#what-is-list-of-load-balancing-algorithms)
-+ [What is DNS load balancing?](#what-is-dns-load-balancing)
++ [What is DNS(Domain Name System) load balancing?](#what-is-dns-load-balancing)
 + [What is Software/Hardware balancing?](#what-is-softwarehardware-balancing)
 + [What is GSLB - Global Server Load Balancer?](#what-is-gslb---global-server-load-balancer)
 + [What are List of Load Balancer?](#what-are-list-of-load-balancer)
@@ -34,7 +34,7 @@
 
 
 ## Service Discovery & Service Registration
-+ [Why not traditional load balancers for Microservices](#why-not-traditional-load-balancers-for-microservices)
++ [Why not traditional load balancers for Microservices?](#why-not-traditional-load-balancers-for-microservices)
 + [How is service discovery resolve this problem?](#how-is-service-discovery-resolve-this-problem)
 + [What is differences between Client-Discovery and Server Discovery?](#what-is-differences-between-client-discovery-and-server-discovery)
 
