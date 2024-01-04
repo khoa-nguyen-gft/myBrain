@@ -12,8 +12,8 @@
 + [What is a list of Load Balancing Algorithms?](#what-is-list-of-load-balancing-algorithms)
 + [What is DNS(Domain Name System) load balancing?](#what-is-dns-load-balancing)
 + [What is Software/Hardware balancing?](#what-is-softwarehardware-balancing)
-+ [What is GSLB - Global Server Load Balancer?](#what-is-gslb---global-server-load-balancer)
-+ [What are List of Load Balancer?](#what-are-list-of-load-balancer)
++ [What is GSLB (Global Server Load Balancer)?](#what-is-gslb-global-server-load-balancer)
+
 
 ## [Message Broker](#message-broker-1)
 + [What is the difference between Asynchronous and Message-Driven Programming?](#what-is-difference-between-asynchronous-and-message-driven-programming)
@@ -51,14 +51,10 @@
 [Table of Contents](#main-title)
 
 ### How to achieve Scalability?
-Now scalability is achieved via two methods in systems: 
-
-+ **Vertical Scalability** - Adding resources or upgrading the existing resources on a single computer
-- **Horizontal Scalability** - Adding more resources in a form of new instances running on different machines
-- **Organizational Scalability** - increasing productivity while hiring more engineers into the team
-
-[Table of Contents](#main-title)
-
+- Now scalability is achieved via two methods in systems: 
+    - **Vertical Scalability** - Adding resources or upgrading the existing resources on a single computer
+    - **Horizontal Scalability** - Adding more resources in a form of new instances running on different machines
+    - **Organizational Scalability** - increasing productivity while hiring more engineers into the team
 
 ![Alt text](images/Pasted%20Graphic%202.png)
 
@@ -100,7 +96,7 @@ In order to make efficient systems scalable from replication parameters where th
 
 ## Load Balancing
 
-## What is Load Balancing?
+### What is Load Balancing?
 
 + **Load Balancing:** Load balancing It is a technique of effectively distributing application or network traffic among all nodes in a distributed system. Types of load balancers:
     1. DNS load balancing
@@ -109,39 +105,40 @@ In order to make efficient systems scalable from replication parameters where th
 
 [Table of Contents](#main-title)
 
-
-## What is list of Load Balancing Algorithms?
-
+### What is list of Load Balancing Algorithms?
 - A few load-balancing algorithms are listed below:
     + Round Robin Algorithm
-    + Weighted Round Robin Algorithm
     + IP Hash Algorithm
     + Least Connection Algorithm
     + Least Response Time
+    + Least Bandwidth (Weighted Round Robin Algorithm)
+
+![Alt text](./images/What%20is%20list%20of%20Load%20Balancing%20Algorithms.png)
 
 [Table of Contents](#main-title)
 
 
-## What is DNS load balancing?
+### What is DNS Load Balancing?
 - **Domain Name System(DNS)** which translates the human-friendly hostnames into the machine IP addresses
 
-    ![Alt text](images/DNS%20load%20balancing.png)
+![Alt text](images/DNS%20load%20balancing.png)
 
 - They can be used by network routers to route requests to individual computers on the web
 - The list of IP addresses changes based on the TTL(Long Time Live) configured for that particular DNS record
 - This list of addresses can be cached in different locations such as the client's computer
 - The balancing strategy is always just a simple round-robin
-    ![Alt text](images/Domain Name System(DNS).png)
+    
+![Alt text](images/Domain Name System(DNS).png)
 
 [Table of Contents](#main-title)
 
-## What is Software/Hardware balancing?
+### What is Software/Hardware Balancing?
 
 - **Hardware Load Balancers:** Run on dedicated devices designed and optimized specifically
 for load balancing
 - **Software Load Balancers:** Programs that can run on a general-purpose computer and
 perform a load balancing function
-- e Hardware and Software Load Balancers can balance the load intelligently taking into account:
+- Hardware and Software Load Balancers can balance the load intelligently taking into account:
     + Different types of hardware
     + Current load on each server
     + Number of open connections
@@ -151,10 +148,8 @@ perform a load balancing function
 [Table of Contents](#main-title)
 
 
-## What is GSLB - Global Server Load Balancer?
-- GSLB is a hybrid between:
-    - DNS service
-    - Hardware/Software Load Balancer
+### What is GSLB (Global Server Load Balancer)?
+- GSLB is a hybrid between `DNS  Load Balancer` and  `Hardware/Software Load Balancer`
 - Most GSLB can be configured to route traffic based on a variety of strategies and not just by physical location
 - Since they are in constant communication with our data centers, they can be configured to route users based on:
     - The current traffic
@@ -166,27 +161,10 @@ perform a load balancing function
 
 [Table of Contents](#main-title)
 
-## What are List of Load Balancer?
-- **AWS - Elastic Load Balancing (ELB):**
-    ![Alt text](./images/List%20of%20Load%20Balancer.png)
-    - **Classic Load Balancer(CLB)** (Layer 4 and 7)(old generation): HTTR HTTPS, TCR, SSL (secure TCP)
-
-    - **Application (Layer 7) Load Balancer (2016 — ALB)**: HTTR HTTPS, WebSocket
-    - **Network (Layer 4) Load Balancer(2017 — NLB):** TCR TLS (secure TCP), UDP
-    - **Gateway Load Balancer(2020 — GWLB)**: Operates at layer 3 (Network layer)- IP Protocol
-
-- **GSLB:**
-    - **Amazon Route 53** 
-    ![Alt text](<./images//Amazon Route 53.png>)
-    - **Cloud DNS** 
-    ![Alt text](./images//AWS-Global-Accelerator-in-combination-with-Cloudfront.png.webp)
-
-[Table of Contents](#main-title)
-
 
 ## Message Broker
 
-## What is difference between Asynchronous and Message-Driven Programming?
+### What is difference between Asynchronous and Message-Driven Programming?
 - **Asynchronous programming** is a programming paradigm that allows tasks to be executed independently and concurrently without blocking the main execution thread.
 
     ![Alt text](images/Asynchronous%20programming.png)

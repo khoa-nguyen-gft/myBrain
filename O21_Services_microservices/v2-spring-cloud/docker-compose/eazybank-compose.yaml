@@ -101,7 +101,5 @@ services:
     extends:
       file: common-config.yaml
       service: microservice-eurekaserver-config
-
-
 networks:
   eazybank:

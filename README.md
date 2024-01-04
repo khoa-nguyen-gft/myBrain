@@ -6,13 +6,13 @@
    ![Alt text](images/System%20Design.png)
 
    + ### [Large Scale Systems Architectural(Load Balancing, Message Broker, API Gateway, CDN, Service Discovery)](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
-      - [Kafka](./O10_messaging_kafka/interview/README.md)
-      - [AWS CDN](./O100_cloud_aws/cdn/README.md)
+      - [Kafka Message](./O10_messaging_kafka/interview/README.md)
+      - [AWS Scalability (Load Balancing, Message Broker, API Gateway, CDN)](./O100_cloud_aws/system-scalability/AWS-system-scalability.md)
 
    + ### [Large Scale Data Storage(Databases, NOSQL, Storages)](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
       - [NoSQL Databases (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
       - [SQL Databases (PostgreSQL)](./O42_database_postgreSQL/README.md)
-      - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage/README.md)
+      - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage-scalability/README.md)
       
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
       + [Spring Framwork (Spring Boot, Spring Test, Log4j)](./O20_Services_spring/interview/README.md)

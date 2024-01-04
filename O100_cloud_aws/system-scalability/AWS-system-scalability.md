@@ -1,33 +1,76 @@
 ## [Main title](/README.md)
 
-![Alt text](images/cdn.png)
-
-# CDN
-+ ## AWS CloudFront
-    + [What is AWS CloudFront?](#what-is-aws-storage)
-    + [What is Origin in AWS CloudFront?](#what-is-origin-in-aws-cloudfront)
-    + [ What is Edge Location and Regional Edge Caches in AWS CloudFront?](#what-is-edge-location-and-regional-edge-caches-in-aws-cloudfront)
-    + [What is difference between CloudFront and S3 Cross Region Replication?](#what-is-difference-between-cloudfront-and-s3-cross-region-replication)
 
 
-+ # Advanced
-    + [What is OCSP (Online Certificate Status Protocol) and OCSP stapling?](#what-is-ocsp-online-certificate-status-protocol-and-ocsp-stapling)
-    + [What is Origin Access Identity (OAI)?](#what-is-origin-access-identity-oai)
-    + [What is Lambda@Edge?](#what-is-lambdaedge)
+## AWS Load Balancing
++ [What is difference between `Classic Load Balancer`, `Application Load Balancer` `Network Load Balancer` and `Gateway Load Balancer`?](#what-is-difference-between-classic-load-balancer-application-load-balancer-network-load-balancer-and-gateway-load-balancer)
++ [What is Network Load Balancers base Target Group?](#what-is-network-load-balancers-base-target-group)
++ [What is AWS Gateway Load Balancer (GWLB)?](#what-is-aws-gateway-load-balancer-gwlb)
 
 
+
+## AWS CloudFront CDN (Content Delivery Network)
++ [What is AWS CloudFront?](#what-is-aws-cloudfront)
++ [What is Origin in AWS CloudFront?](#what-is-origin-in-aws-cloudfront)
++ [ What is Edge Location and Regional Edge Caches in AWS CloudFront?](#what-is-edge-location-and-regional-edge-caches-in-aws-cloudfront)
++ [What is difference between CloudFront and S3 Cross Region Replication?](#what-is-difference-between-cloudfront-and-s3-cross-region-replication)
+
+
+## Advanced
++ [What is OCSP (Online Certificate Status Protocol) and OCSP stapling?](#what-is-ocsp-online-certificate-status-protocol-and-ocsp-stapling)
++ [What is Origin Access Identity (OAI)?](#what-is-origin-access-identity-oai)
++ [What is Lambda@Edge?](#what-is-lambdaedge)
 
 
 ----
+## AWS Load Balancing
 
-## AWS CloudFront
+### What is difference between `Classic Load Balancer`, `Application Load Balancer` `Network Load Balancer` and `Gateway Load Balancer`?
+- **Classic Load Balancer(CLB)** 
+    + (Layer 4 and 7)(old generation): HTTR HTTPS, TCR, SSL (secure TCP)
+
+- **Application (Layer 7) Load Balancer (2016 — ALB)**: 
+    + HTTR HTTPS, WebSocket
+    + Operates at layer 7 (HTTP)
+
+- **Network (Layer 4) Load Balancer(2017 — NLB):** 
+    + TCR TLS (secure TCP), UDP
+    + Operates at layer 4 (TCP, UDP)
+
+- **Gateway Load Balancer(2020 — GWLB)**: 
+    + Operates at layer 3 (Network layer)- IP Protocol
+
+-  Overall, it is recommended to use the newer generation load balancers as they provide more features Some load balancers can be setup as internal (private) or external (public) ELBs
+    ![Alt text](./images/List%20of%20Load%20Balancer.png)
+
+[Table of Contents](#aws-load-balancing)
+
+### What is `Network Load Balancers` base Target Group?
+- **Target Groups** are an essential component of the Elastic Load Balancing service, used primarily with Application Load Balancers and Network Load Balancers. T
+- **Network Load Balancers** help distribute incoming traffic across multiple targets, such as EC2 instances, IP addresses, or Lambda functions.
+    ![Alt text](./images/Network%20Load%20Balancers.png)
+    ![Alt text](./images/Network%20Load%20Balancers-1.png)
+    ![Alt text](./images/Pasted%20Graphic%207.png)
+[Table of Contents](#aws-load-balancing)
+
+### What is `AWS Gateway Load Balancer (GWLB)`?
+
+- **AWS Gateway Load Balancer (GWLB)** is a service designed to manage and scale third-party virtual appliances such as firewalls, intrusion detection and prevention systems, and other security appliances that operate at the network (Layer 3) level. It helps in deploying and scaling these appliances more efficiently and effectively.
+![Alt text](.//images/Pasted%20Graphic%2011.png)
+
+[Table of Contents](#aws-load-balancing)
+
+
+## AWS CloudFront CDN (Content Delivery Network)
 
 ### What is AWS CloudFront?
-- Content Delivery Network (CDN)
-- Improves read performance, content is cached at the edge
-- Improves users experience
-- 216 Point of Presence globally (edge locations)
-- DDoS protection (because worldwide), integration with Shield, AWS Web Application Firewall
+- **CloudFront is a content delivery network (CDN)** that caches and delivers web content from multiple locations around the world, providing low latency and high data transfer speeds.
+    - Improves read performance, content is cached at the edge
+    - Improves users experience
+    - 216 Point of Presence globally (edge locations)
+    - DDoS protection (because worldwide), integration with Shield, AWS Web Application Firewall
+
+![Alt text](images/cdn.png)
 
 [Table of Contents](#cdn)
 
@@ -80,6 +123,7 @@
 [Table of Contents](#cdn)
 
 
+## Advanced
 
 ### What is OCSP (Online Certificate Status Protocol) and OCSP stapling?
 
