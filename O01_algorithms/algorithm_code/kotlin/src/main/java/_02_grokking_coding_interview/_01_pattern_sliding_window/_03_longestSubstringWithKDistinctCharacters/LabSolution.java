@@ -1,4 +1,4 @@
-package _02_grokking_coding_interview._01_pattern_sliding_window.longestSubstringWithKDistinctCharacters;
+package _02_grokking_coding_interview._01_pattern_sliding_window._03_longestSubstringWithKDistinctCharacters;
 
 import java.util.HashMap;
 import java.util.Map;

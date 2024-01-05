@@ -1,31 +1,37 @@
 # Love Challenge Code
 ![Alt text](image-3.png)
 
-# System Design:
+# System Design Interview:
    + [**System Design**](./O03_system_design/interviews/README.md): is the core concept behind the design of any distributed systems. System Design is defined as a process of creating an architecture for different components, interfaces, and modules of the system and providing corresponding data helpful in implementing such elements in systems.
    ![Alt text](images/System%20Design.png)
+
 
    + ### [Large Scale Systems Architectural(Load Balancing, Message Broker, API Gateway, CDN, Service Discovery)](./O03_system_design/interviews/README-System-Architectural-Scalability.md)
       - [Kafka Message](./O10_messaging_kafka/interview/README.md)
       - [AWS Scalability (Load Balancing, Message Broker, API Gateway, CDN)](./O100_cloud_aws/system-scalability/AWS-system-scalability.md)
 
+
    + ### [Large Scale Data Storage(Databases, NOSQL, Storages)](./O03_system_design/interviews/README-Data-Storage-Scalability.md)
       - [NoSQL Databases (DynamoDB, MongoDB)](./O41_database_dynamoDB/interview/README.md)
       - [SQL Databases (PostgreSQL)](./O42_database_postgreSQL/README.md)
-      - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage-scalability/README.md)
-      
+      - [Storages (EBS, FSx, S3, File Gateway)](./O100_cloud_aws/storage-scalability/AWS-storage-scalability.md)
+      - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
+
+
    + ### [API Architecture(Restful, Graphql, gRPC, WebSocket, SOAP)](./O03_system_design/interviews/README-API.md)
       + [Spring Framwork (Spring Boot, Spring Test, Log4j)](./O20_Services_spring/interview/README.md)
       + [GraphQL](./O80_api_graphql/interview/README.md)
 
+
    + ### [High Availability (Fault Tolerance, Resilience), Performance(Throughput, Latency), Durability (Redundancy, Replication) and Consistency](./O03_system_design/interviews/README-availability-performance-consistency_v2.md)
-      - [Caching (Redis)](./O05_system_design_performance/caching/README.md)
       - [Concurrency (Java)](./O70_language_java/java_concurrency/README.md)
       - [Security (Authentication, Encryption)](./O100_cloud_aws/security/README.md)
 
+
    - ### [**System Architecture Patterns (Three-Tier, Microservices, Event-Driven, Big Data Architectures)**](./O03_system_design/interviews/README-System-Patterns.md) 
       + [Containerization (Docker, CNCF, Kubernetes, Helm)](./O37_cicd_containerization/README.md)
-      + [Observability and Monitoring Loggings (Sumo Logic, Grafana)](./O36_cicd_monitoring/README.md)
+      + [Observability and Monitoring Loggings (Sumo Logic, Grafana, Prometheus, OpenTelemetry)](./O36_cicd_monitoring/README.md)
+
 
    - ### System Design Labs
       - [Lab Social Website Desgin](./O04_system_design_labs/001-social-webside/README.md)
@@ -33,7 +39,7 @@
       - [Lab Taxi Desgin](./O04_system_design_labs/003-taxi/README.md)
       - [Lab Chat Desgin](./O04_system_design_labs/004-chat/README.md)
 
-# **Coding:**
+# **Coding Interview:**
    - ### **Data Type and Data Structure:**
       + [Java](./O70_language_java/java_data_structure/README.md)
       + [Kotlin](./O71_language_kotlin/kotlin_data_structure/README.md)
@@ -86,14 +92,14 @@
 
 - **Code Patterns:**
    - **Pattern Sliding Window:** The technique can be best understood with the window pane in the bus, considering a window of length n and the pane which is fixed in it of length k. 
-      - [Averages of subarrays of size K](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/findAverages/README.md)
-      - [Maximum Sum Subarray of Size K (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/maximumSumSubArrayofSizeK/README.md)
-      - [Smallest Subarray with a given sum (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/smallestSubarrayWithaGivenSum/README.md)
-      - [Longest Substring with K Distinct Characters (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/longestSubstringWithKDistinctCharacters/README.md)
-      - [Fruits into Baskets (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/fruitsIntoBaskets/README.md)
-      - [No-repeat Substring (hard)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/noRepeatSubstring/README.md)
-      - Longest Substring with Same Letters after Replacement (hard)
-      - Longest Subarray with Ones after Replacement (hard)
+      - [Averages of subarrays of size K](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_00_findAverages/README.md)
+      - [Maximum Sum Subarray of Size K (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_01_maximumSumSubArrayofSizeK/README.md)
+      - [Smallest Subarray with a given sum (easy)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_02_smallestSubArrayWithaGivenSum/README.md)
+      - [Longest Substring with K Distinct Characters (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_03_longestSubstringWithKDistinctCharacters/README.md)
+      - [Fruits into Baskets (medium)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_04_fruitsIntoBaskets/README.md)
+      - [No-repeat Substring (hard)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_05_noRepeatSubstring/README.md)
+      - [Longest Substring with Same Letters after Replacement (hard)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_06_longestSubstringWithSameLettersAfterReplacement/README.md)
+      - [Longest Subarray with Ones after Replacement (hard)](./O01_algorithms/algorithm_code/kotlin/src/main/java/_02_grokking_coding_interview/_01_pattern_sliding_window/_07_LongestSubarrayWithOnesAfterReplacementHard/README.md)
 
 
 + **Sorting Algorithm**: is used to rearrange a given array or list elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.

@@ -1,4 +1,4 @@
-package _02_grokking_coding_interview._01_pattern_sliding_window.noRepeatSubstring;
+package _02_grokking_coding_interview._01_pattern_sliding_window._05_noRepeatSubstring;
 
 import java.util.HashMap;
 import java.util.Map;

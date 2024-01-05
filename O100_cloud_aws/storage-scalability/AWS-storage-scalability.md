@@ -1,9 +1,10 @@
 ## [Main title](/README.md)
 
-![Alt text](./images/Pasted%20Graphic%2058.png)
 
 
 # AWS Storage 
+![Alt text](./images/Pasted%20Graphic%2058.png)
+
 + [What is AWS Storage?](#what-is-aws-storage)
 + [What is difference between Block, File and Object Store?](#what-is-difference-between-block-file-and-object-store)
 + ## Block Storage
@@ -41,7 +42,13 @@
     + [What is AWS Redshift?](#what-is-aws-redshift)
     + [What is AWS OpenSearch?](#what-is-aws-opensearch)
     + [What is AWS EMR?](#what-is-aws-emr)
+
+
+
+
 ----
+
+# AWS Storage
 
 ### What is AWS Storage?
 - AWS (Amazon Web Services) provides various storage services that allow businesses and developers to store, manage, and retrieve data in the cloud. These storage services cater to a wide range of use cases and requirements. 

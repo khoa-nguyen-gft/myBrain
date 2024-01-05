@@ -43,6 +43,8 @@ dependencies {
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 	// https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus
 	implementation("io.micrometer:micrometer-registry-prometheus:1.12.1")
+// https://mvnrepository.com/artifact/io.opentelemetry.javaagent/opentelemetry-javaagent
+	runtimeOnly("io.opentelemetry.javaagent:opentelemetry-javaagent:1.28.0")
 
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")

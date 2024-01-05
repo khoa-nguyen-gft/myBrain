@@ -1,4 +1,4 @@
-package _02_grokking_coding_interview._01_pattern_sliding_window.fruitsIntoBaskets;
+package _02_grokking_coding_interview._01_pattern_sliding_window._04_fruitsIntoBaskets;
 
 import java.util.HashMap;
 import java.util.Map;
