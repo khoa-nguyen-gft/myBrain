@@ -9,6 +9,7 @@
 + [What is the best Practices of Distributed Logging in Observability?](#what-is-difference-between-distributed-logging-distributed-tracing-metrics-in-observability)
 + [What is the best Practices of Metrics in Observability?](#what-is-the-best-practices-of-metrics-in-observability)
 + [ What is Distributed Tracing in Observability? ](#what-is-distributed-tracing-in-observability)
++ [What is difference between Tags, Trace and Span in Distributed Tracing?](#what-is-difference-between-tags-trace-and-span-in-distributed-tracing)
 
 ## Monitoring Loggings
 + [What is Monitoring?](#what-is-monitoring)
@@ -170,11 +171,14 @@ monitor the system's health and performance
 
 
 ### What is Distributed Tracing in Observability? 
-- Not enough on its own
-- Helps narrow down the:
-    + Faulty component 
-    + Communication problem 
-- We can use logs and metrics to debug further 
+- **Distributed Tracing** is a technique used in microservices or cloud-native applications to understand and analyze the Flow of requests as they propagate across multiple services and components. 
+- It helps in gaining insights into how requests are processed, identifying performance bottlenecks, and diagnosing issues in complex, distributed systems.
+
+    - Not enough on its own
+    - Helps narrow down the:
+        + Faulty component 
+        + Communication problem 
+    - We can use logs and metrics to debug further 
 
 
 ![Alt text](./images/Distributed%20Tracing.png)
@@ -184,6 +188,18 @@ monitor the system's health and performance
 
 [Table of Contents](#observability-loggings)
 
+
+### What is difference between Tags, Trace and Span in Distributed Tracing?
+
+- Distributed Tracing encompasses three primary concepts:
+    - **Tags** serve as metadata that offer supplementary details about the span context, including the request URI, the username of the authenticated user, or the identifier For a specific tenant.
+    - **Trace** denotes the collection of actions tied to a request or transaction, distinguished by a trace ID. It consists of multiple spans that Span across various services.
+    - **Span** represents each individual stage of request processing, encompassing start and end timestamps, and is uniquely identified by the combination of trace ID and span ID.
+
+
+![Alt text](.//images/What%20is%20difference%20between%20Tags,%20Trace%20and%20Span%20in%20Distributed%20Tracing.png)
+
+[Table of Contents](#observability-loggings)
 
 
 # Monitoring Loggings

@@ -1,4 +1,4 @@
-package _02_grokking_coding_interview._01_pattern_sliding_window.smallestSubarrayWithaGivenSum;
+package _02_grokking_coding_interview._01_pattern_sliding_window._02_smallestSubArrayWithaGivenSum;
 
 public class MySolution {
     public static void main(String[] args) {

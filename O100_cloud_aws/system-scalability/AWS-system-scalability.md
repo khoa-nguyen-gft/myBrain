@@ -6,21 +6,22 @@
 + [What is difference between `Classic Load Balancer`, `Application Load Balancer` `Network Load Balancer` and `Gateway Load Balancer`?](#what-is-difference-between-classic-load-balancer-application-load-balancer-network-load-balancer-and-gateway-load-balancer)
 + [What is Network Load Balancers base Target Group?](#what-is-network-load-balancers-base-target-group)
 + [What is AWS Gateway Load Balancer (GWLB)?](#what-is-aws-gateway-load-balancer-gwlb)
-
++ [What is Global Server Load Balancer in AWS (Route 53, AWS Global Accelerator)?](#what-is-global-server-load-balancer-in-aws-route-53-aws-global-accelerator)
 
 
 ## AWS CloudFront CDN (Content Delivery Network)
 + [What is AWS CloudFront?](#what-is-aws-cloudfront)
-+ [What is Origin in AWS CloudFront?](#what-is-origin-in-aws-cloudfront)
-+ [ What is Edge Location and Regional Edge Caches in AWS CloudFront?](#what-is-edge-location-and-regional-edge-caches-in-aws-cloudfront)
-+ [What is difference between CloudFront and S3 Cross Region Replication?](#what-is-difference-between-cloudfront-and-s3-cross-region-replication)
++ [What is difference between CloudFront and AWS Global Accelerator?](#what-is-difference-between-cloudfront-and-aws-global-accelerator)
 
 
 ## Advanced
++ [What is Origin in AWS CloudFront?](#what-is-origin-in-aws-cloudfront)
++ [ What is Edge Location and Regional Edge Caches in AWS CloudFront?](#what-is-edge-location-and-regional-edge-caches-in-aws-cloudfront)
++ [What is difference between CloudFront and S3 Cross Region Replication?](#what-is-difference-between-cloudfront-and-s3-cross-region-replication)
 + [What is OCSP (Online Certificate Status Protocol) and OCSP stapling?](#what-is-ocsp-online-certificate-status-protocol-and-ocsp-stapling)
 + [What is Origin Access Identity (OAI)?](#what-is-origin-access-identity-oai)
 + [What is Lambda@Edge?](#what-is-lambdaedge)
-
++ [What is difference between A && AAAA && CNAME && NS in DNS AWS Route53?](#what-is-difference-between-a--aaaa--cname--ns-in-dns-aws-route53)
 
 ----
 ## AWS Load Balancing
@@ -61,7 +62,19 @@
 [Table of Contents](#aws-load-balancing)
 
 
-## AWS CloudFront CDN (Content Delivery Network)
+### What is Global Server Load Balancer in AWS (Route 53, AWS Global Accelerator)?
+
+- AWS doesn't have a service specifically named "Global Server Load Balancer (GSLB)" within its suite of services. However, AWS provides a range of load balancing solutions that collectively offer capabilities similar to those of GSLB. To achieve global load balancing, AWS offers a combination of services and features that can distribute traffic across multiple geographic regions:
+    + **AWS Route 53**: A highly available, scalable, fully managed, and Authoritative DNS
+    + **AWS Global Accelerator:** These are also distributed globally and used to accelerate traffic to and from globally distributed applications or services. Global Accelerator Edge Locations are used to route traffic over the AWS global network, optimizing the network path and reducing the network latency for end-users.
+
+![Alt text](./images/AWS-Global-Accelerator-in-combination-with-Cloudfront.png.webp)
+
+[Table of Contents](#aws-load-balancing)
+
+
+
+# AWS CloudFront CDN (Content Delivery Network)
 
 ### What is AWS CloudFront?
 - **CloudFront is a content delivery network (CDN)** that caches and delivers web content from multiple locations around the world, providing low latency and high data transfer speeds.
@@ -73,6 +86,15 @@
 ![Alt text](images/cdn.png)
 
 [Table of Contents](#cdn)
+
+### What is difference between CloudFront and AWS Global Accelerator?
+
+![Alt text](.//images/Pasted%20Graphic%2013.png)
+
+[Table of Contents](#cdn)
+
+
+## Advanced
 
 ### What is Origin in AWS CloudFront?
 - Trong dịch vụ AWS CloudFront, "origin" đề cập đến nguồn dữ liệu hoặc máy chủ nơi CloudFront lấy dữ liệu để phân phối đến các máy khách cuối. Một "origin" có thể là một máy chủ web, một tập tin S3 bucket, hoặc một nguồn dữ liệu khác mà CloudFront sẽ tải và phân phối đến người dùng cuối thông qua Content Delivery Network (CDN).
@@ -122,9 +144,6 @@
 
 [Table of Contents](#cdn)
 
-
-## Advanced
-
 ### What is OCSP (Online Certificate Status Protocol) and OCSP stapling?
 
 - OCSP (Online Certificate Status Protocol) và OCSP stapling là hai khía cạnh liên quan đến xác thực chứng chỉ SSL/TLS trên web, nhưng chúng có một số khác biệt quan trọng
@@ -148,5 +167,20 @@ Origin Access Identity (OAI) là một tính năng trong dịch vụ Amazon Clou
 
 
 ![Alt text](./images/Lambda@Edge.png)
+
+[Table of Contents](#advanced)
+
+
+### What is difference between A && AAAA && CNAME && NS in DNS AWS Route53?
+
+- **A** —maps a hostname to IPv4
+- **AAAA** — maps a hostname to IPv6
+- **CNAME** — maps a hostname to another hostname
+    - The target is a domain name that must have an A or AAAA record
+    - Can't create a CNAME record for the top node of a DNS namespace (Zone Apex)
+    - Example: you can't create for example.com, but you can create for www.example.com
+- **NS** — Name Servers for the Hosted Zone
+
+![Alt text](./images/CNAME.png)
 
 [Table of Contents](#advanced)

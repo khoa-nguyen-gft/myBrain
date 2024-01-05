@@ -1,4 +1,4 @@
-package _02_grokking_coding_interview._01_pattern_sliding_window.findAverages;
+package _02_grokking_coding_interview._01_pattern_sliding_window._00_findAverages;
 
 import java.util.Arrays;
 
